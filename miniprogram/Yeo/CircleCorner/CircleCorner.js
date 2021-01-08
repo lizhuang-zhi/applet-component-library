@@ -4,7 +4,24 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    ImgBot: {
+      type: String,
+      value: '../imgs/上传.png'
+    },
+    ImgItem1: {
+      type: String,
+      value: '../imgs/交易所.png'
+    },
+    ImgItem2: {
+      type: String,
+      value: '../imgs/钱.png'
+    },
 
+  },
+
+  // 启用插槽
+  options: {
+    multipleSlots: true
   },
 
   /**

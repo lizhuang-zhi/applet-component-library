@@ -1,0 +1,25 @@
+<!-- 上下结构 -->
+<view class="{{fonType == 'udFon' ? 'yeo-updown-fon' : 'donShow'}} "
+style="font-size: {{FonSize + 'rpx'}};justify-content: {{udPosp}};height: {{getudHeight + 'rpx'}};">
+  <view class="yeo-above"
+  style="color:{{abCol}};">{{udFonConUp}}</view>
+  <view class="yeo-below"
+  style="color:{{blCol}};">{{udFonConDown}}</view>
+</view>
+
+
+<!-- 重叠结构 -->
+<view class="{{fonType == 'olFon' ? 'yeo-overlap-fon' : 'donShow'}} "
+style="font-size: {{FonSize + 'rpx'}};height: {{getolHeight + 'rpx'}};">
+  <view class="yeo-above-ol"
+  style="color:{{abCol}};left:{{olFromLeft + '%'}};">
+    {{olFonCon}}
+    <view class="yeo-below-ol"
+    style="color:{{blCol}};">
+      {{olFonCon}}
+    </view>
+  </view>
+
+</view>
+
+<!-- 字线结构 -->

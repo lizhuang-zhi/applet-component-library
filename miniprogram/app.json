@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/map_test/map_test",
     "pages/calculDistance/calculDistance",
-    "pages/circle/circle"
+    "pages/yeo-circle/yeo-circle",
+    "pages/yeo-overlapFon/yeo-overlapFon"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

@@ -66,8 +66,14 @@
           "scene": null
         },
         {
-          "name": "小圆圈",
-          "pathName": "pages/circle/circle",
+          "name": "右下角圆圈组件",
+          "pathName": "pages/yeo-circle/yeo-circle",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "上下字，叠字，线字",
+          "pathName": "pages/yeo-overlapFon/yeo-overlapFon",
           "query": "",
           "scene": null
         }

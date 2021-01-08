@@ -1,0 +1,14 @@
+<view class="yeo-circle-all">
+  <view class="yeo-item yeo-cir-start" 
+  bindtap="clickItem_1" animation="{{ani_last}}">
+    <image src="{{ImgItem1}}"></image>
+  </view>
+  <view class="yeo-item yeo-cir-item-1" 
+  bindtap="clickItem_2" animation="{{ani}}">
+    <image src="{{ImgItem2}}"></image>
+  </view>
+  <!-- 底部显现图标 -->
+  <view class="yeo-item yeo-cir-end">
+    <image bindtap="toggleShow" src="{{ImgBot}}"></image>
+  </view>
+</view>

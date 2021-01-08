@@ -1,0 +1,11 @@
+<!-- 右下角组件 -->
+<!-- 
+  ImgBot: 底部图
+  ImgItem1：弹出的第一张图片
+  ImgItem2：弹出的第二张图片
+-->
+<yeo-circle-corner
+  ImgBot='../../images/上传.png'
+  ImgItem1='../../images/交易所.png'
+  ImgItem2='../../images/钱.png'>
+</yeo-circle-corner>
