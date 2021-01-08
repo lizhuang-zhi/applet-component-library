@@ -19,7 +19,7 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
-    "useMultiFrameRuntime": false,
+    "useMultiFrameRuntime": true,
     "useApiHook": true,
     "babelSetting": {
       "ignore": [],
@@ -32,7 +32,9 @@
     "userConfirmedUseCompilerModuleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true
+    "minifyWXSS": true,
+    "bundle": false,
+    "useApiHostProcess": false
   },
   "appid": "wx45847f8c326518ee",
   "projectname": "%E5%90%84%E7%B1%BB%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91",
@@ -40,24 +42,34 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
     "game": {
       "list": []
     },
+    "gamePlugin": {
+      "list": []
+    },
     "miniprogram": {
       "list": [
         {
-          "id": -1,
-          "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide"
+          "name": "地图测试",
+          "pathName": "pages/map_test/map_test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "地图位置计算距离",
+          "pathName": "pages/calculDistance/calculDistance",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "小圆圈",
+          "pathName": "pages/circle/circle",
+          "query": "",
+          "scene": null
         }
       ]
     }

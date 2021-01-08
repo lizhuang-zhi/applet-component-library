@@ -1,0 +1,110 @@
+// miniprogram/pages/circle/circle.js
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    isShow: false,
+  },
+
+  // 封装创建动画对象
+  creatAniObj(delay,duration,timingFunction = 'linear',transformOrigin = '50% 50% 0'){
+    return wx.createAnimation({
+      delay,
+      duration,
+      timingFunction,
+      transformOrigin
+    });
+  },
+
+  // 切换显示
+  toggleShow(){
+    let animate = this.creatAniObj(0,500);
+    let animate_last = this.creatAniObj(0,700);
+    let animate_back = this.creatAniObj(100,600);
+    let animate_last_back = this.creatAniObj(0,700);
+
+    if(this.data.isShow == false){
+      animate_last.opacity(1).translate(0, -20).step()
+      animate.opacity(1).translate(0, -10).step()
+      this.setData({
+        ani: animate.export(),
+        ani_last: animate_last.export(),
+        isShow: true
+      })
+    }else{
+      animate_last_back.opacity(0).translate(0, 90).step()
+      animate_back.opacity(0).translate(0, 45).step()
+      this.setData({
+        ani: animate_back.export(),
+        ani_last: animate_last_back.export(),
+        isShow: false
+      })
+    }
+  },
+  // 第一个图标点击事件
+  clickItem_1(){
+    console.log('我是第一个图标点击事件');
+  },
+  // 第二个图标点击事件
+  clickItem_2(){
+    console.log('我是第二个图标点击事件');
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
+})
