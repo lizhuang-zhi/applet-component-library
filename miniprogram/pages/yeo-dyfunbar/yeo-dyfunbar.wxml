@@ -1,0 +1,32 @@
+<!-- 
+  使用时接入左右插槽，
+  中间是搜索框
+
+  参数：
+    yeoBg: 搜索框背景
+    yeoPlaceholder: 搜索框提示内容
+-->
+
+<!-- 组合方式-1   icon/search/icon-->
+<yeo-dy-fun-bar yeoBg='rgb(230,230,230)' yeoPlaceholder='Please Input SomeThing'>
+  <yeo-icon slot='dy-left' IconSize='40' iconUrl='../imgs/back-2.png'></yeo-icon>
+  <yeo-icon slot='dy-right' IconSize='40' iconUrl='../imgs/分类.png'></yeo-icon>
+</yeo-dy-fun-bar>
+
+
+
+<!-- 组合方式-2   hangSwing/search/hangSwing-->
+<yeo-dy-fun-bar yeoBg='rgb(230,230,230)' yeoPlaceholder='Please Input SomeThing'>
+  <yeo-hang-swing slot='dy-left'
+  ImgSize='70'></yeo-hang-swing>
+  <yeo-hang-swing slot='dy-right'
+  ImgSize='70'></yeo-hang-swing>
+</yeo-dy-fun-bar>
+
+
+<!-- 组合方式-3   hangSwing/search/icon-->
+<yeo-dy-fun-bar yeoBg='rgb(230,230,230)' yeoPlaceholder='Please Input SomeThing'>
+  <yeo-hang-swing slot='dy-left'
+  ImgSize='70'></yeo-hang-swing>
+  <yeo-icon slot='dy-right' IconSize='40' iconUrl='../imgs/分类.png'></yeo-icon>
+</yeo-dy-fun-bar>

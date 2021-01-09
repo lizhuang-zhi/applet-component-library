@@ -4,7 +4,10 @@
     "pages/map_test/map_test",
     "pages/calculDistance/calculDistance",
     "pages/yeo-circle/yeo-circle",
-    "pages/yeo-overlapFon/yeo-overlapFon"
+    "pages/yeo-overlapFon/yeo-overlapFon",
+    "pages/yeo-hangswing/yeo-hangswing",
+    "pages/yeo-dyfunbar/yeo-dyfunbar",
+    "pages/yeo-card/yeo-card"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

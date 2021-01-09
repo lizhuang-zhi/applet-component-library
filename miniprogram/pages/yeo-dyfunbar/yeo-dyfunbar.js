@@ -1,14 +1,10 @@
-// miniprogram/pages/yeo-circle/yeo-circle.js
+// miniprogram/pages/yeo-dyfunbar/yeo-dyfunbar.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-
-  changeBg(){
 
   },
 

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "yeo-dy-fun-bar": "/Yeo/DyFunBar/DyFunBar",
+    "yeo-icon": "/Yeo/YeoIcon/YeoIcon",
+    "yeo-search": "/Yeo/YeoSearch/YeoSearch",
+    "yeo-hang-swing": "/Yeo/HangSwing/HangSwing"
+  }
+}

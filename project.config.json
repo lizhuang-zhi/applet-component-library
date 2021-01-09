@@ -66,14 +66,32 @@
           "scene": null
         },
         {
-          "name": "右下角圆圈组件",
+          "name": "yeo-右下角圆圈组件",
           "pathName": "pages/yeo-circle/yeo-circle",
           "query": "",
           "scene": null
         },
         {
-          "name": "上下字，叠字，线字",
+          "name": "yeo-上下字，叠字，线字",
           "pathName": "pages/yeo-overlapFon/yeo-overlapFon",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-摇摆的吊灯",
+          "pathName": "pages/yeo-hangswing/yeo-hangswing",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-动态功能栏",
+          "pathName": "pages/yeo-dyfunbar/yeo-dyfunbar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-介绍卡片",
+          "pathName": "pages/yeo-card/yeo-card",
           "query": "",
           "scene": null
         }

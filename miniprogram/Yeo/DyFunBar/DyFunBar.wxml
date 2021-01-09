@@ -1,0 +1,6 @@
+<view class="yeo-dy-fun-bar">
+  <slot name='dy-left'></slot>
+  <yeo-search background='{{yeoBg}}'
+  placeholder='{{yeoPlaceholder}}'/>
+  <slot name='dy-right'></slot>
+</view>

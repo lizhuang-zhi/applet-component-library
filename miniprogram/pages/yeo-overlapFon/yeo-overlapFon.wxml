@@ -17,8 +17,8 @@
 -->
 <yeo-overlap-fon
 fonType='udFon'
-FonSize='40'
-udPosp='center'></yeo-overlap-fon>
+FonSize='80'
+udPosp='unset'></yeo-overlap-fon>
 
 
 <!-- 
@@ -31,5 +31,5 @@ udPosp='center'></yeo-overlap-fon>
 -->
 <yeo-overlap-fon
 fonType='olFon'
-olFonCon='我是你大爷'
-olFromLeft='30'></yeo-overlap-fon>
+olFonCon='我是一个人'
+olFromLeft='20'></yeo-overlap-fon>

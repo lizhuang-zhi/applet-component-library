@@ -1,0 +1,11 @@
+<view class="yeo-search" style="background: {{background}};">
+  <view class="search-icon">
+    <yeo-icon IconSize='37'
+    iconUrl='{{SearchImg}}'></yeo-icon>
+  </view>
+  <view class="search-input">
+    <input placeholder="{{placeholder}}"/>
+  </view>
+</view>
+
+
