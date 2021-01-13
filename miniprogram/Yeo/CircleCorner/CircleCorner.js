@@ -16,6 +16,16 @@ Component({
       type: String,
       value: '../imgs/钱.png'
     },
+    // 展示方向(1->垂直，0->水平)
+    direction: {
+      type: Number,
+      value: 1
+    },
+    // 图标大小
+    ImgSize: {
+      type: Number,
+      value: 100
+    }
 
   },
 
@@ -51,7 +61,7 @@ Component({
       let animate_back = this.creatAniObj(100, 600);
       let animate_last_back = this.creatAniObj(0, 700);
 
-      if (this.data.isShow == false) {
+      if (this.data.isShow == false && this.data.direction == 1) {
         animate_last.opacity(1).translate(0, -20).step()
         animate.opacity(1).translate(0, -10).step()
         this.setData({
@@ -59,9 +69,25 @@ Component({
           ani_last: animate_last.export(),
           isShow: true
         })
-      } else {
+      } else if(this.data.isShow == true && this.data.direction == 1){
         animate_last_back.opacity(0).translate(0, 90).step()
         animate_back.opacity(0).translate(0, 45).step()
+        this.setData({
+          ani: animate_back.export(),
+          ani_last: animate_last_back.export(),
+          isShow: false
+        })
+      }else if(this.data.isShow == false && this.data.direction == 0){
+        animate_last.opacity(1).translate(135, this.data.ImgSize*1.07).step()
+        animate.opacity(1).translate(70, this.data.ImgSize/1.9).step()
+        this.setData({
+          ani: animate.export(),
+          ani_last: animate_last.export(),
+          isShow: true
+        })
+      }else if(this.data.isShow == true && this.data.direction == 0){
+        animate_last_back.opacity(0).translate(40, this.data.ImgSize*1.07).step()
+        animate_back.opacity(0).translate(35, this.data.ImgSize/1.9).step()
         this.setData({
           ani: animate_back.export(),
           ani_last: animate_last_back.export(),

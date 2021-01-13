@@ -1,2 +1,3 @@
-<!--miniprogram/pages/yeo-card/yeo-card.wxml-->
-<text>miniprogram/pages/yeo-card/yeo-card.wxml</text>
+<view class="pageBox">
+  <yeo-card />
+</view>

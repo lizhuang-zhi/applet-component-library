@@ -1,0 +1,20 @@
+<view class="yeo-card">
+  <view class="card-left">
+    <view class="lt-top">
+      <view class="name">Mr.KLeo</view>
+      <view class="btn" bindtap="clickBtn">关注</view>
+    </view>
+    <view class="title">前端工程师/Dancer</view>
+    <view class="desc">
+      我是Leo，我是一名前端工程师，毕业于NSU,信息工程学士。曾在云顶犀科技公司负责产品前端开发。擅长使用Vue, Yeo-components开发可复用的视图组件
+    </view>
+    <view class="contact">
+      <yeo-circle-corner direction='0' ImgSize='50' ImgBot='../imgs/更多.png'
+  ImgItem1='../imgs/qq.png'
+  ImgItem2='../imgs/wechat.png'/>
+    </view>
+  </view>
+  <view class="card-right">
+    <image src="../imgs/introduce.jpg"></image>
+  </view>
+</view>

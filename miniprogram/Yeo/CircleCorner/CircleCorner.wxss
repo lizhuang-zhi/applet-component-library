@@ -1,11 +1,12 @@
 .yeo-circle-all{
-  position: fixed;
+  /* position: fixed;
   bottom: 30%;
-  right: 45rpx;
+  right: 45rpx; */
+  position: relative;
+  left: 0;
+  top: 0;
 }
 .yeo-circle-all .yeo-item{
-  width: 100rpx;
-  height: 90rpx;
   z-index: 1000;
 }
 .yeo-circle-all .yeo-cir-end{
@@ -18,10 +19,4 @@
 }
 .yeo-circle-all .yeo-cir-start,.yeo-cir-item-1{
   opacity: 0;
-}
-.yeo-circle-all .yeo-cir-start{
-  transform: translateY(180rpx);
-}
-.yeo-circle-all .yeo-cir-item-1{
-  transform: translateY(86rpx);
 }
