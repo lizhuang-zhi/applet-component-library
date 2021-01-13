@@ -94,6 +94,12 @@
           "pathName": "pages/yeo-card/yeo-card",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "yeo-简单卡片",
+          "pathName": "pages/yeo-simple-card/yeo-simple-card",
+          "query": "",
+          "scene": null
         }
       ]
     }

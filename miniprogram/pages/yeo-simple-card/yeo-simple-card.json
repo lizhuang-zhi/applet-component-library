@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "yeo-simple-card": "/Yeo/SimpleCard/SimpleCard"
+  }
+}

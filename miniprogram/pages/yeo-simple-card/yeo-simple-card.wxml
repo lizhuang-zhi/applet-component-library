@@ -1,0 +1,14 @@
+<view class="outbox">
+  <view class="inner">
+    <yeo-simple-card />
+  </view>
+  <view class="inner">
+    <yeo-simple-card BackgroundColor='#F3C143'/>
+  </view>
+  <view class="inner">
+    <yeo-simple-card BackgroundColor='#9AC656'/>
+  </view>
+  <view class="inner">
+    <yeo-simple-card BackgroundColor='#59B9B4'/>
+  </view>
+</view>

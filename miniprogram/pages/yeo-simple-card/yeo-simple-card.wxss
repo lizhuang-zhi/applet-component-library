@@ -1,0 +1,7 @@
+.outbox {
+  width: 93%;
+  margin: 30rpx auto 0;
+}
+.outbox .inner {
+  margin-bottom: 27rpx;
+}
