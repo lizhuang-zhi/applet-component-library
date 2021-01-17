@@ -4,5 +4,5 @@
   /* background: palevioletred; */
   position: fixed;
   bottom: 30%;
-  right: 240rpx;
+  right: 40rpx;
 }

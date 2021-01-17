@@ -1,13 +1,11 @@
-<!--绑定点击事件-->
-<button bindtap="nearby_search">搜索周边KFC</button>
-<!--地图容器-->
-<map id="myMap"
-   markers="{{markers}}"
-   style="width:100%;height:900rpx;"
-   longitude="103.601591"
-   latitude="30.895912" scale='16'
-   enable-traffic
-   enable-building
-   enable-overlooking
-   show-location>
-</map>  
+<scroll-view scroll-x style="height: 300rpx;" scroll-top='false'
+scroll-left='{{sl}}' scroll-with-animation>
+  <view class="item">我是item44444444444444444444444442333333333333333333333333333333333333</view>
+  <view class="item">我是item44444444444444444444444442333333333333333333333333333333333333</view>
+  <view class="item">我是item44444444444444444444444442333333333333333333333333333333333333</view>
+  <view class="item">我是item44444444444444444444444442333333333333333333333333333333333333</view>
+  <view class="item">我是item44444444444444444444444442333333333333333333333333333333333333</view>
+</scroll-view>  
+
+
+<button bindtap="setScrollLeft">向左</button>

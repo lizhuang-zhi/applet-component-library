@@ -12,8 +12,8 @@
 
 
 <view class="outbox">
-  <yeo-circle-corner ImgBot='../../images/交易所.png'
-  ImgItem1='../../images/交易所.png'
+  <yeo-circle-corner ImgBot='../../images/上传.png'
+  ImgItem1='../../images/钱.png'
   ImgItem2='../../images/交易所.png' />
 </view>
 
