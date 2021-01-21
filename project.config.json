@@ -101,6 +101,12 @@
           "pathName": "pages/yeo-simple-card/yeo-simple-card",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "yeo-底部栏",
+          "pathName": "pages/yeo-tab-bar/yeo-tab-bar",
+          "query": "",
+          "scene": null
         }
       ]
     }

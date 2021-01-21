@@ -1,20 +1,12 @@
-<yeo-hang-swing
-ImgSize='80'></yeo-hang-swing>
-
-
-
-
-
-<!-- tabbar组件 -->
 <yeo-tab-bar>
-  <yeo-tab-bar-item isSelect='0' selectWordsCol='#5BC6FA'
-  jumpUrl='/pages/yeo-tab-bar/yeo-tab-bar'>
+  <yeo-tab-bar-item isSelect='1' selectWordsCol='#5BC6FA'>
     <image slot='pic-select' src="../../images/首页-select.png"></image>
     <image slot='pic' src="../../images/首页.png"></image>
     <view slot='tit'>首页</view>
   </yeo-tab-bar-item>
 
-  <yeo-tab-bar-item isSelect='1' selectWordsCol='#5BC6FA'>
+  <yeo-tab-bar-item isSelect='0' selectWordsCol='#5BC6FA'
+  jumpUrl='/pages/yeo-hangswing/yeo-hangswing'>
     <image slot='pic-select' src="../../images/分类-select.png"></image>
     <image slot='pic' src="../../images/分类.png"></image>
     <view slot='tit'>分类</view>
