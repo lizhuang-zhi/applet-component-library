@@ -9,7 +9,9 @@
     "pages/yeo-dyfunbar/yeo-dyfunbar",
     "pages/yeo-card/yeo-card",
     "pages/yeo-simple-card/yeo-simple-card",
-    "pages/yeo-tab-bar/yeo-tab-bar"
+    "pages/yeo-tab-bar/yeo-tab-bar",
+    "pages/yeo-label-box/yeo-label-box",
+    "pages/yeo-stretch/yeo-stretch"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

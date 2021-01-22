@@ -1,0 +1,5 @@
+<view class="box">
+  <yeo-stretch>
+    <view slot='content'>微信小程序和普通的前端开发有很多不同。后者修改js可以操作DOM,即 document.getElementB(id)那么浙西所撒地方但是发射点士大夫地方撒地方是发射点士大夫地方撒地方是发射点士大夫地方撒地方是发射点士大夫地方撒地方是发射点士大夫地方撒地方是发射点士大夫地方撒地方</view>
+  </yeo-stretch>
+</view>

@@ -107,6 +107,17 @@
           "pathName": "pages/yeo-tab-bar/yeo-tab-bar",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "yeo-标签框",
+          "pathName": "pages/yeo-label-box/yeo-label-box",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-动态伸缩模块",
+          "pathName": "pages/yeo-stretch/yeo-stretch",
+          "scene": null
         }
       ]
     }

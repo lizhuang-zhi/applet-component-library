@@ -1,4 +1,4 @@
-<yeo-tab-bar>
+<yeo-tab-bar backgroundCol='#212121'>
   <yeo-tab-bar-item isSelect='1' selectWordsCol='#5BC6FA'>
     <image slot='pic-select' src="../../images/首页-select.png"></image>
     <image slot='pic' src="../../images/首页.png"></image>

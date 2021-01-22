@@ -1,0 +1,13 @@
+<view class="yeo-label-box">
+  <view class="box-up">
+    <view class="tit">
+      <text class="sym">#</text>
+      <text class="words">{{titleWords}}</text>
+    </view>
+    <view class="looks" style="color: {{looksGoodCol}};">{{looks}} 浏览</view>
+  </view>
+
+  <view class="box-down">
+    <slot name='content' class="slot-box"></slot>
+  </view>
+</view>
