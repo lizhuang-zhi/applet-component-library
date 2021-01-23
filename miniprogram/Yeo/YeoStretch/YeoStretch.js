@@ -15,7 +15,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    isShow: false
+    isShow: false,
 
   },
 
@@ -39,6 +39,7 @@ Component({
           },
           content: {
             show: 'block',
+            transi: '2s'
           },
           isShow: true
         });

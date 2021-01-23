@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "yeo-stretch": "/Yeo/YeoStretch/YeoStretch"
+    "yeo-stretch": "/Yeo/YeoStretch/YeoStretch",
+    "yeo-label-box": "/Yeo/YeoLabelBox/YeoLabelBox"
   }
 }

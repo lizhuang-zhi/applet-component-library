@@ -1,5 +1,25 @@
 <view class="box">
   <yeo-stretch>
-    <view slot='content'>微信小程序和普通的前端开发有很多不同。后者修改js可以操作DOM,即 document.getElementB(id)那么浙西所撒地方但是发射点士大夫地方撒地方是发射点士大夫地方撒地方是发射点士大夫地方撒地方是发射点士大夫地方撒地方是发射点士大夫地方撒地方是发射点士大夫地方撒地方</view>
+
+
+    <!-- 传入组件 -->
+    <view slot='content'>
+      <yeo-label-box>
+        <view slot='content'>
+          左右和啥打法上撒旦法四大发顺丰下次茶多酚爱的色放奥的斯是驾驶的立法奥德赛放假啊实打实说的覅偶而忘记微微辣插卡积分ad佛阿斯蒂芬
+        </view>
+      </yeo-label-box>
+
+      <yeo-label-box>
+        <view slot='content'>
+          左右和啥打法上撒旦法四大发顺丰下次茶多酚爱的色放奥的斯是驾驶的立法奥德赛放假啊实打实说的覅偶而忘记微微辣插卡积分ad佛阿斯蒂芬
+        </view>
+      </yeo-label-box>
+    </view>
+
   </yeo-stretch>
 </view>
+
+
+
+

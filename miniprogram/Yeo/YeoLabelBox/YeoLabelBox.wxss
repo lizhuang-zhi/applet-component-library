@@ -1,5 +1,6 @@
 .yeo-label-box {
-  width: 540rpx;
+  width: 88%;
+  /* width: 540rpx; */
   background: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -8,6 +9,7 @@
   padding: 40rpx 32rpx 15rpx 32rpx;
   border-radius: 13rpx;
   box-shadow: 0 0 20rpx #dddddd;
+  margin-bottom: 30rpx;
 }
 .yeo-label-box .box-up {
   width: 100%;

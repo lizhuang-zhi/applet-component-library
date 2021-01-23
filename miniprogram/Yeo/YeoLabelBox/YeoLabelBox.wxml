@@ -8,6 +8,6 @@
   </view>
 
   <view class="box-down">
-    <slot name='content' class="slot-box"></slot>
+    <slot name='content'></slot>
   </view>
 </view>
