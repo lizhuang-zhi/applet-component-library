@@ -1,0 +1,5 @@
+<view class="box">
+  <yeo-horizon-slider sliderArr='{{sliderArr}}'>
+
+  </yeo-horizon-slider>
+</view>

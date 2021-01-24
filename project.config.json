@@ -117,6 +117,13 @@
         {
           "name": "yeo-动态伸缩模块",
           "pathName": "pages/yeo-stretch/yeo-stretch",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-横向滑动栏",
+          "pathName": "pages/yeo-horizon-slider/yeo-horizon-slider",
+          "query": "",
           "scene": null
         }
       ]
