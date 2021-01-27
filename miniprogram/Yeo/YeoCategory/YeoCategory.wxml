@@ -1,0 +1,8 @@
+<view class="yeo-category" style="background: {{bgColor}};">
+  <view class="pic">
+    <image src="{{picUrl}}"></image>
+  </view>
+  <view class="tit">
+    <slot name='title'></slot>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "yeo-category": "/Yeo/YeoCategory/YeoCategory",
+    "yeo-categories": "/Yeo/YeoCategories/YeoCategories"
+  }
+}

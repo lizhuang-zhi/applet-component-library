@@ -1,15 +1,19 @@
-// Yeo/YeoTabBar/YeoTabBar.js
+// Yeo/YeoCategory/YeoCategory.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
     // 背景颜色
-    backgroundCol: {
+    bgColor: {
       type: String,
-      value: '#2E3B4A'
+      value: '#948CFF'
+    },
+    // 图片地址
+    picUrl: {
+      type: String,
+      value: '../imgs/qq.png'
     }
-
   },
 
   options: {

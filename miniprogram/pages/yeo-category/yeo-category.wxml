@@ -1,0 +1,14 @@
+<yeo-categories>
+  <yeo-category picUrl='../../images/html.png'>
+    <view slot='title'>HTML</view>
+  </yeo-category>
+  <yeo-category picUrl='../../images/css3.png' bgColor='#7CE8C1'>
+    <view slot='title'>CSS</view>
+  </yeo-category>
+  <yeo-category picUrl='../../images/js.png' bgColor='#FD7C5A'>
+    <view slot='title'>JavaScript</view>
+  </yeo-category>
+  <yeo-category picUrl='../../images/vuejs-line.png' bgColor='#F8A9FF'>
+    <view slot='title'>Vue</view>
+  </yeo-category>
+</yeo-categories>

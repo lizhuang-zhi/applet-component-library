@@ -12,7 +12,9 @@
     "pages/yeo-tab-bar/yeo-tab-bar",
     "pages/yeo-label-box/yeo-label-box",
     "pages/yeo-stretch/yeo-stretch",
-    "pages/yeo-horizon-slider/yeo-horizon-slider"
+    "pages/yeo-horizon-slider/yeo-horizon-slider",
+    "pages/yeo-category/yeo-category",
+    "pages/yeo-horizon-slider-v2/yeo-horizon-slider-v2"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

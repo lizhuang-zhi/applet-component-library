@@ -125,6 +125,17 @@
           "pathName": "pages/yeo-horizon-slider/yeo-horizon-slider",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "yeo-分类模块",
+          "pathName": "pages/yeo-category/yeo-category",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-第二版本横拉栏",
+          "pathName": "pages/yeo-horizon-slider-v2/yeo-horizon-slider-v2",
+          "scene": null
         }
       ]
     }
