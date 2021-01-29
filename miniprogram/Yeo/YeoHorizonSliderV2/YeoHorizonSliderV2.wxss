@@ -5,7 +5,7 @@
   display: inline-block;
   width: 303rpx;
   height: 407rpx;
-  border-radius: 23rpx;
+  border-radius: 35rpx;
   margin-right: 33rpx;
 }
 .yeo-horizon-slider .singleBox .content {

@@ -1,6 +1,6 @@
 <scroll-view class="yeo-horizon-slider" scroll-x scroll-left="{{leftdistance}}" scroll-with-animation="{{true}}">
 
-<view class="singleBox" wx:for="{{sliderArr}}" wx:key='index' style="background: {{item.bgColor}};">
+<navigator class="singleBox" wx:for="{{sliderArr}}" wx:key='index' style="background: {{item.bgColor}};" url="{{item.urlAddress}}" open-type="navigate">
   <view class="content">
     <view class="num">{{item.num}}</view>
     <view class="tit">{{item.title}}</view>
@@ -8,6 +8,6 @@
   <view class="pic">
     <image src="{{item.picUrl}}"></image>
   </view>
-</view>
+</navigator>
 
 </scroll-view>

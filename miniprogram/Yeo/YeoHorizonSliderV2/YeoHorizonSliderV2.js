@@ -8,7 +8,7 @@ Component({
     sliderArr: {
       type: Array,
       value: null
-    },
+    }
   },
 
   /**
@@ -22,7 +22,7 @@ Component({
     attached: function() {
       setTimeout(()=>{
         this.setData({
-          leftdistance: 200
+          leftdistance: 70
         })
       },1200)
     },
