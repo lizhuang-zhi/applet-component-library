@@ -4,7 +4,7 @@
 
 ### 展示效果
 
-<img src="https://s3.ax1x.com/2021/02/08/yUY201.png" style="zoom:30%;" /><img src="https://s3.ax1x.com/2021/02/08/yUYgmR.png" style="zoom:30%;" />
+<img src="https://s3.ax1x.com/2021/02/08/yUY201.png" style="zoom:10%;" /><img src="https://s3.ax1x.com/2021/02/08/yUYgmR.png" style="zoom:10%;" />
 
 ### 描述
 
