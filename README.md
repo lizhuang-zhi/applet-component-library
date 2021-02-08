@@ -1,12 +1,23 @@
-# 云开发 quickstart
+# Yeo小程序组件使用文档
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
+## yeo-tools-bar（工具栏）
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
+### 展示效果
 
-## 参考文档
+<img src="https://s3.ax1x.com/2021/02/08/yUY201.png" style="zoom:50%;" /><img src="https://s3.ax1x.com/2021/02/08/yUYgmR.png" style="zoom:50%;" />
 
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
+### 描述
+
+点击中心图标，工具栏动画展开；再次点击复原
+
+### 属性说明
+
+| 属性名      | 类型   | 默认值                  | 说明             |
+| ----------- | :----- | ----------------------- | ---------------- |
+| bordRadius  | Number | 15                      | 背景块圆角大小   |
+| movDistance | Number | 52                      | 动画展示距离     |
+| mainPic     | String | ../imgs/tools_main.png  | 中心控制显示图标 |
+| upPic       | String | ../imgs/tools_index.png | 上图标           |
+| rightUpPic  | String | ../imgs/tools_relax.png | 右上图标         |
+| rightPic    | String | ../imgs/tools_cate.png  | 右图标           |
 
