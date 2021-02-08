@@ -1,4 +1,4 @@
-<navigator url='{{jumpUrl}}' open-type='redirect'>
+<navigator url='{{jumpUrl}}' open-type='navigate'>
   <view class="yeo-tab-bar-item">
     <view class="item-pic">
       <slot wx:if="{{isSelect}}" name='pic-select'></slot>

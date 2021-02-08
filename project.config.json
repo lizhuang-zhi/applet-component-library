@@ -135,6 +135,12 @@
         {
           "name": "yeo-第二版本横拉栏",
           "pathName": "pages/yeo-horizon-slider-v2/yeo-horizon-slider-v2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-工具栏",
+          "pathName": "pages/yeo-tools-bar/yeo-tools-bar",
           "scene": null
         }
       ]

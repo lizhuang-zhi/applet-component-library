@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "yeo-tools-bar": "/Yeo/YeoToolsBar/YeoToolsBar"
+  }
+}

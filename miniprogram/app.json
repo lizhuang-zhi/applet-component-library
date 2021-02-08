@@ -14,7 +14,8 @@
     "pages/yeo-stretch/yeo-stretch",
     "pages/yeo-horizon-slider/yeo-horizon-slider",
     "pages/yeo-category/yeo-category",
-    "pages/yeo-horizon-slider-v2/yeo-horizon-slider-v2"
+    "pages/yeo-horizon-slider-v2/yeo-horizon-slider-v2",
+    "pages/yeo-tools-bar/yeo-tools-bar"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
