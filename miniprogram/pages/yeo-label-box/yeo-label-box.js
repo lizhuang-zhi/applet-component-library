@@ -8,6 +8,12 @@ Page({
 
   },
 
+  // 点击组件
+  clickEvent(e) {
+    console.log(e);
+    console.log('标签框被点击');
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

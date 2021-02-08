@@ -1,3 +1,5 @@
-.box {
-  margin: 30rpx auto;
+
+yeo-label-box{
+  width: 88%;
+  margin: 0 auto;
 }

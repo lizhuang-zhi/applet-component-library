@@ -4,7 +4,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    // 标题文字
+    // 标题内容
     titleWords: {
       type: String,
       value: 'Vue双向绑定'
@@ -12,12 +12,22 @@ Component({
     // 浏览数
     looks: {
       type: String,
-      value: 16668
+      value: '66666'
     },
-    // 浏览数大于10万的颜色（自动改变）
-    looksGoodCol: {
+    // 浏览数的颜色（大于10万自动改变）
+    looksCol: {
       type: String,
       value: ''
+    },
+    // 背景框圆角大小
+    bordRadius: {
+      type: Number,
+      value: 13
+    },
+    // 背景颜色
+    bgColor: {
+      type: String,
+      value: '#FFFFFF'
     }
   },
 
@@ -32,7 +42,7 @@ Component({
       if(this.data.looks > 99999){
         this.setData({
           looks: "10W+",
-          looksGoodCol: "#5AB0AE"
+          looksCol: "#5AB0AE"
         })
       }
     },
@@ -52,6 +62,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    // 整体组件点击事件
+    ClickBox() {
+      let detail = {};
+      this.triggerEvent('clickevent',detail);
+    }
   }
 })

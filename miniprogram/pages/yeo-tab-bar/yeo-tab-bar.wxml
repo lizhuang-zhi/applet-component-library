@@ -18,4 +18,5 @@
     <image slot='pic' src="../../images/我的.png"></image>
     <view slot='tit'>我的</view>
   </yeo-tab-bar-item>
+
 </yeo-tab-bar>
