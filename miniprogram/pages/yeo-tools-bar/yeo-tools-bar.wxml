@@ -1,1 +1,2 @@
-<yeo-tools-bar></yeo-tools-bar>
+<yeo-tools-bar bind:upevent='upEvent'
+bind:rightevent='rightEvent'></yeo-tools-bar>

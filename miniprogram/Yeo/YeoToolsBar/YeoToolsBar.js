@@ -10,13 +10,23 @@ Component({
       type: Number,
       value: 15
     },
+    // 背景色
+    bgColor: {
+      type: String,
+      value: '#9266F9'
+    },
     // 动画展示距离(单位是px)
     movDistance: {
       type: Number,
       value: 52
     },
+    // 图标相对背景大小(10~25最适宜)
+    picSize: {
+      type: Number,
+      value: 15
+    },
 
-    /* 图标 */
+    /* 图标路径 */
     // 中心控制显示图标
     mainPic: {
       type: String,
@@ -90,6 +100,36 @@ Component({
         })
       }
 
+    },
+
+    // 上图标事件
+    TapUp() {
+      let myEventDetail = {
+        name: '上图标事件',
+      }; // detail对象，提供给事件监听函数
+      let myEventOption = {
+      }; // 触发事件的选项
+      this.triggerEvent( 'upevent', myEventDetail, myEventOption);
+    },
+
+    // 右上图标事件
+    TapUpRight() {
+      let myEventDetail = {
+        name: '右上图标事件',
+      }; // detail对象，提供给事件监听函数
+      let myEventOption = {
+      }; // 触发事件的选项
+      this.triggerEvent( 'uprightevent', myEventDetail, myEventOption);
+    },
+
+    // 右图标事件
+    TapRight() {
+      let myEventDetail = {
+        name: '右图标事件',
+      }; // detail对象，提供给事件监听函数
+      let myEventOption = {
+      }; // 触发事件的选项
+      this.triggerEvent( 'rightevent', myEventDetail, myEventOption);
     }
 
   }

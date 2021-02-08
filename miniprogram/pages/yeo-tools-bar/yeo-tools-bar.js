@@ -8,6 +8,16 @@ Page({
 
   },
 
+  // 监听上图标事件
+  upEvent(e) {
+    console.log(e);
+  },
+  // 右边图标事件
+  rightEvent() {
+    console.log('我是右边的图标，你别点我！！');
+  },
+  
+
   /**
    * 生命周期函数--监听页面加载
    */
