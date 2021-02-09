@@ -1,5 +1,4 @@
-<yeo-hang-swing
-ImgSize='80'></yeo-hang-swing>
+<yeo-hang-swing ImgSize='80'></yeo-hang-swing>
 
 
 
@@ -7,8 +6,7 @@ ImgSize='80'></yeo-hang-swing>
 
 <!-- tabbar组件 -->
 <yeo-tab-bar>
-  <yeo-tab-bar-item isSelect='0' selectWordsCol='#5BC6FA'
-  jumpUrl='/pages/yeo-tab-bar/yeo-tab-bar'>
+  <yeo-tab-bar-item isSelect='0' selectWordsCol='#5BC6FA' jumpUrl='/pages/yeo-tab-bar/yeo-tab-bar'>
     <image slot='pic-select' src="../../images/首页-select.png"></image>
     <image slot='pic' src="../../images/首页.png"></image>
     <view slot='tit'>首页</view>
@@ -20,8 +18,7 @@ ImgSize='80'></yeo-hang-swing>
     <view slot='tit'>分类</view>
   </yeo-tab-bar-item>
 
-  <yeo-tab-bar-item isSelect='0' selectWordsCol='#5BC6FA'
-  jumpUrl='/pages/yeo-dyfunbar/yeo-dyfunbar'>
+  <yeo-tab-bar-item isSelect='0' selectWordsCol='#5BC6FA' jumpUrl='/pages/yeo-dyfunbar/yeo-dyfunbar'>
     <image slot='pic-select' src="../../images/我的-select.png"></image>
     <image slot='pic' src="../../images/我的.png"></image>
     <view slot='tit'>我的</view>

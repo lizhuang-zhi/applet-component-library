@@ -5,17 +5,17 @@ Component({
    */
   properties: {
     // 摆动频率(数值越大，摆动越慢)
-    SwingSpeed: {
+    swingSpeed: {
       type: Number,
       value: 1.5
     },
     // 图片地址
-    ImgUrl: {
+    imgUrl: {
       type: String,
       value: '../imgs/吊灯.png'
     },
     // 图片大小
-    ImgSize: {
+    imgSize: {
       type: Number,
       value: 100
     },
@@ -33,6 +33,9 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    // 点击事件
+    clickTap() {
+      this.triggerEvent('clickevent',{});
+    }  
   }
 })

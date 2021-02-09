@@ -5,7 +5,7 @@ Component({
    */
   properties: {
     // 图片
-    ImgUrl: {
+    imgUrl: {
       type: String,
       value: '../imgs/introduce.jpg'
     },
@@ -37,6 +37,14 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    // 点击图片
+    clickPic() {
+      this.triggerEvent('picevent',{name: '图片事件'},{});
+    },
 
+    // 点击其他地方事件
+    clickMain() {
+      this.triggerEvent('mainevent',{name: '其他事件'},{});
+    }
   }
 })

@@ -1,6 +1,5 @@
 .yeo-dy-fun-bar{
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 .yeo-dy-fun-bar yeo-search{
