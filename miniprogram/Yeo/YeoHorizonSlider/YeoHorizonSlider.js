@@ -22,6 +22,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    clickObject(e) {
+      // 存储点击对象至clickObj
+      let clickObj = e.currentTarget.dataset.item;
+      this.triggerEvent('clickevent',{clickObj});
+    }
   }
 })

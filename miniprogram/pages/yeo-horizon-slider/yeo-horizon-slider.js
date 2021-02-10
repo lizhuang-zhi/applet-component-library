@@ -13,6 +13,13 @@ Page({
     ]
   },
 
+
+  // 点击事件
+  clickObj(e) {
+    // 监听触发目标
+    console.log(e.detail.clickObj);
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

@@ -1,5 +1,5 @@
 <view class="box">
-  <yeo-horizon-slider sliderArr='{{sliderArr}}'>
+  <yeo-horizon-slider sliderArr='{{sliderArr}}' bind:clickevent='clickObj'>
 
   </yeo-horizon-slider>
 </view>

@@ -8,6 +8,120 @@
 
 
 
+
+
+
+
+
+
+## yeo-horizon-slider（横向滑动栏）
+
+### 展示效果
+
+<img src="https://s3.ax1x.com/2021/02/10/ywohf1.png" style="zoom:67%;" />
+
+### 描述
+
+向右滑动展示更多内容
+
+### 属性说明
+
+| 属性名    | 类型  | 默认值 | 说明         |
+| --------- | :---- | ------ | ------------ |
+| sliderArr | Array | null   | 遍历数组数据 |
+
+### 事件
+
+| 事件名          | 事件描述     |
+| --------------- | ------------ |
+| bind:clickevent | 监听点击事件 |
+
+### 使用示例
+
+index.wxml
+
+```html
+<yeo-horizon-slider sliderArr='{{sliderArr}}' bind:clickevent='clickObj'></yeo-horizon-slider>
+```
+
+index.js
+
+```js
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    // 传入数组数据
+    sliderArr: [
+      {picUrl: '../imgs/YHS-1.jpg',title: '怦然心动',description: '月亮将会奔你而来'},
+      {picUrl: '../imgs/YHS-2.jpg',title: '傲慢与偏见',description: '以灵魂唤醒灵魂'},
+      {picUrl: '../imgs/YHS-3.jfif',title: '老人与海',description: '老人与海的固执'},
+      {picUrl: '../imgs/YHS-4.jpg',title: '复仇者联盟',description: '以父之名论英雄'},
+    ]
+  },
+
+  // 点击事件
+  clickObj(e) {
+    // 监听触发目标
+    console.log(e.detail.clickObj);
+  },
+```
+
+## yeo-horizon-slider-v2（横向滑动栏-v2）
+
+### 展示效果
+
+<img src="https://s3.ax1x.com/2021/02/10/ywqkrV.png" style="zoom:67%;" />
+
+### 描述
+
+向右滑动展示更多内容
+
+### 属性说明
+
+| 属性名    | 类型    | 默认值 | 说明                 |
+| --------- | :------ | ------ | -------------------- |
+| sliderArr | Array   | null   | 遍历数组数据         |
+| isShowMov | Boolean | true   | 是否开启动画滑动提示 |
+| titFont   | Number  | 20     | 标题大小             |
+| numFont   | Number  | 50     | 数字大小             |
+
+### 事件
+
+| 事件名          | 事件描述     |
+| --------------- | ------------ |
+| bind:clickevent | 监听点击事件 |
+
+### 使用示例
+
+index.wxml
+
+```html
+<yeo-horizon-slider-v2 sliderArr='{{sliderArr}}' bind:clickevent="clickObj">
+</yeo-horizon-slider-v2>
+```
+
+index.js
+
+```js
+ /**
+   * 页面的初始数据
+   */
+  data: {
+    sliderArr: [
+      {picUrl: '../../images/computer.png',bgColor: '#EBDFFF',title: 'Article',num: 19},
+      {picUrl: '../../images/earphone.png',bgColor: '#C4EFFC',title: 'Category',num: 6},
+      {picUrl: '../../images/router.png',bgColor: '#948CFF',title: 'Module',num: 3}
+    ]
+  },
+
+  // 获取点击对象
+  clickObj(e) {
+    // 获取点击对象
+    console.log(e.detail.itemObj);
+  },
+```
+
 ## yeo-dyfunbar（动态功能栏）
 
 ### 展示效果

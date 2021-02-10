@@ -6,10 +6,16 @@ Page({
    */
   data: {
     sliderArr: [
-      {picUrl: '../../images/article.png',bgColor: '#EBDFFF',title: 'Article',num: 19},
-      {picUrl: '../../images/category.png',bgColor: '#C4EFFC',title: 'Category',num: 6},
-      {picUrl: '../../images/modules.png',bgColor: '#948CFF',title: 'Module',num: 3}
+      {picUrl: '../../images/computer.png',bgColor: '#EBDFFF',title: 'Article',num: 19},
+      {picUrl: '../../images/earphone.png',bgColor: '#C4EFFC',title: 'Category',num: 6},
+      {picUrl: '../../images/router.png',bgColor: '#948CFF',title: 'Module',num: 3}
     ]
+  },
+
+  // 获取点击对象
+  clickObj(e) {
+    // 获取点击对象
+    console.log(e.detail.itemObj);
   },
 
   /**
