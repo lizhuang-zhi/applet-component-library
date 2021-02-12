@@ -1,0 +1,4 @@
+<yeo-anima-search model:bindvalue="{{pageValue}}"
+bind:searcontevent="changeSearCont"
+searBackArr="{{searArr}}"></yeo-anima-search>
+

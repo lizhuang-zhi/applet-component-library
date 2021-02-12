@@ -38,7 +38,7 @@
   },
   "appid": "wx45847f8c326518ee",
   "projectname": "%E5%90%84%E7%B1%BB%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91",
-  "libVersion": "2.8.1",
+  "libVersion": "2.15.0",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "compileType": "miniprogram",
@@ -141,6 +141,18 @@
         {
           "name": "yeo-工具栏",
           "pathName": "pages/yeo-tools-bar/yeo-tools-bar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-下方弹出框",
+          "pathName": "pages/yeo-below-pop/yeo-below-pop",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-动画搜索",
+          "pathName": "pages/yeo-anima-search/yeo-anima-search",
           "scene": null
         }
       ]

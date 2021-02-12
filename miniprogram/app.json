@@ -15,7 +15,9 @@
     "pages/yeo-horizon-slider/yeo-horizon-slider",
     "pages/yeo-category/yeo-category",
     "pages/yeo-horizon-slider-v2/yeo-horizon-slider-v2",
-    "pages/yeo-tools-bar/yeo-tools-bar"
+    "pages/yeo-tools-bar/yeo-tools-bar",
+    "pages/yeo-below-pop/yeo-below-pop",
+    "pages/yeo-anima-search/yeo-anima-search"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -31,6 +33,8 @@
     }
   },
   "usingComponents": {
-    "yeo-search": "/Yeo/YeoSearch/YeoSearch"
+    "yeo-search": "/Yeo/YeoSearch/YeoSearch",
+    "yeo-below-pop": "/Yeo/YeoBelowPop/YeoBelowPop",
+    "yeo-anima-search": "/Yeo/YeoAnimaSearch/YeoAnimaSearch"
   }
 }

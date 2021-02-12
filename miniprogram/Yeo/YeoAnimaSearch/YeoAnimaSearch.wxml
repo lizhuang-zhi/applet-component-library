@@ -1,0 +1,25 @@
+<view class="yeo-anima-search" animation='{{spreadAndCancel}}' bindtap="spreadSearch">
+  <view class="search-pic">
+    <image src="../imgs/anima_search.png"></image>
+  </view>
+
+  <view class="input-words" animation="{{showInput}}">
+    <input placeholder="请输入" model:value="{{bindvalue}}" bindfocus='focusInput' animation='{{showInputCon}}'/>
+  </view>
+
+  <view class="cancel-pic" animation="{{showCancel}}" catchtap="cancelSearch">
+    <image src="../imgs/anima_cancel.png"></image>
+  </view>
+
+  <!-- 实时搜索内容 -->
+  <view class="sear-cont" animation='{{showSearCon}}'>
+    <view class="line" animation='{{showConLine}}'></view>
+    <view class="content" wx:for="{{searBackArr}}" wx:key='index' animation='{{contSear}}'>
+      <view class="tit">{{item.tit}}</view>
+      <view class="desc">{{item.desc}}</view>
+    </view>
+  </view>
+
+
+</view>
+

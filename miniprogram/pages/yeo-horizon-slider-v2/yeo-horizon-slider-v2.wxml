@@ -1,3 +1,2 @@
-<yeo-horizon-slider-v2 
-sliderArr='{{sliderArr}}' bind:clickevent="clickObj">
+<yeo-horizon-slider-v2 sliderArr='{{sliderArr}}' bind:clickevent="clickObj">
 </yeo-horizon-slider-v2>
