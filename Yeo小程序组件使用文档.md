@@ -2,17 +2,101 @@
 
 
 
+## yeo-anima-search（动画搜索）
 
+### 展示效果
 
+<img src="https://s3.ax1x.com/2021/02/12/yDR00J.png" style="zoom:67%;" /><img src="https://s3.ax1x.com/2021/02/12/yDRst1.png" style="zoom:57%;" /><img src="https://s3.ax1x.com/2021/02/12/yDRg1K.png" style="zoom: 50%;" />
 
+### 描述
 
+附带动画效果的实时性搜索组件
 
+### 属性说明
 
+| 属性名         | 类型   | 默认值 | 说明                   |
+| -------------- | :----- | ------ | ---------------------- |
+| bindvalue      | String | null   | 搜索输入值             |
+| searBackArr    | Array  | null   | 返回搜索结果数组       |
+| lineWidth      | Number | 330    | line长度               |
+| titFont        | Number | 28     | 搜索内容标题大小       |
+| descFont       | Number | 23     | 搜索内容描述大小       |
+| horizonWidth   | Number | 200    | 横向展开宽度（px）     |
+| perpendHeight  | Number | 260    | 垂直展开高度（px）     |
+| cancelMovRight | Number | 160    | 取消叉图右移距离（px） |
+| inputMovRight  | Number | 40     | 输入框右移距离（px）   |
+| inputWidth     | Number | 90     | 输入框宽度（px）       |
 
+### 事件
 
+| 事件名               | 事件描述         |
+| -------------------- | ---------------- |
+| bind:getsearobjevent | 监听点击对象事件 |
 
+### 事件参数
 
+| 事件                 | 事件参数名 | 事件参数值类型 | 参数说明                 |
+| -------------------- | ---------- | -------------- | ------------------------ |
+| bind:getsearobjevent | clickObj   | Object         | 点击搜索中返回的单一对象 |
 
+### 使用示例
+
+index.wxml
+
+```html
+<yeo-anima-search model:bindvalue="{{pageValue}}" bind:searcontevent="changeSearCont" searBackArr="{{searArr}}">
+</yeo-anima-search>
+```
+
+index.js
+
+```js
+ /**
+   * 页面的初始数据
+   */
+  data: {
+    // 双向绑定数据
+    pageValue: ''
+  },
+
+  // 改变数据搜索内容
+  changeSearCont(e) {
+    if (e.detail.searCont) {
+      // 获取实时搜索内容
+      let searCon = e.detail.searCont;
+      wx.request({
+        // 这里是作者本人接口，支持与否，取决于作者是否进行了后期服务器续费操作
+        url: 'https://yundingxikj.cn/weixin/search/' + searCon,
+        success: res => {
+          console.log(res.data);
+          // 构建新数组，存入返回值
+          let searArr = res.data.filter((value, index) => {
+            return index < 3;
+          }).map((value, index) => {
+            let obj = {};
+            obj.tit = value.articleTitle;
+            obj.desc = value.articleSummary.substring(0,14);
+
+            return obj;
+          })
+
+          this.setData({
+            searArr: searArr
+          })
+        },
+        fail: res => {
+          wx.showToast({
+            icon: 'none',
+            title: '网络错误，请稍后再试',
+          })
+        }
+      })
+    } else {
+      console.log('暂无搜索值');
+    }
+
+  },
+```
 
 ## yeo-horizon-slider（横向滑动栏）
 

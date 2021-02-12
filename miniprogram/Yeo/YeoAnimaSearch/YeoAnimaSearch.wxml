@@ -13,10 +13,10 @@
 
   <!-- 实时搜索内容 -->
   <view class="sear-cont" animation='{{showSearCon}}'>
-    <view class="line" animation='{{showConLine}}'></view>
-    <view class="content" wx:for="{{searBackArr}}" wx:key='index' animation='{{contSear}}'>
-      <view class="tit">{{item.tit}}</view>
-      <view class="desc">{{item.desc}}</view>
+    <view class="line" animation='{{showConLine}}' style="width: {{lineWidth + 'rpx'}};"></view>
+    <view class="content" wx:for="{{searBackArr}}" wx:key='index' animation='{{contSear}}' data-item="{{item}}" bindtap="getSearObject">
+      <view class="tit" style="font-size: {{titFont + 'rpx'}};">{{item.tit}}</view>
+      <view class="desc" style="font-size: {{descFont + 'rpx'}};">{{item.desc}}</view>
     </view>
   </view>
 

@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    // 双向绑定数据
     pageValue: ''
   },
 
@@ -24,7 +25,7 @@ Page({
           }).map((value, index) => {
             let obj = {};
             obj.tit = value.articleTitle;
-            obj.desc = value.articleSummary.substring(0,16);
+            obj.desc = value.articleSummary.substring(0,14);
 
             return obj;
           })

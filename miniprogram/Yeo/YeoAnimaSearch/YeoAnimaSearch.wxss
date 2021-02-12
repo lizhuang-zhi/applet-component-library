@@ -14,7 +14,6 @@ page {
   width: 110rpx;
   height: 110rpx;
   border-radius: 50rpx;
-  /* z-index: 10; */
 
   background: #FFFFFF;
 }
@@ -24,7 +23,6 @@ page {
   position: absolute;
   top: 30rpx;
   left: 0;
-  /* z-index: -2; */
 
   opacity: 0;
 }
@@ -35,7 +33,6 @@ page {
 .yeo-anima-search .search-pic {
   width: var(--search-pic);
   height: var(--search-pic);
-  /* z-index: 20; */
 
   position: absolute;
   top: 30rpx;
@@ -51,7 +48,6 @@ page {
   position: absolute;
   top: 35rpx;
   left: 0;
-  /* z-index: -1; */
 
   opacity: 0;
 }
@@ -73,7 +69,6 @@ page {
 }
 .yeo-anima-search .sear-cont .line {
   border-top: 3rpx solid #D7D7D7;
-  width: 370rpx;
   margin: 0 15rpx;
   
   opacity: 0;
@@ -82,12 +77,10 @@ page {
   margin: 20rpx 0 30rpx 30rpx;
 }
 .yeo-anima-search .sear-cont .content .tit {
-  font-size: 28rpx;
   letter-spacing: 2rpx;
   color: #777777;
 }
 .yeo-anima-search .sear-cont .content .desc {
-  font-size: 23rpx;
   letter-spacing: 1rpx;
   color: #999999;
 }
