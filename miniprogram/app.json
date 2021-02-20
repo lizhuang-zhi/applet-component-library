@@ -1,8 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/map_test/map_test",
-    "pages/calculDistance/calculDistance",
     "pages/yeo-circle/yeo-circle",
     "pages/yeo-overlapFon/yeo-overlapFon",
     "pages/yeo-hangswing/yeo-hangswing",
@@ -17,7 +15,9 @@
     "pages/yeo-horizon-slider-v2/yeo-horizon-slider-v2",
     "pages/yeo-tools-bar/yeo-tools-bar",
     "pages/yeo-below-pop/yeo-below-pop",
-    "pages/yeo-anima-search/yeo-anima-search"
+    "pages/yeo-anima-search/yeo-anima-search",
+    "pages/yeo-loading/yeo-loading",
+    "pages/yeo-rotate/yeo-rotate"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -35,6 +35,7 @@
   "usingComponents": {
     "yeo-search": "/Yeo/YeoSearch/YeoSearch",
     "yeo-below-pop": "/Yeo/YeoBelowPop/YeoBelowPop",
-    "yeo-anima-search": "/Yeo/YeoAnimaSearch/YeoAnimaSearch"
+    "yeo-anima-search": "/Yeo/YeoAnimaSearch/YeoAnimaSearch",
+    "yeo-rotate": "/Yeo/YeoRotate/YeoRotate"
   }
 }

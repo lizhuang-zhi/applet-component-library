@@ -1,13 +1,3 @@
-// 引入SDK核心类，js文件根据自己业务，位置可自行放置
-var QQMapWX = require('../../map/qqmap-wx-jssdk');
-
-// 实例化API核心类
-var qqmapsdk = new QQMapWX({
-  key: 'RHYBZ-VU4C3-5MC3F-3Q5S4-BSOFT-JQFQQ' // 必填
-});
-
-
-
 Page({
 
   /**

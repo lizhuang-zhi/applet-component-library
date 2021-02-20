@@ -55,18 +55,6 @@
     "miniprogram": {
       "list": [
         {
-          "name": "地图测试",
-          "pathName": "pages/map_test/map_test",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "地图位置计算距离",
-          "pathName": "pages/calculDistance/calculDistance",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "yeo-右下角圆圈组件",
           "pathName": "pages/yeo-circle/yeo-circle",
           "query": "",
@@ -153,6 +141,19 @@
         {
           "name": "yeo-动画搜索",
           "pathName": "pages/yeo-anima-search/yeo-anima-search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/yeo-loading/yeo-loading",
+          "pathName": "pages/yeo-loading/yeo-loading",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-旋转的美食",
+          "pathName": "pages/yeo-rotate/yeo-rotate",
+          "query": "",
           "scene": null
         }
       ]
