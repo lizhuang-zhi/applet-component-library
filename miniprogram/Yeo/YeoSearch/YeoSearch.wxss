@@ -3,12 +3,9 @@
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 60rpx;
-  padding: 12rpx;
 }
 .yeo-search .search-input{
   width: 92%;
-  margin-left: 10rpx;
 }
 .yeo-search .search-input input{
   width: 100%;

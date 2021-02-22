@@ -155,6 +155,18 @@
           "pathName": "pages/yeo-rotate/yeo-rotate",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "yeo-图标",
+          "pathName": "pages/yeo-icon/yeo-icon",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-搜索栏",
+          "pathName": "pages/yeo-search/yeo-search",
+          "query": "",
+          "scene": null
         }
       ]
     }

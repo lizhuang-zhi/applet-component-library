@@ -203,6 +203,99 @@ fonSize='40'
 lineWidthOfScreen='32%'></yeo-art-font>
 ```
 
+## yeo-icon（图标）
+
+### 展示效果
+
+![](https://s3.ax1x.com/2021/02/22/y7cgOO.png)
+
+### 描述
+
+Yeo图标，说实话，这组件我感觉封装了个寂寞，但是有总比没有好，后续会持续优化，各位见谅。
+
+### 属性说明
+
+| 属性名   | 类型   | 默认值             | 说明     |
+| -------- | :----- | ------------------ | -------- |
+| iconUrl  | String | ../imgs/vegt-1.png | 图片地址 |
+| IconSize | Number | 160                | 图片大小 |
+
+### 使用示例
+
+index.wxml
+
+```html
+<yeo-icon></yeo-icon>
+```
+
+## yeo-search（搜索栏）
+
+### 展示效果
+
+<img src="https://s3.ax1x.com/2021/02/22/y7WsED.png" style="zoom:80%;" />
+
+### 描述
+
+搜索组件，开发者可根据爱好对搜索图标，占位文字进行更改，其次也可以根据自己需求对图标，输入框的位置与搜索框整体的大小进行更改。
+
+### 属性说明
+
+| 属性名           | 类型   | 默认值             | 说明           |
+| ---------------- | :----- | ------------------ | -------------- |
+| searchImg        | String | ../imgs/search.png | 搜索图标       |
+| placeholder      | String | Input Something    | 占位文字       |
+| background       | String | rgb(250,250,250)   | 背景颜色       |
+| searBordRadius   | Number | 60                 | 搜索框圆角     |
+| topPadding       | Number | 12                 | 上内边距       |
+| bottomPadding    | Number | 12                 | 下内边距       |
+| leftPadding      | Number | 30                 | 左内边距       |
+| rightPadding     | Number | 30                 | 右内边距       |
+| inputLeftMargin  | Number | 16                 | 输入框左外边距 |
+| inputRightMargin | Number | 30                 | 输入框右外边距 |
+| inputType        | String | text               | 输入内容类型   |
+
+* inputType属性的适用值
+
+| 适用值 | 说明               |
+| ------ | ------------------ |
+| text   | 文本输入键盘       |
+| number | 数字输入键盘       |
+| idcard | 身份证输入键盘     |
+| digit  | 带小数点的数字键盘 |
+
+### 事件
+
+**返回数据说明：具体内容请查看**
+
+[input事件相关数据]: https://developers.weixin.qq.com/miniprogram/dev/component/input.html
+
+| 事件名                         | 事件描述                   | 组件返回页面数据 | 返回数据类型 | 返回数据说明       |
+| ------------------------------ | -------------------------- | ---------------- | ------------ | ------------------ |
+| bind:inputevent                | 监听键盘输入事件           | obj              | Object       | 输入内容等相关数据 |
+| bind:focusevent                | 监听输入框聚焦事件         | obj              | Object       | 输入内容等相关数据 |
+| bind:blurevent                 | 监听输入框失去焦点事件     | obj              | Object       | 输入内容等相关数据 |
+| bind:confirmevent              | 监听输入框点击完成按钮事件 | obj              | Object       | 输入内容等相关数据 |
+| bind:keyboardheightchangeevent | 监听键盘高度变化事件       | obj              | Object       | 输入内容等相关数据 |
+
+### 使用示例
+
+index.html
+
+```html
+<view class="search">
+  <yeo-search></yeo-search>
+</view>
+```
+
+index.wxss
+
+```css
+.search {
+  margin: 40rpx auto 30rpx;
+  width: 600rpx;
+}
+```
+
 ## yeo-rotate（旋转的餐盘）
 
 ### 展示效果

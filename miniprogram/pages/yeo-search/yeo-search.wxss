@@ -1,0 +1,4 @@
+.search {
+  margin: 40rpx auto 30rpx;
+  width: 600rpx;
+}

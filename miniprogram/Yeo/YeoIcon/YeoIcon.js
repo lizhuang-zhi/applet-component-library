@@ -7,12 +7,12 @@ Component({
     // 图片地址
     iconUrl: {
       type: String,
-      value: '../imgs/钱.png'
+      value: '../imgs/vegt-1.png'
     },
     // 图片大小
     IconSize: {
       type: Number,
-      value: 50
+      value: 160
     }
   },
 

@@ -1,0 +1,3 @@
+<view class="search">
+  <yeo-search></yeo-search>
+</view>
