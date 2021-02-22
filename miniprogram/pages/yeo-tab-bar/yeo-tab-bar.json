@@ -1,6 +1,5 @@
 {
   "usingComponents": {
-    "yeo-tab-bar": "/Yeo/YeoTabBar/YeoTabBar",
-    "yeo-tab-bar-item": "/Yeo/YeoTabBarItem/YeoTabBarItem"
+    
   }
 }

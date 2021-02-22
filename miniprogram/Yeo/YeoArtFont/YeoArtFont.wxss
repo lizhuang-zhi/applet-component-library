@@ -44,3 +44,20 @@
   letter-spacing: 0.08em;
   z-index: 5;
 }
+
+/* ***************字线结构*************** */
+.yeo-word-line-fon{
+  position: relative;
+  width: 100%;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.yeo-words{
+  position: absolute;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+}
+.yeo-line{
+  position: absolute;
+  /* height: 15rpx; */
+}

@@ -15,10 +15,10 @@
     udFonConDown：下面内容
     udPosp：位置（可选值：center<居中>、unset<未设置，默认值>）
 -->
-<yeo-overlap-fon
+<yeo-art-font
 fonType='udFon'
-FonSize='80'
-udPosp='unset'></yeo-overlap-fon>
+fonSize='80'
+udPosp='unset'></yeo-art-font>
 
 
 <!-- 
@@ -27,9 +27,24 @@ udPosp='unset'></yeo-overlap-fon>
   独有参数：
     olFonCon：内容
     olFromLeft：
-      距离屏幕左边的百分比距离(默认值：40)
+      距离屏幕左边的百分比距离(默认值：40) <0~70最佳>
 -->
-<yeo-overlap-fon
+<yeo-art-font
 fonType='olFon'
-olFonCon='我是一个人'
-olFromLeft='20'></yeo-overlap-fon>
+olFromLeft='30'></yeo-art-font>
+
+
+
+<!-- 
+  字线结构的字体
+
+  独有参数：
+    worLineFonCon：内容
+    worLinePosp：
+      位置（可选值：center<居中，默认值>、unset<未设置>）
+    更多参数，请查看文档！
+-->
+<yeo-art-font
+fonType='worLineFon'
+fonSize='40'
+lineWidthOfScreen='32%'></yeo-art-font>

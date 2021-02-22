@@ -13,6 +13,26 @@ Component({
     picUrl: {
       type: String,
       value: '../imgs/qq.png'
+    },
+    // 图片大小
+    picSize: {
+      type: Number,
+      value: 46
+    },
+    // 图片距离框体左侧内边距
+    paddingLeftofPic: {
+      type: Number,
+      value: 30
+    },
+    // 框体圆角
+    boxRadius: {
+      type: Number,
+      value: 32
+    },
+    // 框体底部外边距
+    boxMarginBottom: {
+      type: Number,
+      value: 38
     }
   },
 
@@ -30,7 +50,7 @@ Component({
   /**
    * 组件的方法列表
    */
-  methods: {
+  methods: {  
 
   }
 })

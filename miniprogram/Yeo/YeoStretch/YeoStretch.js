@@ -1,9 +1,41 @@
 // Yeo/YeoStretch/YeoStretch.js
+let tools = require('../utils/tools');
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
+    // 闪动图标
+    flickPic: {
+      type: String,
+      value: '../imgs/闪电-1.png'
+    },
+    // 展示框宽度(百分数或者具体数值)
+    boxWidth: {
+      type: String,
+      value: '90%'
+    },
+    // 展示框高度
+    boxHeight: {
+      type: Number,
+      value: 1000
+    },
+    // 展示框圆角(0-50最佳)
+    boxRadius: {
+      type: Number,
+      value: 30
+    },
+    // 展示框&&闪动图标伸展收缩持续时长(0-3s，超过3s统一设置为3s)
+    TransTime: {
+      type: Number,
+      value: 1
+    },
+    // 闪动图标向右移动距离(百分数或者具体数值)
+    flickPicMovRightDistance: {
+      type: String,
+      value: '86%'
+    },
+
 
   },
 
@@ -15,8 +47,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    isShow: false,
-
+    isShow: false
   },
 
   /**
@@ -24,36 +55,43 @@ Component({
    */
   methods: {
     // 点击拉伸事件
-    stretchClick(){
+    stretchClick(e){
+      let getTransTime = this.data.TransTime > 3 ? 3 : this.data.TransTime;
       if(this.data.isShow == false){
+        let getBoxHeight = this.data.boxHeight + 'rpx';
+        let getBoxRadius = this.data.boxRadius + 'rpx';
+        let getflickPicMovRightDistance = this.data.flickPicMovRightDistance;
         this.setData({
           boxChange: {
-            width: '90%',
-            height: '1000rpx',
-            bora: '30rpx',
-            transi: '1s'
+            width: this.data.boxWidth,
+            height: getBoxHeight,
+            bora: getBoxRadius,
+            transi: getTransTime + 's'
           },
           pic: {
-            left: '86%',
-            transi: '1s',
-          },
-          content: {
-            show: 'block',
-            transi: '2s'
+            left: getflickPicMovRightDistance,
+            transi: getTransTime + 's',
           },
           isShow: true
         });
+        setTimeout(() => {
+          this.setData({
+            content: {
+              show: 'block'
+            }
+          })
+        }, (getTransTime * 0.85 * 1000))
       }else {
         this.setData({
           boxChange: {
             width: '120rpx',
             height: '120rpx',
             bora: '50%',
-            transi: '1s'
+            transi: getTransTime + 's'
           },
           pic: {
             left: '20rpx',
-            transi: '1s',
+            transi: getTransTime + 's'
           },
           content: {
             show: 'none',

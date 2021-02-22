@@ -34,7 +34,6 @@ page {
 }
 .yeo-card .card-left .lt-top .btn {
   box-sizing: border-box;
-  background: #7AB2DC;
   padding: 7rpx 18rpx;
   font-size: 22rpx;
   letter-spacing: 2rpx;
@@ -50,9 +49,4 @@ page {
   color: #82878A;
   letter-spacing: 2rpx;
   line-height: 1.5;
-}
-.yeo-card .card-left .contact {
-  position: absolute;
-  top: 62%;
-  left: 20rpx;
 }

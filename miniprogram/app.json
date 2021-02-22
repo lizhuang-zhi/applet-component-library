@@ -36,6 +36,22 @@
     "yeo-search": "/Yeo/YeoSearch/YeoSearch",
     "yeo-below-pop": "/Yeo/YeoBelowPop/YeoBelowPop",
     "yeo-anima-search": "/Yeo/YeoAnimaSearch/YeoAnimaSearch",
-    "yeo-rotate": "/Yeo/YeoRotate/YeoRotate"
+    "yeo-rotate": "/Yeo/YeoRotate/YeoRotate",
+    "yeo-art-font": "/Yeo/YeoArtFont/YeoArtFont",
+    "yeo-simple-card": "/Yeo/YeoSimpleCard/YeoSimpleCard",
+    "yeo-hang-swing": "/Yeo/YeoHangSwing/YeoHangSwing",
+    "yeo-tab-bar": "/Yeo/YeoTabBar/YeoTabBar",
+    "yeo-tab-bar-item": "/Yeo/YeoTabBarItem/YeoTabBarItem",
+    "yeo-dy-fun-bar": "/Yeo/YeoDyFunBar/YeoDyFunBar",
+    "yeo-icon": "/Yeo/YeoIcon/YeoIcon",
+    "yeo-card": "/Yeo/YeoCard/YeoCard",
+    "yeo-category": "/Yeo/YeoCategory/YeoCategory",
+    "yeo-categories": "/Yeo/YeoCategories/YeoCategories",
+    "yeo-horizon-slider": "/Yeo/YeoHorizonSlider/YeoHorizonSlider",
+    "yeo-horizon-slider-v2": "/Yeo/YeoHorizonSliderV2/YeoHorizonSliderV2",
+    "yeo-label-box": "/Yeo/YeoLabelBox/YeoLabelBox",
+    "yeo-stretch": "/Yeo/YeoStretch/YeoStretch",
+    "yeo-tools-bar": "/Yeo/YeoToolsBar/YeoToolsBar",
+    "yeo-circle-corner":"/Yeo/YeoCircleCorner/YeoCircleCorner"
   }
 }

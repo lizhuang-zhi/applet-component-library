@@ -1,4 +1,5 @@
 // components/CircleCorner/CircleCorner.js
+let tools = require('../utils/tools');
 Component({
   /**
    * 组件的属性列表
@@ -45,21 +46,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    // 封装创建动画对象
-    creatAniObj(delay, duration, timingFunction = 'linear', transformOrigin = '50% 50% 0') {
-      return wx.createAnimation({
-        delay,
-        duration,
-        timingFunction,
-        transformOrigin
-      });
-    },
     // 切换显示
     toggleShow() {
-      let animate = this.creatAniObj(0, 500);
-      let animate_last = this.creatAniObj(0, 700);
-      let animate_back = this.creatAniObj(100, 600);
-      let animate_last_back = this.creatAniObj(0, 700);
+      let animate = tools.creatAnima(0, 'linear', 500);
+      let animate_last = tools.creatAnima(0, 'linear', 700);
+      let animate_back = tools.creatAnima(100, 'linear', 600);
+      let animate_last_back = tools.creatAnima(0, 'linear', 700);
 
       if (this.data.isShow == false && this.data.direction == 1) {
         animate_last.opacity(1).translate(0, -20).step()

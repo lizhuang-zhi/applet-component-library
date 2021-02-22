@@ -1,8 +1,3 @@
-page {
-  /* 图片大小 */
-  --pic-size: 80rpx;
-}
-
 .yeo-tools-bar {
   position: fixed;
   bottom: 130rpx;
@@ -12,8 +7,8 @@ page {
   position: relative;
 }
 .yeo-tools-bar .inner-tools .size {
-  width: var(--pic-size);
-  height: var(--pic-size);
+  width: 80rpx;
+  height: 80rpx;
   border-radius: inherit;
 }
 yeo-tools-bar .inner-tools .size image{

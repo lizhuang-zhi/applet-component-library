@@ -3,13 +3,6 @@
   height: 117rpx;
   display: flex;
   align-items: center;
-  border-radius: 32rpx;
-  margin-bottom: 38rpx;
-}
-.yeo-category .pic {
-  width: 46rpx;
-  height: 46rpx;
-  padding-left: 30rpx;
 }
 .yeo-category .pic image {
   height: 100%;

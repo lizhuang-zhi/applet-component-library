@@ -1,9 +1,14 @@
 <view class="box">
   <yeo-stretch>
 
-
-    <!-- 传入组件 -->
+    <!-- 传入组件作为插槽内容 -->
     <view slot='content'>
+      <yeo-label-box>
+        <view slot='content'>
+          左右和啥打法上撒旦法四大发顺丰下次茶多酚爱的色放奥的斯是驾驶的立法奥德赛放假啊实打实说的覅偶而忘记微微辣插卡积分ad佛阿斯蒂芬
+        </view>
+      </yeo-label-box>
+
       <yeo-label-box>
         <view slot='content'>
           左右和啥打法上撒旦法四大发顺丰下次茶多酚爱的色放奥的斯是驾驶的立法奥德赛放假啊实打实说的覅偶而忘记微微辣插卡积分ad佛阿斯蒂芬

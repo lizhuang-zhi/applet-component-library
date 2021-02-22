@@ -1,8 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "yeo-icon": "/Yeo/YeoIcon/YeoIcon",
-    "yeo-search": "/Yeo/YeoSearch/YeoSearch",
-    "yeo-hang-swing": "/Yeo/HangSwing/HangSwing"
-  }
-}

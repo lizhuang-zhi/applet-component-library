@@ -1,5 +1,208 @@
 # Yeo小程序组件使用文档
 
+## Yeo组件使用步骤
+
+1. 导入Yeo文件夹（将文件放置同page同层级）
+2. 在app.json中导入组件路径
+
+app.json
+
+```json
+  "usingComponents": {
+    "yeo-search": "/Yeo/YeoSearch/YeoSearch",
+    "yeo-anima-search": "/Yeo/YeoAnimaSearch/YeoAnimaSearch",
+    "yeo-rotate": "/Yeo/YeoRotate/YeoRotate",
+    "yeo-art-font": "/Yeo/YeoArtFont/YeoArtFont",
+    "yeo-simple-card": "/Yeo/YeoSimpleCard/YeoSimpleCard",
+    "yeo-hang-swing": "/Yeo/YeoHangSwing/YeoHangSwing",
+    "yeo-tab-bar": "/Yeo/YeoTabBar/YeoTabBar",
+    "yeo-tab-bar-item": "/Yeo/YeoTabBarItem/YeoTabBarItem",
+    "yeo-dy-fun-bar": "/Yeo/YeoDyFunBar/YeoDyFunBar",
+    "yeo-icon": "/Yeo/YeoIcon/YeoIcon",
+    "yeo-card": "/Yeo/YeoCard/YeoCard",
+    "yeo-category": "/Yeo/YeoCategory/YeoCategory",
+    "yeo-categories": "/Yeo/YeoCategories/YeoCategories",
+    "yeo-horizon-slider": "/Yeo/YeoHorizonSlider/YeoHorizonSlider",
+    "yeo-horizon-slider-v2": "/Yeo/YeoHorizonSliderV2/YeoHorizonSliderV2",
+    "yeo-label-box": "/Yeo/YeoLabelBox/YeoLabelBox",
+    "yeo-stretch": "/Yeo/YeoStretch/YeoStretch",
+    "yeo-tools-bar": "/Yeo/YeoToolsBar/YeoToolsBar"
+  }
+```
+
+**在app.json中加入要使用组件的声明路径即可**
+
+3. 在页面中引用组件名称标签，配置对应属性与事件
+
+## yeo-categories与yeo-category（分类）
+
+### 展示效果
+
+<img src="https://s3.ax1x.com/2021/02/21/yoBNQJ.png" style="zoom:80%;" />
+
+### 描述
+
+通过Vue构建组件的形式，将整个组件拆分为了两个块（YeoCategories组件与YeoCategory组件），用户可以根据自身需求，自定义传入分类样式中item个数与item的样子。
+
+### 属性说明
+
+* ==YeoCategories组件==
+
+| 属性名        | 类型   | 默认值 | 说明       |
+| ------------- | :----- | ------ | ---------- |
+| paddingTop    | Number | 70     | 顶部内边距 |
+| paddingSide   | Number | 95     | 左右内边距 |
+| paddingBottom | Number | 40     | 顶部内边距 |
+
+* ==YeoCategory组件==
+
+| 属性名           | 类型   | 默认值         | 说明                   |
+| ---------------- | :----- | -------------- | ---------------------- |
+| bgColor          | String | \#948CFF       | 背景颜色               |
+| picUrl           | String | ../imgs/qq.png | 图片地址               |
+| picSize          | Number | 46             | 图片大小               |
+| paddingLeftofPic | Number | 30             | 图片距离框体左侧内边距 |
+| boxRadius        | Number | 32             | 框体圆角               |
+| boxMarginBottom  | Number | 38             | 框体底部外边距         |
+
+### 插槽
+
+* ==YeoCategories组件==
+
+**YeoCategories组件**：内部只含有一个slot标签，供大家任意插入其他样式（当然你也不一定非要插入YeoCategory组件）
+
+* ==YeoCategory组件==
+
+```html
+  <yeo-category picUrl='../../images/vuejs-line.png' bgColor='#F8A9FF'>
+    <view slot='title'>Vue</view>
+  </yeo-category>
+```
+
+### 使用示例
+
+index.wxml
+
+```html
+<yeo-categories>
+  <yeo-category picUrl='../../images/html.png'>
+    <view slot='title'>HTML</view>
+  </yeo-category>
+  <yeo-category picUrl='../../images/css3.png' bgColor='#7CE8C1'>
+    <view slot='title'>CSS</view>
+  </yeo-category>
+  <yeo-category picUrl='../../images/js.png' bgColor='#FD7C5A'>
+    <view slot='title'>JavaScript</view>
+  </yeo-category>
+  <yeo-category picUrl='../../images/vuejs-line.png' bgColor='#F8A9FF'>
+    <view slot='title'>Vue</view>
+  </yeo-category>
+</yeo-categories>
+```
+
+## yeo-art-font（艺术字体）
+
+### 展示效果
+
+<img src="https://s3.ax1x.com/2021/02/21/yokNW9.png" style="zoom:75%;" />
+
+### 描述
+
+提供多种形式的字体供大家使用，根据自我喜好，调整字体大小、颜色、位置等。
+
+### 属性说明
+
+> **公共属性**
+
+| 属性名  | 类型   | 默认值  | 说明                                                         |
+| ------- | :----- | ------- | ------------------------------------------------------------ |
+| fonType | String | olFon   | 字体类型(需要用户自行选择)：udFon 上下字，olFon 重叠字，worLineFon 字线字 |
+| abCol   | String | #000000 | 上层字体颜色                                                 |
+| blCol   | String | #A5ADB5 | 下层字体颜色                                                 |
+| fonSize | Number | 39      | 字体大小                                                     |
+
+> **上下字体独有参数**
+
+| 属性名       | 类型   | 默认值   | 说明                                                 |
+| ------------ | :----- | -------- | ---------------------------------------------------- |
+| udPosp       | String | center   | 上下结构字的位置 center<居中> unset<未设置,默认靠左> |
+| udFonConUp   | String | 上下字体 | 上层字体内容                                         |
+| udFonConDown | String | UpDown   | 下层字体内容                                         |
+
+> **重叠字体独有参数**
+
+| 属性名     | 类型   | 默认值   | 说明                         |
+| ---------- | :----- | -------- | ---------------------------- |
+| olFonCon   | String | 重叠字体 | 重叠字的字体内容             |
+| olFromLeft | Number | 40       | 重叠字的位置(距离左侧百分比) |
+
+> **字线字体独有参数**
+
+| 属性名            | 类型   | 默认值   | 说明                                                       |
+| ----------------- | :----- | -------- | ---------------------------------------------------------- |
+| worLineFonCon     | String | 字线字体 | 字线字的字体内容                                           |
+| worLinePosp       | String | center   | 字线字的位置 center<居中> unset<未设置,默认靠左>           |
+| wordWieight       | String | normal   | 字体内容粗细 normal正常、bold加粗、bolder更粗、lighter变细 |
+| lineDistanceOfTop | Number | 1.3      | 底部线条距离字体顶部的距离：字体大小 * lineDistanceOfTop   |
+| lineWidthOfScreen | String | 35%      | 底部线条宽度（屏幕百分比 or 具体数值<附带rpx>)             |
+| lineHeight        | Number | 10       | 底部线条厚度                                               |
+| lineColor         | String | #FFA82E  | 底部线条颜色                                               |
+| lineLeftRadius    | Number | 10       | 底部线条左边圆角                                           |
+| lineRightRadius   | Number | 10       | 底部线条右边圆角                                           |
+
+### 使用示例
+
+index.wxml
+
+```html
+<!-- 
+  公共参数：
+    fonType: 字体类型
+    FonSize: 字体大小
+    abCol: 上层字体颜色（默认值：#000000） 
+    blCol: 下层字体颜色（默认值：#A5ADB5）   
+-->
+
+<!-- 
+  上下结构字体
+
+  独有参数：
+    udFonConUp：上面内容
+    udFonConDown：下面内容
+    udPosp：位置（可选值：center<居中>、unset<未设置，默认值>）
+-->
+<yeo-art-font
+fonType='udFon'
+fonSize='80'
+udPosp='unset'></yeo-art-font>
+
+<!-- 
+  重叠结构字体
+
+  独有参数：
+    olFonCon：内容
+    olFromLeft：
+      距离屏幕左边的百分比距离(默认值：40) <0~70最佳>
+-->
+<yeo-art-font
+fonType='olFon'
+olFromLeft='30'></yeo-art-font>
+
+<!-- 
+  字线结构的字体
+
+  独有参数：
+    worLineFonCon：内容
+    worLinePosp：
+      位置（可选值：center<居中，默认值>、unset<未设置>）
+    更多参数，请查看文档！
+-->
+<yeo-art-font
+fonType='worLineFon'
+fonSize='40'
+lineWidthOfScreen='32%'></yeo-art-font>
+```
+
 ## yeo-rotate（旋转的餐盘）
 
 ### 展示效果
@@ -16,7 +219,7 @@
 | ------------ | :----- | ------------------ | ------------------------------------------------------------ |
 | roundBgColor | String | rgb(157, 157, 202) | 圆桌背景                                                     |
 | roundSize    | Number | 0                  | 圆桌大小(0~50最佳)                                           |
-| vegtArr      | Array  | 4张图片路径数组    | 传入旋转数据（暂时固定取四个元素）；少于四个：传入默认数组，多于四个：获取传入数据前四个元素 |
+| vegtArr      | Array  | 4张图片路径数组    | 传入旋转餐盘数组数据（暂时固定取四个元素）；少于四个：传入默认数组，多于四个：获取传入数据前四个元素 |
 
 ### 事件
 
@@ -393,6 +596,49 @@ index.wxml 与 index.wxss
 }
 ```
 
+## yeo-card（介绍卡片）
+
+### 展示效果
+
+<img src="https://s3.ax1x.com/2021/02/22/y7ni1U.png" style="zoom:77%;" />
+
+### 描述
+
+这是一个关于自我介绍的卡片，
+
+### 属性说明
+
+| 属性名          | 类型   | 默认值                                                       | 说明                           |
+| --------------- | :----- | ------------------------------------------------------------ | ------------------------------ |
+| name            | String | Mr.KLeo                                                      | 昵称                           |
+| position        | String | 前端工程师/Dancer                                            | 职务或爱好                     |
+| description     | String | 大家好，我是Mr.KLeo，一名正在学习前端的Person。热爱技术，热爱交流，热爱生活。擅长使用Vue、JavaScript、HTML、CSS、Yeo-components开发可复用的视图组件，希望与你共同进步！ | 介绍内容                       |
+| cardPic         | String | ../imgs/introduce.jpg                                        | 右侧配图                       |
+| btnBgColor      | String | #7AB2DC                                                      | （关注）按钮背景色             |
+| clickBtnBgColor | String | \#5E6675                                                     | 点击（关注）按钮后，按钮背景色 |
+
+### 事件
+
+| 事件名           | 事件描述                 | 组件返回页面数据 | 返回数据类型 | 返回数据说明 |
+| ---------------- | ------------------------ | ---------------- | ------------ | ------------ |
+| bind:attentevent | 点击（关注）按钮监听事件 | isAttent         | Boolean      | 是否关注     |
+
+### 使用示例
+
+index.wxml 与 index.wxss
+
+```html
+<view class="pageBox">
+  <yeo-card />
+</view>
+```
+
+```css
+.pageBox {
+  margin: 70rpx auto;
+}
+```
+
 ## yeo-tab-bar（底部栏）
 
 ### 展示效果
@@ -505,6 +751,81 @@ index.wxml 与 index.js
     console.log(e);
     console.log('标签框被点击');
   },
+```
+
+## yeo-stretch（动态伸缩模块）
+
+### 展示效果
+
+<img src="https://s3.ax1x.com/2021/02/20/yI8Xxf.png" style="zoom:67%;" /><img src="https://s3.ax1x.com/2021/02/20/yIGpZQ.png" style="zoom:67%;" />
+
+### 描述
+
+通过点击闪动的闪电小图标（当然你也可以更换），动态伸缩展示具体内容，展示内容通过具名插槽传入，同时展开后支持向下滑动，也就是说不限制插槽内容高度。
+
+### 属性说明
+
+| 属性名                   | 类型   | 默认值             | 说明                                                       |
+| ------------------------ | :----- | ------------------ | ---------------------------------------------------------- |
+| flickPic                 | String | ../imgs/闪电-1.png | 闪动图标                                                   |
+| boxWidth                 | String | 90%                | 展示框宽度(百分数或者具体数值)                             |
+| boxHeight                | Number | 1000               | 展示框高度                                                 |
+| boxRadius                | Number | 30                 | 展示框圆角(0-50最佳)                                       |
+| TransTime                | Number | 1                  | 展示框&&闪动图标伸展收缩持续时长(0-3s，超过3s统一设置为3s) |
+| flickPicMovRightDistance | String | 86%                | 闪动图标向右移动距离(百分数或者具体数值)                   |
+
+### 插槽
+
+index.wxml
+
+```html
+  <yeo-stretch>
+    <!-- 插槽 -->
+    <view slot='content'>
+     	<!-- 插入内容 -->
+    </view>
+  </yeo-stretch>
+```
+
+### 使用示例
+
+index.wxml
+
+```html
+<view class="box">
+  <yeo-stretch>
+
+    <!-- 传入组件作为插槽内容 -->
+    <view slot='content'>
+      <yeo-label-box>
+        <view slot='content'>
+          左右和啥打法上撒旦法四大发顺丰下次茶多酚爱的色放奥的斯是驾驶的立法奥德赛放假啊实打实说的覅偶而忘记微微辣插卡积分ad佛阿斯蒂芬
+        </view>
+      </yeo-label-box>
+
+      <yeo-label-box>
+        <view slot='content'>
+          左右和啥打法上撒旦法四大发顺丰下次茶多酚爱的色放奥的斯是驾驶的立法奥德赛放假啊实打实说的覅偶而忘记微微辣插卡积分ad佛阿斯蒂芬
+        </view>
+      </yeo-label-box>
+
+      <yeo-label-box>
+        <view slot='content'>
+          左右和啥打法上撒旦法四大发顺丰下次茶多酚爱的色放奥的斯是驾驶的立法奥德赛放假啊实打实说的覅偶而忘记微微辣插卡积分ad佛阿斯蒂芬
+        </view>
+      </yeo-label-box>
+    </view>
+
+  </yeo-stretch>
+</view>
+```
+
+index.wxss
+
+```css
+.box {
+  margin: 30rpx 0 30rpx 50rpx;
+}
 ```
 
 ## yeo-tools-bar（工具栏）
