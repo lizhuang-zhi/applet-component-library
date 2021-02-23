@@ -26,7 +26,8 @@ app.json
     "yeo-horizon-slider-v2": "/Yeo/YeoHorizonSliderV2/YeoHorizonSliderV2",
     "yeo-label-box": "/Yeo/YeoLabelBox/YeoLabelBox",
     "yeo-stretch": "/Yeo/YeoStretch/YeoStretch",
-    "yeo-tools-bar": "/Yeo/YeoToolsBar/YeoToolsBar"
+    "yeo-tools-bar": "/Yeo/YeoToolsBar/YeoToolsBar",
+    "yeo-blur-card": "/Yeo/YeoBlurCard/YeoBlurCard"
   }
 ```
 
@@ -226,6 +227,60 @@ index.wxml
 
 ```html
 <yeo-icon></yeo-icon>
+```
+
+## yeo-blur-card（滤镜卡片）
+
+### 展示效果
+
+![](https://s3.ax1x.com/2021/02/23/yLrUR1.png)
+
+### 描述
+
+在描述文字背景处添加模糊滤镜的效果，增加用户观感。同时支持开发者对组件各个部位进行调节。
+
+### 属性说明
+
+| 属性名            | 类型   | 默认值                                                       | 说明                                                         |
+| ----------------- | :----- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| description       | String | 大家好，我是Mr.KLeo，一名正在学习前端的Person。热爱技术，热爱交流，热爱生活。擅长使用Vue、JavaScript、HTML、CSS、Yeo-components开发可复用的视图组件，希望与你共同进步！ | 描述信息                                                     |
+| buttonContent     | String | 按钮                                                         | 按钮文字                                                     |
+| bgImgUrl          | String | https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2164794023,1537310268&fm=26&gp=0.jpg | 背景图地址（这里的地址是不支持相对路径的）                   |
+| bgBordRadius      | Number | 20                                                           | 背景框圆角                                                   |
+| bgWidth           | Number | 600                                                          | 背景框宽度                                                   |
+| bgHeight          | Number | 600                                                          | 背景框高度                                                   |
+| bgSize            | String | cover                                                        | 背景图展示形式(cover集中 contain全包含)                      |
+| blurWidth         | String | 86%                                                          | 模糊框宽度(屏幕百分比or数值<带上单位rpx>)                    |
+| blurHeight        | String | 86%                                                          | 模糊框高度(屏幕百分比or数值<带上单位rpx>)                    |
+| blurPadding       | String | 30rpx                                                        | 模糊框内边距(这里你可以按照padding的规范填写)： '20rpx 40rpx'；'40rpx 30rpx 20rpx'； '40rpx 30rpx 20rpx 10rpx' |
+| blurBordRadius    | Number | 30                                                           | 模糊框圆角                                                   |
+| contentBordRadius | Number | 10                                                           | 文字框圆角                                                   |
+| contentSize       | Number | 30                                                           | 文字框内文字大小                                             |
+| contentColor      | String | #2D4235                                                      | 文字颜色                                                     |
+| btnColor          | String | rgba(255, 255, 255, 0.8)                                     | 按钮文字颜色                                                 |
+
+### 事件
+
+| 事件名        | 事件描述         | 组件返回页面数据 | 返回数据类型 | 返回数据说明 |
+| ------------- | ---------------- | ---------------- | ------------ | ------------ |
+| bind:btnevent | 监听点击按钮事件 | content          | String       | 返回文字内容 |
+
+### 使用示例
+
+index.wxml
+
+```html
+<view class="box">
+  <yeo-blur-card></yeo-blur-card>
+</view>
+```
+
+index.wxss
+
+```css
+.box {
+  margin: 60rpx auto;
+}
 ```
 
 ## yeo-search（搜索栏）

@@ -167,6 +167,11 @@
           "pathName": "pages/yeo-search/yeo-search",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "yeo-滤镜卡片",
+          "pathName": "pages/yeo-blur-card/yeo-blur-card",
+          "scene": null
         }
       ]
     }

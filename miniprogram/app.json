@@ -19,7 +19,8 @@
     "pages/yeo-loading/yeo-loading",
     "pages/yeo-rotate/yeo-rotate",
     "pages/yeo-icon/yeo-icon",
-    "pages/yeo-search/yeo-search"
+    "pages/yeo-search/yeo-search",
+    "pages/yeo-blur-card/yeo-blur-card"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -54,6 +55,7 @@
     "yeo-label-box": "/Yeo/YeoLabelBox/YeoLabelBox",
     "yeo-stretch": "/Yeo/YeoStretch/YeoStretch",
     "yeo-tools-bar": "/Yeo/YeoToolsBar/YeoToolsBar",
-    "yeo-circle-corner": "/Yeo/YeoCircleCorner/YeoCircleCorner"
+    "yeo-circle-corner": "/Yeo/YeoCircleCorner/YeoCircleCorner",
+    "yeo-blur-card": "/Yeo/YeoBlurCard/YeoBlurCard"
   }
 }
