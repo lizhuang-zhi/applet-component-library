@@ -27,7 +27,9 @@ app.json
     "yeo-label-box": "/Yeo/YeoLabelBox/YeoLabelBox",
     "yeo-stretch": "/Yeo/YeoStretch/YeoStretch",
     "yeo-tools-bar": "/Yeo/YeoToolsBar/YeoToolsBar",
-    "yeo-blur-card": "/Yeo/YeoBlurCard/YeoBlurCard"
+    "yeo-blur-card": "/Yeo/YeoBlurCard/YeoBlurCard",
+    "yeo-comment": "/Yeo/YeoComment/YeoComment",
+    "yeo-message-card": "/Yeo/YeoMessageCard/YeoMessageCard"
   }
 ```
 
@@ -280,6 +282,74 @@ index.wxss
 ```css
 .box {
   margin: 60rpx auto;
+}
+```
+
+## yeo-message-card（留言卡片）
+
+### 展示效果
+
+<img src="https://s3.ax1x.com/2021/02/25/yvTXnK.png" style="zoom:80%;" />
+
+### 描述
+
+评论组件，支持两种模式（暗黑模式与白天模式），除此之外，开发者可通过传入等级（1-7），为用户设定不同级别的头像挂件（如上图）
+
+### 属性说明
+
+| 属性名            | 类型   | 默认值                                                       | 说明                                                         |
+| ----------------- | :----- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| cardBotMargin     | Number | 30                                                           | 底部外边距                                                   |
+| userImg           | String | ../imgs/introduce.jpg                                        | 用户头像                                                     |
+| headPendant       | Number | 1                                                            | 头像挂件：从1-7级，级数越高，挂件越靓；小于1，默认不佩戴挂件；大于7，默认第7级 |
+| userName          | String | 仙秩                                                         | 用户名                                                       |
+| userNameColor     | String | #555555                                                      | 用户名颜色                                                   |
+| userNameSize      | Number | 28                                                           | 用户名字体大小                                               |
+| time              | String | 2020-02-20                                                   | 时间                                                         |
+| timeColor         | String | #555555                                                      | 时间颜色                                                     |
+| timeSize          | Number | 22                                                           | 时间字体大小                                                 |
+| content           | String | 我说的话叫评论，我做的事叫论评，你看我评论还是论评都是非常的坦荡 | 评论内容                                                     |
+| contentColor      | String | \#222222                                                     | 评论内容颜色                                                 |
+| contentSize       | Number | 30                                                           | 评论内容字体大小                                             |
+| contentLetSpacing | Number | 2                                                            | 评论内容字间距                                               |
+| lineColor         | String | \#bbbbbb                                                     | 下划线颜色                                                   |
+| contentPaddingBot | Number | 45                                                           | 下划线与内容距离                                             |
+| ==model==         | String | white                                                        | 设置模式（dark暗黑模式与white白天模式）：设置模式的同时也设置了模式内的值，此时我们对于开发者设置的部分予以保留<暗黑模式最适背景色：#272727；白天模式最适背景色：#EBEBEB> |
+
+### 事件
+
+| 事件名            | 事件描述         | 组件返回页面数据 | 返回数据类型 | 返回数据说明                       |
+| ----------------- | ---------------- | ---------------- | ------------ | ---------------------------------- |
+| bind:userimgclick | 监听点击头像事件 | obj              | Object       | 包含用户名、用户头像url            |
+| bind:contentclick | 监听点击内容事件 | obj              | Object       | 包含用户名、发布时间、用户评论内容 |
+
+### 使用示例
+
+index.wxml
+
+```html
+<view class="box">
+  <view class="inner">
+    <yeo-message-card headPendant='0' userImg='../imgs/YHS-2.jpg'></yeo-message-card>
+    <yeo-message-card headPendant='3' userImg='../imgs/YHS-3.jfif' content='文件来对本页面的窗口表现进行配置。'></yeo-message-card>
+    <yeo-message-card headPendant='4' userImg='../imgs/YHS-2.jpg' content='在支持云调用的接口文档中，会分别列出 HTTPS 调用的文档及云调用的文档，云调用文档同 HTTPS 调用文档一样包含请求参数、返回值及示例。'></yeo-message-card>
+    <yeo-message-card headPendant='5' content='小程序根目录下的 app.json 文件用来对微信小程序进行全局配置'></yeo-message-card>
+    <yeo-message-card headPendant='7' userImg='../imgs/YHS-1.jpg'></yeo-message-card>
+    <yeo-message-card headPendant='8' content='接口获得临时登录凭证 code 后传到开发者服务器'></yeo-message-card>
+  </view>
+</view>
+```
+
+index.wxss
+
+```css
+.box {
+  width: 100%;
+  height: 1600rpx;
+  background: #272727;
+}
+.inner {
+  padding: 50rpx 30rpx 0;
 }
 ```
 
@@ -594,12 +664,10 @@ index.js
 
 ### 属性说明
 
-| 属性名         | 类型   | 默认值           | 说明           |
-| -------------- | :----- | ---------------- | -------------- |
-| yeoBg          | String | rgb(240,240,240) | 搜索框背景     |
-| yeoPlaceholder | String | Input Something  | 搜索框提示内容 |
-| distractWay    | String | around           | 分散方式       |
-| sideDistance   | Number | 0                | 左右两边边距   |
+| 属性名       | 类型   | 默认值 | 说明         |
+| ------------ | :----- | ------ | ------------ |
+| distractWay  | String | around | 分散方式     |
+| sideDistance | Number | 0      | 左右两边边距 |
 
 * distractWay具体属性值
 
@@ -619,20 +687,30 @@ index.js
 | bind:leftevent   | 左边部分监听事件 |
 | bind:rightevent  | 右边部分监听事件 |
 
+### 插槽
+
+总体功能栏是分三个部分的，每个部分都对应一个槽位供开发者自行添加
+
+```html
+  <yeo-icon slot='dy-left' IconSize='40' iconUrl='../imgs/back-2.png'></yeo-icon>
+  <yeo-search slot='dy-center'></yeo-search>
+  <yeo-icon slot='dy-right' IconSize='40' iconUrl='../imgs/分类.png'></yeo-icon>
+```
+
 ### 使用示例
 
 index.wxml
 
 ```html
 <!-- 组合方式-1   icon/search/icon-->
-<yeo-dy-fun-bar yeoBg='rgb(230,230,230)' yeoPlaceholder='Please Input SomeThing'>
+<yeo-dy-fun-bar>
   <yeo-icon slot='dy-left' IconSize='40' iconUrl='../imgs/back-2.png'></yeo-icon>
   <yeo-search slot='dy-center'></yeo-search>
   <yeo-icon slot='dy-right' IconSize='40' iconUrl='../imgs/分类.png'></yeo-icon>
 </yeo-dy-fun-bar>
 
 <!-- 组合方式-2   hangSwing/search/hangSwing-->
-<yeo-dy-fun-bar yeoBg='rgb(230,230,230)' yeoPlaceholder='Please Input SomeThing'>
+<yeo-dy-fun-bar>
   <yeo-hang-swing slot='dy-left'
   ImgSize='70'></yeo-hang-swing>
   <yeo-search slot='dy-center'></yeo-search>
@@ -641,14 +719,13 @@ index.wxml
 </yeo-dy-fun-bar>
 
 <!-- 组合方式-3   hangSwing/search/icon-->
-<yeo-dy-fun-bar yeoBg='rgb(230,230,230)' yeoPlaceholder='Please Input SomeThing'>
+<yeo-dy-fun-bar>
   <yeo-search slot='dy-center'></yeo-search>
   <yeo-icon slot='dy-right' IconSize='40' iconUrl='../imgs/分类.png'></yeo-icon>
 </yeo-dy-fun-bar>
 
 <!-- 组合方式-4   hangSwing/自定义/icon-->
-<yeo-dy-fun-bar yeoBg='rgb(230,230,230)' yeoPlaceholder='Please Input SomeThing'
-distractWay='between' sideDistance='30'>
+<yeo-dy-fun-bar distractWay='between' sideDistance='30' bind:centerevent='centerTap'>
   <yeo-icon slot='dy-left' IconSize='40' iconUrl='../imgs/back-2.png'></yeo-icon>
   <view slot='dy-center'>我就是个所谓的标题</view>
   <yeo-icon slot='dy-right' IconSize='40' iconUrl='../imgs/分类.png'></yeo-icon>
@@ -1020,5 +1097,78 @@ index.wxml 与 index.js
   upEvent(e) {
     console.log(e);
   },
+```
+
+## ==yeo-comment==（评论组件）
+
+### 展示效果
+
+<img src="https://s3.ax1x.com/2021/02/25/yxPjzV.png" style="zoom: 74%;" />
+
+### 描述
+
+整个评论组件其实是由前面的三个组件组合而成（yeo-art-font、yeo-dyfunbar、yeo-message-card），通过适当调整开发而成，为了达到最优展示效果，笔者提供的开发属性与接口相对减少，只对外开放必要属性进行更改（其实我就是懒）
+
+### 属性说明
+
+| 属性名         | 类型   | 默认值                  | 说明                           |
+| -------------- | :----- | ----------------------- | ------------------------------ |
+| boxTopMargin   | Number | 50                      | 评论组件上外边距               |
+| boxSizeMargin  | Number | 40                      | 评论组件左右外边距             |
+| boxBotMargin   | Number | 40                      | 评论组件下外边距               |
+| commentTitle   | String | 最新评论                | 评论顶标题                     |
+| commentColor   | String | #188AFC                 | 评论顶标题颜色                 |
+| lineWidth      | String | 94rpx                   | 下划线长度（百分比or具体数值） |
+| lineColor      | String | \#5AC3D6                | 下划线颜色                     |
+| searBordRadius | Number | 20                      | 搜索框圆角                     |
+| placeholder    | String | 快来留下你精彩的评论... | 输入框占位文字                 |
+| **commentArr** | Array  | 数组数据（下面展示）    | 评论数组数据                   |
+
+commentArr默认值：
+
+YeoComment.js
+
+```js
+    /* 评论数组数据 */
+    commentArr: {
+      type: Array,
+      value: [{
+          userImg: '../imgs/introduce.jpg',
+          headPendant: 7,
+          userName: '人是非',
+          content: '我说的话叫评论，我做的事叫论评，你看我评论还是论评都是非常的坦荡',
+          time: '2021-2-21'
+        },
+        {
+          userImg: '../imgs/YHS-2.jpg',
+          headPendant: 3,
+          userName: '陌生的兄弟',
+          content: '楼上说的对',
+          time: '2021-02-22'
+        },
+        {
+          userImg: '../imgs/YHS-1.jpg',
+          headPendant: 5,
+          userName: '可爱的猫',
+          content: '楼上说的有道理',
+          time: '2021-1-05'
+        },
+      ]
+    }
+```
+
+### 事件
+
+| 事件名            | 事件描述                 | 组件返回页面数据 | 返回数据类型 | 返回数据说明                       |
+| ----------------- | ------------------------ | ---------------- | ------------ | ---------------------------------- |
+| bind:userimgevent | 监听点击评论用户头像事件 | userInfo         | Object       | 包含用户名、用户头像url            |
+| bind:commentevent | 监听点击内容事件         | commentInfo      | Object       | 包含用户名、发布时间、用户评论内容 |
+
+### 使用示例
+
+index.wxml
+
+```html
+<yeo-comment></yeo-comment>
 ```
 
