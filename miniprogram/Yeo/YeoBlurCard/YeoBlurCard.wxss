@@ -34,5 +34,5 @@
 .yeo-blur-card .blur-box .box-btn button {
   margin-top: 30rpx;
   width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.1); */
+  background-color: rgba(255, 255, 255, 0.1);
 }

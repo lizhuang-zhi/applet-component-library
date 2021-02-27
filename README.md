@@ -29,7 +29,8 @@ app.json
     "yeo-tools-bar": "/Yeo/YeoToolsBar/YeoToolsBar",
     "yeo-blur-card": "/Yeo/YeoBlurCard/YeoBlurCard",
     "yeo-comment": "/Yeo/YeoComment/YeoComment",
-    "yeo-message-card": "/Yeo/YeoMessageCard/YeoMessageCard"
+    "yeo-message-card": "/Yeo/YeoMessageCard/YeoMessageCard",
+    "yeo-loading": "/Yeo/YeoLoading/YeoLoading"
   }
 ```
 
@@ -351,6 +352,79 @@ index.wxss
 .inner {
   padding: 50rpx 30rpx 0;
 }
+```
+
+## yeo-loading（加载动画）
+
+### 展示效果
+
+<img src="https://s3.ax1x.com/2021/02/27/6S0ZjA.png" style="zoom:80%;" /><img src="https://s3.ax1x.com/2021/02/27/6S0mnI.png" style="zoom:80%;" />
+
+### 描述
+
+加载动画组件，开发者可改变背景覆盖色、加载点的大小、圆角、颜色等。
+
+### 属性说明
+
+| 属性名          | 类型    | 默认值                   | 说明                                              |
+| --------------- | :------ | ------------------------ | ------------------------------------------------- |
+| isShowLoading   | Boolean | true                     | 是否显示Loading                                   |
+| loadingBgColor  | String  | rgba(230, 230, 230, 0.7) | Loading背景颜色(传入rgba才可以实现透视遮盖层效果) |
+| loadingTop      | String  | 40%                      | Loading在页面位置（百分比or具体数值<带rpx>高度）  |
+| dotColor        | String  | \#1B76FF                 | 加载点颜色                                        |
+| dotNum          | Number  | 3                        | 加载点个数                                        |
+| dotSize         | Number  | 26                       | 加载点大小                                        |
+| dotBordRadius   | Number  | 8                        | 加载点圆角(数值越大，dot越圆)                     |
+| dotMarginSize   | Number  | 10                       | 加载点之间左右间距                                |
+| dotShowDuration | Number  | 500                      | 加载点之间出现间隔时长(ms)                        |
+
+### 使用示例
+
+index.html
+
+```html
+<!-- loading组件 -->
+<yeo-loading isShowLoading='{{isShowLoading}}'></yeo-loading>
+
+<!-- 模拟数据请求 -->
+<view>我就是个摆设</view>
+<view style="height: 500rpx;">
+  <view wx:for="{{arr}}" wx:key='index'>
+    <view style="height: 100rpx;width: 200rpx;">
+      {{item}}
+    </view>
+  </view>
+</view>
+<view>我就是个摆设</view>
+```
+
+index.js
+
+```js
+Page({
+    
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    isShowLoading: true,
+    arr: []
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    // 模拟数据加载过程
+    setTimeout(()=>{
+      this.setData({
+        isShowLoading: false,
+        arr: [123,23,454,4534,345]
+      })
+    },2000);
+  },
+    
+})  
 ```
 
 ## yeo-search（搜索栏）

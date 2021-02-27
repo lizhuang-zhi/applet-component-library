@@ -145,7 +145,7 @@
           "scene": null
         },
         {
-          "name": "pages/yeo-loading/yeo-loading",
+          "name": "yeo-加载动画",
           "pathName": "pages/yeo-loading/yeo-loading",
           "query": "",
           "scene": null
@@ -183,6 +183,7 @@
         {
           "name": "yeo-留言卡片",
           "pathName": "pages/yeo-message-card/yeo-message-card",
+          "query": "",
           "scene": null
         }
       ]

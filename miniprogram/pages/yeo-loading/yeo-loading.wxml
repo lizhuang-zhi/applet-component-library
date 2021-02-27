@@ -1,8 +1,14 @@
-<!-- loading.wxml -->
-<view class="loading">
-  <view class="dot" animation="{{alpha[0]}}"></view>
-  <view class="dot" animation="{{alpha[1]}}"></view>
-  <view class="dot" animation="{{alpha[2]}}"></view>
-  <view class="dot" animation="{{alpha[3]}}"></view>
-  <view class="dot" animation="{{alpha[4]}}"></view>
+<!-- loading组件 -->
+<yeo-loading isShowLoading='{{isShowLoading}}'></yeo-loading>
+
+<!-- 模拟数据请求 -->
+<view>我就是个摆设</view>
+<view style="height: 500rpx;">
+  <view wx:for="{{arr}}" wx:key='index'>
+    <view style="height: 100rpx;width: 200rpx;">
+      {{item}}
+    </view>
+  </view>
 </view>
+<view>我就是个摆设</view>
+
