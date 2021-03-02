@@ -185,6 +185,17 @@
           "pathName": "pages/yeo-message-card/yeo-message-card",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "yeo-轮播图",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "测试",
+          "pathName": "pages/yeo-test/yeo-test",
+          "scene": null
         }
       ]
     }

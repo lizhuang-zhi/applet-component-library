@@ -30,7 +30,8 @@ app.json
     "yeo-blur-card": "/Yeo/YeoBlurCard/YeoBlurCard",
     "yeo-comment": "/Yeo/YeoComment/YeoComment",
     "yeo-message-card": "/Yeo/YeoMessageCard/YeoMessageCard",
-    "yeo-loading": "/Yeo/YeoLoading/YeoLoading"
+    "yeo-loading": "/Yeo/YeoLoading/YeoLoading",
+    "yeo-swiper": "/Yeo/YeoSwiper/YeoSwiper"
   }
 ```
 
@@ -230,6 +231,96 @@ index.wxml
 
 ```html
 <yeo-icon></yeo-icon>
+```
+
+## yeo-swiper（轮播图）
+
+### 展示效果
+
+![](https://s3.ax1x.com/2021/03/02/6kWGJU.png)
+
+![](https://s3.ax1x.com/2021/03/02/6kWYz4.png)
+
+### 描述
+
+轮播组件，经过调整，笔者认为此结构与宽距都合适，所以开放属性有限。
+
+### 属性说明
+
+| 属性名           | 类型    | 默认值           | 说明                              |
+| ---------------- | :------ | ---------------- | --------------------------------- |
+| dataArr          | Array   | 轮播图背景图数组 | 背景图数组数据                    |
+| swiperPaddingTop | Number  | 0                | 轮播框内部上边距                  |
+| swiperPaddingBot | Number  | 0                | 轮播框内部下边距                  |
+| swiperMarginTop  | Number  | 60               | 轮播框外部上边距                  |
+| swiperMarginBot  | Number  | 30               | 轮播框外部下边距                  |
+| bordRadius       | Number  | 30               | Item圆角大小                      |
+| bgSize           | String  | cover            | Item背景图横纵比（contain、cover) |
+| autoPlay         | Boolean | true             | 是否自动轮播                      |
+| intervalTime     | Number  | 5000             | 轮播间隔时长                      |
+
+* dataArr示例（默认值）
+
+```js
+    // 背景图数组数据
+    dataArr: {
+      type: Array,
+      value: [{
+          bgUrl: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2738668818,2590397852&fm=26&gp=0.jpg',
+          title: 'Tomorr',
+          time: '2021-1-5',
+          isStar: false
+        },
+        {
+          bgUrl: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3569081884,3982453064&fm=26&gp=0.jpg',
+          title: 'Thor',
+          time: '2021-2-13',
+          isStar: false
+        },
+        {
+          bgUrl: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1105979147,3553146784&fm=26&gp=0.jpg',
+          title: 'Red Coal',
+          time: '2021-2-3',
+          isStar: false
+        }
+      ]
+    },
+```
+
+> 内部样式
+
+| 属性名                   | 类型   | 默认值   | 说明                                      |
+| ------------------------ | :----- | -------- | ----------------------------------------- |
+| starBoxWidth             | Number | 80       | 收藏框宽度                                |
+| starBoxHeight            | Number | 80       | 收藏框高度                                |
+| starBoxBordRadius        | Number | 35       | 收藏框圆角                                |
+| starBoxBgColor           | String | \#4C5F79 | 收藏框背景色                              |
+| starTopWithOutBox        | Number | -10      | 收藏框距离外部框顶距离                    |
+| starRightWithOutBox      | Number | 30       | 收藏框距离外部框右侧边缘距离              |
+| starPicSize              | String | 50%      | 收藏框内图标大小(屏幕占比or具体数值<rpx>) |
+| bottomInfoBotWithOutBox  | Number | 10       | 底部栏距离外部框底距离                    |
+| bottomInfoLeftWithOutBox | Number | 38       | 底部栏距离外部框左侧距离                  |
+| timeFontSize             | Number | 24       | 时间字体大小                              |
+| timeLetterSpacing        | Number | 1        | 时间字母间距                              |
+| timeColor                | String | \#A8A4AE | 时间颜色                                  |
+| timeFontWeight           | String | normal   | 时间字体粗度                              |
+| titleFontSize            | Number | 42       | 标题字体大小                              |
+| titleColor               | String | #F5F9FC  | 标题颜色                                  |
+| titleFontWeight          | String | bold     | 标题字体粗度                              |
+
+### 事件
+
+| 事件名            | 事件描述             | 组件返回页面数据 | 返回数据类型 | 返回数据说明            |
+| ----------------- | -------------------- | ---------------- | ------------ | ----------------------- |
+| bind:clickevent   | 监听点击（Item）事件 | index            | Number       | 返回点击swiper-item索引 |
+| bind:sendarrevent | ==监听组件毁灭事件== | dataArr          | Array        | 返回改动后的dataArr     |
+
+### 使用示例
+
+index.wxml
+
+```html
+<yeo-swiper></yeo-swiper>
 ```
 
 ## yeo-blur-card（滤镜卡片）

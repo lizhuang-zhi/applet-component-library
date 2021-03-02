@@ -5,8 +5,13 @@ Page({
    */
   data: {
 
+
   },
 
+  // 组件毁灭时触发
+  getDataArr(e) {
+    console.log(e.detail.dataArr);
+  },
 
   /**
    * 生命周期函数--监听页面加载

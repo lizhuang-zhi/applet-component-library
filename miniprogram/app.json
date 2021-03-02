@@ -61,6 +61,7 @@
     "yeo-blur-card": "/Yeo/YeoBlurCard/YeoBlurCard",
     "yeo-comment": "/Yeo/YeoComment/YeoComment",
     "yeo-message-card": "/Yeo/YeoMessageCard/YeoMessageCard",
-    "yeo-loading": "/Yeo/YeoLoading/YeoLoading"
+    "yeo-loading": "/Yeo/YeoLoading/YeoLoading",
+    "yeo-swiper": "/Yeo/YeoSwiper/YeoSwiper"
   }
 }
