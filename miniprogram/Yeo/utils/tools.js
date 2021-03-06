@@ -12,7 +12,7 @@ let tools = {
   changeTimeFormat(time) {
     return this.format(time, 'yyyy-MM-dd');
   },
-  //封装时间格式
+  // 封装时间格式
   format(time, format) {
     var t = new Date(time);
     var tf = function (i) {
@@ -41,6 +41,16 @@ let tools = {
       }
     })
   },
+  // 获取指定选择器的高度(选择器)
+  selectHeight(select) {
+    let query = wx.createSelectorQuery();
+    query.select(select).boundingClientRect();
+    return new Promise((resolve, reject) => {
+      query.exec(res => {
+        resolve(res[0].height);
+      });
+    });
+  }
 
 
 

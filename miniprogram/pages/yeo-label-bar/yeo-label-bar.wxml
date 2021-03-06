@@ -1,0 +1,23 @@
+<yeo-label-bar tabArr='{{tabArray}}' currentTab='1' tabContHeight='{{maxHeight}}'>
+  <view slot='{{tabArray[0]}}' class="tab-1">
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+  </view>
+  <view slot='{{tabArray[1]}}' class="tab-2">
+    <view>{{tabArray[1]}}</view>
+    <view>{{tabArray[1]}}</view>
+    <view>{{tabArray[1]}}</view>
+  </view>
+  <view slot='{{tabArray[2]}}' class="tab-3">
+    <view>{{tabArray[2]}}</view>
+    <view>{{tabArray[2]}}</view>
+    <view>{{tabArray[2]}}</view>
+    <view>{{tabArray[2]}}</view>
+  </view>
+</yeo-label-bar>
+
+

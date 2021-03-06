@@ -193,8 +193,15 @@
           "scene": null
         },
         {
-          "name": "测试",
-          "pathName": "pages/yeo-test/yeo-test",
+          "name": "yeo-tab切换栏",
+          "pathName": "pages/yeo-tab-change/yeo-tab-change",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-标签栏",
+          "pathName": "pages/yeo-label-bar/yeo-label-bar",
+          "query": "",
           "scene": null
         }
       ]
