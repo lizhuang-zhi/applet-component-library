@@ -24,7 +24,8 @@
     "pages/yeo-comment/yeo-comment",
     "pages/yeo-message-card/yeo-message-card",
     "pages/yeo-tab-change/yeo-tab-change",
-    "pages/yeo-label-bar/yeo-label-bar"
+    "pages/yeo-label-bar/yeo-label-bar",
+    "pages/yeo-flow-waterfall/yeo-flow-waterfall"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -66,6 +67,7 @@
     "yeo-loading": "/Yeo/YeoLoading/YeoLoading",
     "yeo-swiper": "/Yeo/YeoSwiper/YeoSwiper",
     "yeo-tab-change": "/Yeo/YeoTabChange/YeoTabChange",
-    "yeo-label-bar": "/Yeo/YeoLabelBar/YeoLabelBar"
+    "yeo-label-bar": "/Yeo/YeoLabelBar/YeoLabelBar",
+    "yeo-flow-waterfall": "/Yeo/YeoFlowWaterfall/YeoFlowWaterfall"
   }
 }

@@ -323,6 +323,178 @@ index.wxml
 <yeo-swiper></yeo-swiper>
 ```
 
+## yeo-tab-change（tab切换）
+
+### 展示效果
+
+<img src="https://s3.ax1x.com/2021/03/07/6MEaH1.png" style="zoom:70%;" />
+
+### 描述
+
+tab切换组件，为开发者提供在单页面的切换功能，开发者可根据自身需求对组件进行样式调整
+
+### 属性说明
+
+| 属性名            | 类型   | 默认值                           | 说明                    |
+| ----------------- | :----- | -------------------------------- | ----------------------- |
+| titleArr          | Array  | ["首页", "商城", "动态", "我的"] | 传入标题数组            |
+| currentIndex      | Number | 0                                | 当前tab索引             |
+| tabWidth          | String | 100%                             | tab框宽度               |
+| tabJustiContent   | String | space-around                     | tab布局方式             |
+| tabMargin         | String | 0 0 20rpx 0                      | tab外边距               |
+| fontSize          | Number | 32                               | 字体大小                |
+| fontColor         | String | \#CBCBCB                         | 字体颜色(未选中时)      |
+| fontSelectColor   | String | \#FCFCFC                         | 字体tab选中时颜色       |
+| fontWeight        | String | bold                             | 字体粗细                |
+| fontLetterSpacing | Number | 5                                | 词组字间距              |
+| fontZIndex        | Number | 10                               | 字体层级                |
+| lineWidth         | Number | 80                               | 下划线宽度              |
+| lineHeight        | Number | 20                               | 下划线高度              |
+| lineColor         | String | \#EC625C                         | 下划线颜色              |
+| lineBordRadius    | Number | 20                               | 下滑线圆角              |
+| lineBottom        | Number | -5                               | 下滑线距离tab框底部距离 |
+| lineZIndex        | Number | 1                                | 下划线层级              |
+| lineLeft          | Number | -2                               | 下划线左距离            |
+
+### 事件
+
+| 事件名              | 事件描述        | 组件返回页面数据 | 返回数据类型 | 返回数据说明      |
+| ------------------- | --------------- | ---------------- | ------------ | ----------------- |
+| bind:changetabevent | 监听切换tab事件 | tabIndex         | Number       | 返回点击tab的索引 |
+
+### 使用示例
+
+index.wxml
+
+```html
+<view class="box">
+  <yeo-tab-change></yeo-tab-change>
+</view>
+```
+
+index.wxss
+
+```css
+.box{
+  padding-top: 50rpx;
+  height: 1300rpx;
+  background: #151515;
+}
+```
+
+## yeo-label-bar（标签切换页）
+
+### 展示效果
+
+<img src="https://s3.ax1x.com/2021/03/07/6MVXsH.png" style="zoom:67%;" />
+
+### 描述
+
+通过将yeo-tab-change组件与swiper原生组件相结合，通过数据绑定、数据监听、事件监听等方式结合而成，对于yeo-tab-change组件的部分属性可直接查看yeo-tab-change组件（**部分：指除开我没写的部分**）
+
+### 属性说明
+
+| 属性名                     | 类型         | 默认值                           | 说明                                 |
+| -------------------------- | :----------- | -------------------------------- | ------------------------------------ |
+| tabOutMargin               | String       | 40rpx 0 0 0                      | tab外框外边距                        |
+| tabContHeight              | Number       | 70                               | tab内容框高度                        |
+| tabContColor               | String       | \#F6F6F6                         | tab内容框背景颜色                    |
+| tabMargin                  | String       | 20rpx 10rpx 0                    | tab内容框外边距                      |
+| tabBordRadius              | Number       | 10                               | tab内容框圆角                        |
+| *以下为yeo-tab-change部分* | ------------ | -------------------------------- | ------------------------------------ |
+| tabArr                     | Array        | ["Yeo", "听听", "推荐"]          | TabChange数组                        |
+| tabChangeWidth             | String       | 100%                             | TabChange框宽度                      |
+| tabChangeJustiContent      | String       | space-around                     | TabChange布局方式                    |
+| currentTab                 | Number       | 0                                | 初始化显示tab页面的索引              |
+
+==其余没有写到的关于yeo-tab-change属性，都是可直接调用的同名属性！！==
+
+### 使用示例
+
+index.wxml
+
+```html
+<yeo-label-bar tabArr='{{tabArray}}' currentTab='1' tabContHeight='{{maxHeight}}'>
+  <view slot='{{tabArray[0]}}' class="tab-1">
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+  </view>
+  <view slot='{{tabArray[1]}}' class="tab-2">
+    <view>{{tabArray[1]}}</view>
+    <view>{{tabArray[1]}}</view>
+    <view>{{tabArray[1]}}</view>
+  </view>
+  <view slot='{{tabArray[2]}}' class="tab-3">
+    <view>{{tabArray[2]}}</view>
+    <view>{{tabArray[2]}}</view>
+    <view>{{tabArray[2]}}</view>
+    <view>{{tabArray[2]}}</view>
+  </view>
+</yeo-label-bar>
+```
+
+index.js
+
+==其中演示的 TabInit() 方法非常重要，开发者只需要修改其中的选择器（.tab-1、.tab-2、.tab-3），就可以直接套用此方法，只是需要注意 *tools* 变量的相对路径==
+
+```js
+// 1.这里的路径是相对于我的文件来说（开发者需要自行更改)
+let tools = require('../../Yeo/utils/tools');
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    tabArray: ['Yeo', '我的', '动态']
+  },
+
+  // 2.初始化tab页面高度
+  TabInit() {
+    // 新建数组
+    let tabHeiArr = [];
+    // 声明异步函数
+    new Promise((resolve, reject) => {
+      /* 
+        分别获取每个tab页的内容高度
+        .tab-1 .tab-2 .tab-3 都是选择器
+      */
+      tools.selectHeight('.tab-1').then(back => {
+        tabHeiArr.push(back);
+      });
+      tools.selectHeight('.tab-2').then(back => {
+        tabHeiArr.push(back);
+      });
+      tools.selectHeight('.tab-3').then(back => {
+        tabHeiArr.push(back);
+        // 获取完成改变Promise状态
+        resolve('success');
+      });
+    }).then(res => {
+      let newArr = tabHeiArr.sort((a, b) => a - b);
+      // 最大高度
+      let maxHeight = newArr[tabHeiArr.length - 1];
+      this.setData({
+        maxHeight: maxHeight * 2
+      })
+    })
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    // 初始化tab高度
+    this.TabInit();
+  },
+    
+})
+```
+
 ## yeo-blur-card（滤镜卡片）
 
 ### 展示效果
@@ -1081,6 +1253,55 @@ index.wxml
     <view slot='tit'>我的</view>
   </yeo-tab-bar-item>
 </yeo-tab-bar>
+```
+
+## yeo-flow-waterfall（流式布局）
+
+### 展示效果
+
+<img src="https://s3.ax1x.com/2021/03/08/61euod.png" style="zoom:67%;" />
+
+### 描述
+
+组件采用两列式的流式布局，开发者通过传入数组数据（图片、名称、点赞数等）对组件进行数据插入，其次对于组件的样式进行样式接口的开放
+
+### 属性说明
+
+| 属性名                     | 类型   | 默认值            | 说明                     |
+| -------------------------- | :----- | ----------------- | ------------------------ |
+| dataArr                    | Array  | 详细见下面代码    | 数组数据内容             |
+| boxMargin                  | String | 0 20rpx           | 外层框外边距             |
+| itemTopLeftRadius          | Number | 10                | item框左上方圆角         |
+| itemTopRightRadius         | Number | 10                | item框右上方圆角         |
+| itemContPadding            | String | 12rpx 23rpx 30rpx | item框内容内边距         |
+| itemContBgColor            | String | rgb(240,240,240)  | item框内容背景颜色       |
+| itemContTitleSize          | Number | 32                | 内容框标题字体大小       |
+| itemContTitleWeight        | String | bold              | 内容框标题字体粗细       |
+| itemContTitleColor         | String | \#3F3F4F          | 内容框标题字体颜色       |
+| itemContTitleBotMargin     | Number | 15                | 内容框标题字体下外边距   |
+| itemUserPicSize            | Number | 40                | 内容框用户头像大小       |
+| itemUserPicBordRadius      | String | 50%               | 内容框用户头像圆角       |
+| itemUserNameSize           | Number | 26                | 内容框用户名字体大小     |
+| itemUserNameLetterSpacing  | Number | 1                 | 内容框用户名字间距       |
+| itemUserNameColor          | String | \#767676          | 内容框用户名字体颜色     |
+| itemUserNameMarginLeft     | Number | 12                | 内容框用户名字体左外边距 |
+| itemContLovesPicSize       | Number | 35                | 内容框点赞图标大小       |
+| itemContLovesNumSize       | Number | 30                | 内容框点赞数量字体大小   |
+| itemContLovesNumColor      | String | \#6E6E6E          | 内容框点赞数量字体颜色   |
+| itemContLovesNumMarginLeft | Number | 6                 | 内容框点赞数量左外边距   |
+
+### 事件
+
+| 事件名             | 事件描述             | 组件返回页面数据 | 返回数据类型 | 返回数据说明        |
+| ------------------ | -------------------- | ---------------- | ------------ | ------------------- |
+| bind:senddataevent | ==监听组件毁灭事件== | dataArr          | Object       | 返回改动后的dataArr |
+
+### 使用示例
+
+index.wxml
+
+```html
+<yeo-flow-waterfall></yeo-flow-waterfall>
 ```
 
 ## yeo-label-box（标签框）

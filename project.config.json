@@ -203,6 +203,11 @@
           "pathName": "pages/yeo-label-bar/yeo-label-bar",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "yeo-流式布局",
+          "pathName": "pages/yeo-flow-waterfall/yeo-flow-waterfall",
+          "scene": null
         }
       ]
     }
