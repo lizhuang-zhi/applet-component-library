@@ -12,7 +12,7 @@ Component({
     // 用户头像
     userImg: {
       type: String,
-      value: '../imgs/introduce.jpg'
+      value: 'https://s3.ax1x.com/2021/03/09/63FUNq.jpg'
     },
     /* 
       头像挂件: 
@@ -108,13 +108,33 @@ Component({
         this.setData({
           headPendantUrl: null
         })
-      } else if (getLevelOfPendant > 7) {
+      } else if (getLevelOfPendant >= 7) {
         this.setData({
-          headPendantUrl: `../imgs/gj_7.png`
+          headPendantUrl: `https://s3.ax1x.com/2021/03/09/63F9tx.png`
         })
-      }else {
+      }else if(getLevelOfPendant  == 1){
         this.setData({
-          headPendantUrl: `../imgs/gj_${getLevelOfPendant}.png`
+          headPendantUrl: `https://s3.ax1x.com/2021/03/09/63iL1U.png`
+        })
+      }else if(getLevelOfPendant  == 2){
+        this.setData({
+          headPendantUrl: `https://s3.ax1x.com/2021/03/09/63iOcF.png`
+        })
+      }else if(getLevelOfPendant  == 3){
+        this.setData({
+          headPendantUrl: `https://s3.ax1x.com/2021/03/09/63ivnJ.png`
+        })
+      }else if(getLevelOfPendant  == 4){
+        this.setData({
+          headPendantUrl: `https://s3.ax1x.com/2021/03/09/63iz7R.png`
+        })
+      }else if(getLevelOfPendant  == 5){
+        this.setData({
+          headPendantUrl: `https://s3.ax1x.com/2021/03/09/63ixB9.png`
+        })
+      }else if(getLevelOfPendant  == 6){
+        this.setData({
+          headPendantUrl: `https://s3.ax1x.com/2021/03/09/63FpA1.png`
         })
       }
       /* 

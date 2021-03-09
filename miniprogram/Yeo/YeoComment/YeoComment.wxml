@@ -7,8 +7,8 @@
   <!-- 输入评论 -->
   <view class="send-message">
     <yeo-dy-fun-bar distractWay='between'>
-      <yeo-search slot='dy-center' searchImg='../imgs/comment-gray.png' searBordRadius='{{searBordRadius}}' placeholder='{{placeholder}}' bind:confirmevent='sendMessage' bind:inputevent='inputMessage'></yeo-search>
-      <yeo-icon slot='dy-right' IconSize='50' iconUrl='../imgs/send.png' bindtap="sendMessageTap"></yeo-icon>
+      <yeo-search slot='dy-center' searchImg='https://s3.ax1x.com/2021/03/09/63iTkq.png' searBordRadius='{{searBordRadius}}' placeholder='{{placeholder}}' bind:confirmevent='sendMessage' bind:inputevent='inputMessage'></yeo-search>
+      <yeo-icon slot='dy-right' IconSize='50' iconUrl='https://s3.ax1x.com/2021/03/09/63FZBd.png' bindtap="sendMessageTap"></yeo-icon>
     </yeo-dy-fun-bar>
   </view>
 

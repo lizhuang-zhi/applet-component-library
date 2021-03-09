@@ -23,10 +23,10 @@ Component({
     vegtArr: {
       type: Array,
       value: [
-        '../imgs/vegt-1.png',
-        '../imgs/vegt-2.png',
-        '../imgs/vegt-3.png',
-        '../imgs/vegt-4.png'
+        'https://s3.ax1x.com/2021/03/09/63F1gS.png',
+        'https://s3.ax1x.com/2021/03/09/63F3jg.png',
+        'https://s3.ax1x.com/2021/03/09/63FYHs.png',
+        'https://s3.ax1x.com/2021/03/09/63FJBj.png'
       ]
     }
 

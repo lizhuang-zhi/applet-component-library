@@ -7,7 +7,7 @@ Component({
     // 图片
     imgUrl: {
       type: String,
-      value: '../imgs/introduce.jpg'
+      value: 'https://s3.ax1x.com/2021/03/09/63FF1O.jpg'
     },
     // 标题
     title: {

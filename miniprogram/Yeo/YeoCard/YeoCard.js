@@ -22,7 +22,7 @@ Component({
     // 右侧配图
     cardPic: {
       type: String,
-      value: '../imgs/introduce.jpg'
+      value: 'https://s3.ax1x.com/2021/03/09/63FF1O.jpg'
     },
     // （关注）按钮背景色
     btnBgColor: {

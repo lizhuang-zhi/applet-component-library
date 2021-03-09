@@ -6,10 +6,10 @@ Page({
    */
   data: {
     sliderArr: [
-      {picUrl: '../imgs/YHS-1.jpg',title: '怦然心动',description: '月亮将会奔你而来'},
-      {picUrl: '../imgs/YHS-2.jpg',title: '傲慢与偏见',description: '以灵魂唤醒灵魂'},
-      {picUrl: '../imgs/YHS-3.jfif',title: '老人与海',description: '老人与海的固执'},
-      {picUrl: '../imgs/YHS-4.jpg',title: '复仇者联盟',description: '以父之名论英雄'},
+      {picUrl: 'https://s3.ax1x.com/2021/03/09/63FNEn.jpg',title: '怦然心动',description: '月亮将会奔你而来'},
+      {picUrl: 'https://s3.ax1x.com/2021/03/09/63FUNq.jpg',title: '傲慢与偏见',description: '以灵魂唤醒灵魂'},
+      {picUrl: 'https://s3.ax1x.com/2021/03/09/63Fa40.jpg',title: '老人与海',description: '老人与海的固执'},
+      {picUrl: 'https://s3.ax1x.com/2021/03/09/63FDvF.jpg',title: '复仇者联盟',description: '以父之名论英雄'},
     ]
   },
 

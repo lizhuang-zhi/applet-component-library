@@ -110,7 +110,7 @@ Component({
     // 内容框标题字体下外边距
     itemContTitleBotMargin: {
       type: Number,
-      value: 15
+      value: 22
     },
     // 内容框用户头像大小
     itemUserPicSize: {

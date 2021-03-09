@@ -30,22 +30,22 @@ Component({
     // 中心控制显示图标
     mainPic: {
       type: String,
-      value: '../imgs/tools_main.png'
+      value: 'https://s3.ax1x.com/2021/03/09/63FQ9f.png'
     },
     // 上图标
     upPic: {
       type: String,
-      value: '../imgs/tools_index.png'
+      value: 'https://s3.ax1x.com/2021/03/09/63FK4P.png'
     },
     // 右上图标
     rightUpPic: {
       type: String,
-      value: '../imgs/tools_relax.png'
+      value: 'https://s3.ax1x.com/2021/03/09/63Fl38.png'
     },
     // 右图标
     rightPic: {
       type: String,
-      value: '../imgs/tools_cate.png'
+      value: 'https://s3.ax1x.com/2021/03/09/63FuNt.png'
     }
 
 

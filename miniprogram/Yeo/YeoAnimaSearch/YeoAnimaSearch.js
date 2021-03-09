@@ -15,7 +15,6 @@ Component({
       type: Array,
       value: null
     },
-
     // line长度
     lineWidth: {
       type: Number,

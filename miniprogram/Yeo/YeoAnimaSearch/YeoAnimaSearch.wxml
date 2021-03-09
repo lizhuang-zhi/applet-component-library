@@ -1,6 +1,6 @@
 <view class="yeo-anima-search" animation='{{spreadAndCancel}}' bindtap="spreadSearch">
   <view class="search-pic">
-    <image src="../imgs/anima_search.png"></image>
+    <image src="https://s3.ax1x.com/2021/03/09/63iI7n.png"></image>
   </view>
 
   <view class="input-words" animation="{{showInput}}">
@@ -8,7 +8,7 @@
   </view>
 
   <view class="cancel-pic" animation="{{showCancel}}" catchtap="cancelSearch">
-    <image src="../imgs/anima_cancel.png"></image>
+    <image src="https://s3.ax1x.com/2021/03/09/63iHhV.png"></image>
   </view>
 
   <!-- 实时搜索内容 -->

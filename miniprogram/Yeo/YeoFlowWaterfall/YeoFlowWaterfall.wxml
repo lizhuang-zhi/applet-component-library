@@ -11,7 +11,7 @@
             <view class="user-name" style="font-size: {{itemUserNameSize + 'rpx'}};letter-spacing: {{itemUserNameLetterSpacing + 'rpx'}};color: {{itemUserNameColor}};margin-left: {{itemUserNameMarginLeft + 'rpx'}};">{{item.userName}}</view>
           </view>
           <view class="loves">
-            <image class='loves-pic' src="{{item.isLove ? '../imgs/loves-num-select.png' : '../imgs/loves-num.png'}}" style="width: {{itemContLovesPicSize + 'rpx'}};height: {{itemContLovesPicSize + 'rpx'}};" catchtap="lovesEvent" data-item="{{item}}" data-index="{{index}}"></image>
+            <image class='loves-pic' src="{{item.isLove ? 'https://s3.ax1x.com/2021/03/09/63Fi9K.png' : 'https://s3.ax1x.com/2021/03/09/63FCh6.png'}}" style="width: {{itemContLovesPicSize + 'rpx'}};height: {{itemContLovesPicSize + 'rpx'}};" catchtap="lovesEvent" data-item="{{item}}" data-index="{{index}}"></image>
             <view class="loves-num" style="font-size: {{itemContLovesNumSize + 'rpx'}};color: {{itemContLovesNumColor}};margin-left: {{itemContLovesNumMarginLeft + 'rpx'}};">{{item.lovesNum}}</view>
           </view>
         </view>

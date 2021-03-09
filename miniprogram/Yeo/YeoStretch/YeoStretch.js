@@ -8,7 +8,7 @@ Component({
     // 闪动图标
     flickPic: {
       type: String,
-      value: '../imgs/闪电-1.png'
+      value: 'https://s3.ax1x.com/2021/03/09/63FgER.png'
     },
     // 展示框宽度(百分数或者具体数值)
     boxWidth: {

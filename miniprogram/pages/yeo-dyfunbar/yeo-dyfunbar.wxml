@@ -9,9 +9,9 @@
 
 <!-- 组合方式-1   icon/search/icon-->
 <yeo-dy-fun-bar>
-  <yeo-icon slot='dy-left' IconSize='40' iconUrl='../imgs/back-2.png'></yeo-icon>
+  <yeo-icon slot='dy-left' IconSize='40' iconUrl='https://s3.ax1x.com/2021/03/09/63i50s.png'></yeo-icon>
   <yeo-search slot='dy-center'></yeo-search>
-  <yeo-icon slot='dy-right' IconSize='40' iconUrl='../imgs/分类.png'></yeo-icon>
+  <yeo-icon slot='dy-right' IconSize='40' iconUrl='https://s3.ax1x.com/2021/03/09/63FBgU.png'></yeo-icon>
 </yeo-dy-fun-bar>
 
 <text>\n</text>
@@ -30,16 +30,16 @@
 <!-- 组合方式-3   hangSwing/search/icon-->
 <yeo-dy-fun-bar>
   <yeo-search slot='dy-center'></yeo-search>
-  <yeo-icon slot='dy-right' IconSize='40' iconUrl='../imgs/分类.png'></yeo-icon>
+  <yeo-icon slot='dy-right' IconSize='40' iconUrl='https://s3.ax1x.com/2021/03/09/63FBgU.png'></yeo-icon>
 </yeo-dy-fun-bar>
 
 <text>\n</text>
 
 <!-- 组合方式-4   hangSwing/自定义/icon-->
 <yeo-dy-fun-bar distractWay='between' sideDistance='30' bind:centerevent='centerTap'>
-  <yeo-icon slot='dy-left' IconSize='40' iconUrl='../imgs/back-2.png'></yeo-icon>
+  <yeo-icon slot='dy-left' IconSize='40' iconUrl='https://s3.ax1x.com/2021/03/09/63i50s.png'></yeo-icon>
   <view slot='dy-center'>我就是个所谓的标题</view>
-  <yeo-icon slot='dy-right' IconSize='40' iconUrl='../imgs/分类.png'></yeo-icon>
+  <yeo-icon slot='dy-right' IconSize='40' iconUrl='https://s3.ax1x.com/2021/03/09/63FBgU.png'></yeo-icon>
 </yeo-dy-fun-bar>
 
 

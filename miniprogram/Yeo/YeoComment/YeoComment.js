@@ -53,21 +53,21 @@ Component({
     commentArr: {
       type: Array,
       value: [{
-          userImg: '../imgs/introduce.jpg',
+          userImg: 'https://s3.ax1x.com/2021/03/09/63FF1O.jpg',
           headPendant: 7,
           userName: '人是非',
           content: '我说的话叫评论，我做的事叫论评，你看我评论还是论评都是非常的坦荡',
           time: '2021-2-21'
         },
         {
-          userImg: '../imgs/YHS-2.jpg',
+          userImg: 'https://s3.ax1x.com/2021/03/09/63FUNq.jpg',
           headPendant: 3,
           userName: '陌生的兄弟',
           content: '楼上说的对',
           time: '2021-02-22'
         },
         {
-          userImg: '../imgs/YHS-1.jpg',
+          userImg: 'https://s3.ax1x.com/2021/03/09/63FNEn.jpg',
           headPendant: 5,
           userName: '可爱的猫',
           content: '楼上说的有道理',
@@ -96,7 +96,7 @@ Component({
     sendMsg(content) {
       // 新建评论对象
       let newCont = {
-        userImg: '../imgs/introduce.jpg',
+        userImg: 'https://s3.ax1x.com/2021/03/09/63FNEn.jpg',
         headPendant: 0,
         userName: '荒野大道',
         content

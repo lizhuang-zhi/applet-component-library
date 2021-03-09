@@ -1,10 +1,10 @@
 <view class="box">
   <view class="inner">
-    <yeo-message-card headPendant='0' userImg='../imgs/YHS-2.jpg'></yeo-message-card>
-    <yeo-message-card headPendant='3' userImg='../imgs/YHS-3.jfif' content='文件来对本页面的窗口表现进行配置。'></yeo-message-card>
-    <yeo-message-card headPendant='4' userImg='../imgs/YHS-2.jpg' content='在支持云调用的接口文档中，会分别列出 HTTPS 调用的文档及云调用的文档，云调用文档同 HTTPS 调用文档一样包含请求参数、返回值及示例。'></yeo-message-card>
+    <yeo-message-card headPendant='0' userImg='../../images/article.png'></yeo-message-card>
+    <yeo-message-card headPendant='3' userImg='https://s3.ax1x.com/2021/03/09/63FUNq.jpg' content='文件来对本页面的窗口表现进行配置。'></yeo-message-card>
+    <yeo-message-card headPendant='4' userImg='https://s3.ax1x.com/2021/03/09/63FNEn.jpg' content='在支持云调用的接口文档中，会分别列出 HTTPS 调用的文档及云调用的文档，云调用文档同 HTTPS 调用文档一样包含请求参数、返回值及示例。'></yeo-message-card>
     <yeo-message-card headPendant='5' content='小程序根目录下的 app.json 文件用来对微信小程序进行全局配置'></yeo-message-card>
-    <yeo-message-card headPendant='7' userImg='../imgs/YHS-1.jpg'></yeo-message-card>
+    <yeo-message-card headPendant='7' userImg='../../images/computer.png'></yeo-message-card>
     <yeo-message-card headPendant='8' content='接口获得临时登录凭证 code 后传到开发者服务器'></yeo-message-card>
   </view>
 </view>

@@ -12,7 +12,7 @@ Component({
     // 图片地址
     picUrl: {
       type: String,
-      value: '../imgs/qq.png'
+      value: 'https://s3.ax1x.com/2021/03/09/63FkcD.png'
     },
     // 图片大小
     picSize: {
