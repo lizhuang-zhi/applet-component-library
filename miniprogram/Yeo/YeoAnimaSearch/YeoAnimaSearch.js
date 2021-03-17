@@ -54,6 +54,11 @@ Component({
     inputWidth: {
       type: Number,
       value: 90
+    },
+    // 搜索框背景颜色
+    boxBgColor: {
+      type: String,
+      value: '#FFFFFF'
     }
     
     

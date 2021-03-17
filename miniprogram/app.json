@@ -27,6 +27,33 @@
     "pages/yeo-label-bar/yeo-label-bar",
     "pages/yeo-flow-waterfall/yeo-flow-waterfall"
   ],
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/yeo-loading/yeo-loading",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index-select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/yeo-card/yeo-card",
+        "iconPath": "images/space.png",
+        "selectedIconPath": "images/space-select.png",
+        "text": "空间"
+      },
+      {
+        "pagePath": "pages/yeo-icon/yeo-icon",
+        "iconPath": "images/letter.png",
+        "selectedIconPath": "images/letter-select.png",
+        "text": "信件"
+      }
+    ]
+  },
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",

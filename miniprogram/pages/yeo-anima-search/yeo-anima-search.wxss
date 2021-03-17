@@ -1,3 +1,6 @@
+page {
+  background: rgb(170, 163, 163);
+}
 yeo-anima-search {
   margin: 40rpx 0 0 40rpx;
 }

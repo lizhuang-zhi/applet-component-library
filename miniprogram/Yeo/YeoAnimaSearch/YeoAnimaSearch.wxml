@@ -1,4 +1,4 @@
-<view class="yeo-anima-search" animation='{{spreadAndCancel}}' bindtap="spreadSearch">
+<view class="yeo-anima-search" animation='{{spreadAndCancel}}' bindtap="spreadSearch" style="background: {{boxBgColor}};">
   <view class="search-pic">
     <image src="https://s3.ax1x.com/2021/03/09/63iI7n.png"></image>
   </view>

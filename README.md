@@ -250,10 +250,13 @@ index.wxml
 | 属性名           | 类型    | 默认值           | 说明                              |
 | ---------------- | :------ | ---------------- | --------------------------------- |
 | dataArr          | Array   | 轮播图背景图数组 | 背景图数组数据                    |
+| swiperHeight     | Number  | 630              | 轮播框高度                        |
 | swiperPaddingTop | Number  | 0                | 轮播框内部上边距                  |
 | swiperPaddingBot | Number  | 0                | 轮播框内部下边距                  |
 | swiperMarginTop  | Number  | 60               | 轮播框外部上边距                  |
 | swiperMarginBot  | Number  | 30               | 轮播框外部下边距                  |
+| itemWidth        | Number  | 420              | Item宽度                          |
+| itemHeight       | Number  | 410              | Item高度                          |
 | bordRadius       | Number  | 30               | Item圆角大小                      |
 | bgSize           | String  | cover            | Item背景图横纵比（contain、cover) |
 | autoPlay         | Boolean | true             | 是否自动轮播                      |
@@ -823,18 +826,19 @@ index.wxml
 
 ### 属性说明
 
-| 属性名         | 类型   | 默认值 | 说明                   |
-| -------------- | :----- | ------ | ---------------------- |
-| bindvalue      | String | null   | 搜索输入值             |
-| searBackArr    | Array  | null   | 返回搜索结果数组       |
-| lineWidth      | Number | 330    | line长度               |
-| titFont        | Number | 28     | 搜索内容标题大小       |
-| descFont       | Number | 23     | 搜索内容描述大小       |
-| horizonWidth   | Number | 200    | 横向展开宽度（px）     |
-| perpendHeight  | Number | 260    | 垂直展开高度（px）     |
-| cancelMovRight | Number | 160    | 取消叉图右移距离（px） |
-| inputMovRight  | Number | 40     | 输入框右移距离（px）   |
-| inputWidth     | Number | 90     | 输入框宽度（px）       |
+| 属性名         | 类型   | 默认值   | 说明                   |
+| -------------- | :----- | -------- | ---------------------- |
+| bindvalue      | String | null     | 搜索输入值             |
+| searBackArr    | Array  | null     | 返回搜索结果数组       |
+| lineWidth      | Number | 330      | line长度               |
+| titFont        | Number | 28       | 搜索内容标题大小       |
+| descFont       | Number | 23       | 搜索内容描述大小       |
+| horizonWidth   | Number | 200      | 横向展开宽度（px）     |
+| perpendHeight  | Number | 260      | 垂直展开高度（px）     |
+| cancelMovRight | Number | 160      | 取消叉图右移距离（px） |
+| inputMovRight  | Number | 40       | 输入框右移距离（px）   |
+| inputWidth     | Number | 90       | 输入框宽度（px）       |
+| boxBgColor     | String | \#FFFFFF | 搜索框背景颜色         |
 
 ### 事件
 

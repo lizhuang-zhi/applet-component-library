@@ -1,6 +1,4 @@
 page {
-  background: rgb(235,235,235);
-
   /* 搜索图片大小 */
   --search-pic: 47rpx;
   /* 取消搜索图片大小 */
@@ -14,8 +12,6 @@ page {
   width: 110rpx;
   height: 110rpx;
   border-radius: 50rpx;
-
-  background: #FFFFFF;
 }
 .yeo-anima-search .input-words {
   margin: 0 15rpx 0 20rpx;

@@ -5,7 +5,7 @@
 <view>我就是个摆设</view>
 <view style="height: 500rpx;">
   <view wx:for="{{arr}}" wx:key='index'>
-    <view style="height: 100rpx;width: 200rpx;">
+    <view>  
       {{item}}
     </view>
   </view>

@@ -27,6 +27,11 @@ Component({
         }
       ]
     },
+    // 轮播框高度
+    swiperHeight: {
+      type: Number,
+      value: 630
+    },
     // 轮播框内部上边距
     swiperPaddingTop: {
       type: Number,
@@ -46,6 +51,16 @@ Component({
     swiperMarginBot: {
       type: Number,
       value: 30
+    },
+    // Item宽度
+    itemWidth: {
+      type: Number,
+      value: 420
+    },
+    // Item高度
+    itemHeight: {
+      type: Number,
+      value: 410
     },
     // Item圆角大小
     bordRadius: {

@@ -1,9 +1,4 @@
-.yeo-swiper {
-  height: 630rpx;
-}
 .yeo-swiper .yeo-swiper-item {
-  width: 420rpx;
-  height: 410rpx;
   margin-left: 80rpx;
   margin-top: 100rpx;
 }
