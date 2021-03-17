@@ -1,6 +1,5 @@
 .yeo-swiper .yeo-swiper-item {
   margin-left: 80rpx;
-  margin-top: 100rpx;
 }
 
 /* 内部样式 */

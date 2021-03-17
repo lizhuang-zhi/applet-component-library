@@ -3,7 +3,7 @@
   style="height: {{swiperHeight + 'rpx'}};margin-top: {{swiperMarginTop + 'rpx'}};margin-bottom: {{swiperMarginBot + 'rpx'}};padding-top: {{swiperPaddingTop + 'rpx'}};padding-bottom: {{swiperPaddingBot + 'rpx'}};">
   <swiper-item bindtap="tapItem" wx:for="{{dataArr}}" wx:key='index' data-index="{{index}}">
     <view class="yeo-swiper-item {{swiperIndex == index ? 'active' : 'normal'}}"
-      style="width: {{itemWidth + 'rpx'}};height: {{itemHeight + 'rpx'}};background: url({{item.bgUrl}});background-size: {{bgSize}};border-radius: {{bordRadius + 'rpx'}};">
+      style="width: {{itemWidth + 'rpx'}};height: {{itemHeight + 'rpx'}};margin-top: {{itemMarginTop + 'rpx'}};background: url({{item.bgUrl}});background-size: {{bgSize}};border-radius: {{bordRadius + 'rpx'}};">
 
       <view class="yeo-swiper-item-v1">
         <view class="star" bindtap="starTap" data-index="{{index}}" style="width: {{starBoxWidth + 'rpx'}};height: {{starBoxHeight + 'rpx'}};border-radius: {{starBoxBordRadius + 'rpx'}};background: {{starBoxBgColor}};top: {{starTopWithOutBox + 'rpx'}};right: {{starRightWithOutBox + 'rpx'}};">

@@ -257,6 +257,7 @@ index.wxml
 | swiperMarginBot  | Number  | 30               | 轮播框外部下边距                  |
 | itemWidth        | Number  | 420              | Item宽度                          |
 | itemHeight       | Number  | 410              | Item高度                          |
+| itemMarginTop    | Number  | 100              | Item的顶部外边距                  |
 | bordRadius       | Number  | 30               | Item圆角大小                      |
 | bgSize           | String  | cover            | Item背景图横纵比（contain、cover) |
 | autoPlay         | Boolean | true             | 是否自动轮播                      |

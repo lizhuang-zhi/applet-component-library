@@ -62,6 +62,11 @@ Component({
       type: Number,
       value: 410
     },
+    // Item的顶部外边距
+    itemMarginTop: {
+      type: Number,
+      value: 100
+    },
     // Item圆角大小
     bordRadius: {
       type: Number,
