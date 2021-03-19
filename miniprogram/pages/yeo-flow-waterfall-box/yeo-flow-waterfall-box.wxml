@@ -1,0 +1,7 @@
+<yeo-flow-waterfall-box>
+  <yeo-text-box content='我是一个人在游走的时候'></yeo-text-box>
+  <yeo-text-box></yeo-text-box>
+  <yeo-text-box content='面对人生，我们有许多的选择，请加油！'></yeo-text-box>
+  <yeo-text-box content='时间在走着，但是我想要停下'></yeo-text-box>
+  <yeo-text-box></yeo-text-box>
+</yeo-flow-waterfall-box>

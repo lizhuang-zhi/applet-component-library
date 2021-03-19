@@ -31,7 +31,13 @@ app.json
     "yeo-comment": "/Yeo/YeoComment/YeoComment",
     "yeo-message-card": "/Yeo/YeoMessageCard/YeoMessageCard",
     "yeo-loading": "/Yeo/YeoLoading/YeoLoading",
-    "yeo-swiper": "/Yeo/YeoSwiper/YeoSwiper"
+    "yeo-swiper": "/Yeo/YeoSwiper/YeoSwiper",
+    "yeo-label-bar": "/Yeo/YeoLabelBar/YeoLabelBar",
+    "yeo-tab-change": "/Yeo/YeoTabChange/YeoTabChange",
+    "yeo-flow-waterfall": "/Yeo/YeoFlowWaterfall/YeoFlowWaterfall",
+    "yeo-diary-box": "/Yeo/YeoDiaryBox/YeoDiaryBox",
+    "yeo-text-box": "/Yeo/YeoTextBox/YeoTextBox",
+    "yeo-flow-waterfall-box": "/Yeo/YeoFlowWaterfallBox/YeoFlowWaterfallBox"
   }
 ```
 
@@ -339,26 +345,31 @@ tab切换组件，为开发者提供在单页面的切换功能，开发者可�
 
 ### 属性说明
 
-| 属性名            | 类型   | 默认值                           | 说明                    |
-| ----------------- | :----- | -------------------------------- | ----------------------- |
-| titleArr          | Array  | ["首页", "商城", "动态", "我的"] | 传入标题数组            |
-| currentIndex      | Number | 0                                | 当前tab索引             |
-| tabWidth          | String | 100%                             | tab框宽度               |
-| tabJustiContent   | String | space-around                     | tab布局方式             |
-| tabMargin         | String | 0 0 20rpx 0                      | tab外边距               |
-| fontSize          | Number | 32                               | 字体大小                |
-| fontColor         | String | \#CBCBCB                         | 字体颜色(未选中时)      |
-| fontSelectColor   | String | \#FCFCFC                         | 字体tab选中时颜色       |
-| fontWeight        | String | bold                             | 字体粗细                |
-| fontLetterSpacing | Number | 5                                | 词组字间距              |
-| fontZIndex        | Number | 10                               | 字体层级                |
-| lineWidth         | Number | 80                               | 下划线宽度              |
-| lineHeight        | Number | 20                               | 下划线高度              |
-| lineColor         | String | \#EC625C                         | 下划线颜色              |
-| lineBordRadius    | Number | 20                               | 下滑线圆角              |
-| lineBottom        | Number | -5                               | 下滑线距离tab框底部距离 |
-| lineZIndex        | Number | 1                                | 下划线层级              |
-| lineLeft          | Number | -2                               | 下划线左距离            |
+| 属性名            | 类型    | 默认值                           | 说明                    |
+| ----------------- | :------ | -------------------------------- | ----------------------- |
+| isFixed           | Boolean | false                            | 是否固定位置            |
+| fixedTop          | Number  | 0                                | 固定位置top值           |
+| boxPaddingTop     | Number  | 60                               | 组件框顶部内边距        |
+| bgColor           | String  | #eeeeee                          | 背景色                  |
+| zIndex            | Number  | 199                              | 组件框层级              |
+| titleArr          | Array   | ["首页", "商城", "动态", "我的"] | 传入标题数组            |
+| currentIndex      | Number  | 0                                | 当前tab索引             |
+| tabWidth          | String  | 100%                             | tab框宽度               |
+| tabJustiContent   | String  | space-around                     | tab布局方式             |
+| tabMargin         | String  | 0 0 20rpx 0                      | tab外边距               |
+| fontSize          | Number  | 32                               | 字体大小                |
+| fontColor         | String  | \#CBCBCB                         | 字体颜色(未选中时)      |
+| fontSelectColor   | String  | \#FCFCFC                         | 字体tab选中时颜色       |
+| fontWeight        | String  | bold                             | 字体粗细                |
+| fontLetterSpacing | Number  | 5                                | 词组字间距              |
+| fontZIndex        | Number  | 10                               | 字体层级                |
+| lineWidth         | Number  | 80                               | 下划线宽度              |
+| lineHeight        | Number  | 20                               | 下划线高度              |
+| lineColor         | String  | \#EC625C                         | 下划线颜色              |
+| lineBordRadius    | Number  | 20                               | 下滑线圆角              |
+| lineBottom        | Number  | -5                               | 下滑线距离tab框底部距离 |
+| lineZIndex        | Number  | 1                                | 下划线层级              |
+| lineLeft          | Number  | -2                               | 下划线左距离            |
 
 ### 事件
 
@@ -1281,7 +1292,7 @@ index.wxml
 </yeo-tab-bar>
 ```
 
-## yeo-flow-waterfall（流式布局）
+## yeo-flow-waterfall（瀑布流布局）
 
 ### 展示效果
 
@@ -1328,6 +1339,59 @@ index.wxml
 
 ```html
 <yeo-flow-waterfall></yeo-flow-waterfall>
+```
+
+## yeo-diary-box（日记框）
+
+### 展示效果
+
+![](https://s3.ax1x.com/2021/03/19/6RWrj0.png)
+
+### 描述
+
+日记框，开发者可自由更改日记框大小（外层加样式）、日记框内文字颜色与大小
+
+### 属性说明
+
+| 属性名               | 类型   | 默认值                                                       | 说明           |
+| -------------------- | :----- | ------------------------------------------------------------ | -------------- |
+| diaryTit             | String | 日记男孩                                                     | 标题           |
+| diaryContent         | String | 我们总是打扫房间思想水利电力谁都得四我看看水电费计息撒旦法大反馈了山东中路上的方块第三方 | 日记内容       |
+| diaryDate            | String | 3月5日                                                       | 日记时间       |
+| fontColor            | String | #293939                                                      | 字体颜色       |
+| bgColor              | String | \#f6f6f6                                                     | 背景色         |
+| bordRadius           | Number | 25                                                           | 外框圆角       |
+| padding              | Number | 30                                                           | 内边距         |
+| marginBottom         | Number | 20                                                           | 外框底部外边距 |
+| titFontSize          | Number | 35                                                           | 标题字体大小   |
+| titFontWeight        | String | bold                                                         | 标题字体粗细   |
+| titPaddingTop        | Number | 15                                                           | 标题顶部内边距 |
+| titMarginBottom      | Number | 20                                                           | 标题底部外边距 |
+| contentLetterSpacing | Number | 2                                                            | 内容字间距     |
+| contentFontSize      | Number | 27                                                           | 内容字体大小   |
+| contentMarginBottom  | Number | 25                                                           | 内容底部外边距 |
+| dateFontSize         | Number | 30                                                           | 日期字体大小   |
+
+### 事件
+
+| 事件名          | 事件描述           | 组件返回页面数据 | 返回数据类型 | 返回数据说明                     |
+| --------------- | ------------------ | ---------------- | ------------ | -------------------------------- |
+| bind:clickevent | 监听点击日记框事件 | info             | Object       | 包含日记标题、日记内容、日记时间 |
+
+### 使用示例
+
+index.wxml 与 index.wxss
+
+```html
+<view class="box">
+  <yeo-diary-box></yeo-diary-box>
+</view>
+```
+
+```css
+.box {
+  margin: 30rpx 20rpx 0;
+}
 ```
 
 ## yeo-label-box（标签框）

@@ -1,0 +1,3 @@
+<view class="box">
+  <yeo-diary-box></yeo-diary-box>
+</view>
