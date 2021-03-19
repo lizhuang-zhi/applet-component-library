@@ -1292,6 +1292,48 @@ index.wxml
 </yeo-tab-bar>
 ```
 
+## yeo-flow-waterfall-box（瀑布流布局外框架）
+
+### 展示效果
+
+![](https://s4.ax1x.com/2021/03/19/6fAkpF.png)
+
+### 描述
+
+瀑布流布局的外框架，内容由开发者自行定义
+
+### 插槽
+
+```html
+<yeo-flow-waterfall-box>
+  <yeo-text-box></yeo-text-box>
+  <yeo-text-box></yeo-text-box>
+</yeo-flow-waterfall-box>
+```
+
+### 使用示例
+
+index.wxml
+
+```html
+<yeo-flow-waterfall-box>
+  <yeo-text-box content='我是一个人在游走的时候'></yeo-text-box>
+  <yeo-text-box></yeo-text-box>
+  <yeo-text-box content='面对人生，我们有许多的选择，请加油！'></yeo-text-box>
+  <yeo-text-box content='时间在走着，但是我想要停下'></yeo-text-box>
+  <yeo-text-box></yeo-text-box>
+</yeo-flow-waterfall-box>
+```
+
+index.wxss
+
+```css
+yeo-text-box {
+  display: inline-block;
+  margin-bottom: 20rpx;
+}
+```
+
 ## yeo-flow-waterfall（瀑布流布局）
 
 ### 展示效果
@@ -1339,6 +1381,58 @@ index.wxml
 
 ```html
 <yeo-flow-waterfall></yeo-flow-waterfall>
+```
+
+## yeo-text-box（文本框）
+
+### 展示效果
+
+![](https://s4.ax1x.com/2021/03/19/6fA7u9.png)
+
+### 描述
+
+日记框，开发者可自由更改文本框大小（外层加样式）、文本框内文字颜色与大小
+
+### 属性说明
+
+| 属性名                      | 类型   | 默认值                                                       | 说明               |
+| --------------------------- | :----- | ------------------------------------------------------------ | ------------------ |
+| content                     | String | 从昨天开始，我要好好学习，天天向上，嘻嘻，因为我是一个爱学习的Man | 内容               |
+| userName                    | String | 胡辣汤的朋友                                                 | 用户名             |
+| commentNum                  | Number | 265                                                          | 评论数量           |
+| bgColor                     | String | #f6f6f6                                                      | 背景色             |
+| padding                     | Number | 28                                                           | 内边距             |
+| boxBordRadius               | Number | 25                                                           | 外框圆角           |
+| contMarginBottom            | Number | 25                                                           | 内容底部外边距     |
+| contLetterSpacing           | Number | 2                                                            | 内容字间距         |
+| contFontSize                | Number | 28                                                           | 内容文字大小       |
+| contLineHeight              | Number | 1.55                                                         | 内容行高           |
+| botBarJustifyContent        | String | space-between                                                | 底部栏布局方式     |
+| botBarFontColor             | String | #767676                                                      | 底部栏字体颜色     |
+| botBarUserNameLetterSpacing | Number | 1                                                            | 底部栏用户名字间距 |
+| botBarUserNameFontSize      | Number | 26                                                           | 底部栏字体大小     |
+| picSize                     | Number | 20                                                           | 箭头图标大小       |
+
+### 事件
+
+| 事件名          | 事件描述           | 组件返回页面数据 | 返回数据类型 | 返回数据说明                       |
+| --------------- | ------------------ | ---------------- | ------------ | ---------------------------------- |
+| bind:clickevent | 监听点击文本框事件 | info             | Object       | 包含用户名、文本内容、文本评论数量 |
+
+### 使用示例
+
+index.wxml 与 index.wxss
+
+```html
+<view class="box">
+  <yeo-text-box></yeo-text-box>
+</view>
+```
+
+```css
+.box {
+  margin: 30rpx 200rpx 0;
+}
 ```
 
 ## yeo-diary-box（日记框）
