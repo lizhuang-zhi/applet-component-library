@@ -1,0 +1,12 @@
+.yeo-stamp-text .stamp-top {
+  display: flex;
+  justify-content: space-between;
+}
+.yeo-stamp-text .stamp-top .left-pic image{
+  width: 100%;
+  height: 100%;
+}
+.yeo-stamp-text .stamp-top .right-pic image{
+  width: 100%;
+  height: 100%;
+}

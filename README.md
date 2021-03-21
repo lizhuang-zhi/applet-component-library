@@ -37,7 +37,8 @@ app.json
     "yeo-flow-waterfall": "/Yeo/YeoFlowWaterfall/YeoFlowWaterfall",
     "yeo-diary-box": "/Yeo/YeoDiaryBox/YeoDiaryBox",
     "yeo-text-box": "/Yeo/YeoTextBox/YeoTextBox",
-    "yeo-flow-waterfall-box": "/Yeo/YeoFlowWaterfallBox/YeoFlowWaterfallBox"
+    "yeo-flow-waterfall-box": "/Yeo/YeoFlowWaterfallBox/YeoFlowWaterfallBox",
+    "yeo-stamp-text": "/Yeo/YeoStampText/YeoStampText"
   }
 ```
 
@@ -1485,6 +1486,64 @@ index.wxml 与 index.wxss
 ```css
 .box {
   margin: 30rpx 20rpx 0;
+}
+```
+
+## yeo-stamp-text（邮票文本框）
+
+### 展示效果
+
+![](https://z3.ax1x.com/2021/03/20/64ZXCt.png)
+
+### 描述
+
+邮票框，开发者可自行调整邮票图片、信件内容、用户名与时间
+
+### 属性说明
+
+| 属性名               | 类型   | 默认值                                             | 说明                   |
+| -------------------- | :----- | -------------------------------------------------- | ---------------------- |
+| boxWidth             | Number | 300                                                | 外框宽度               |
+| boxPadding           | String | #ffffff                                            | 内边距                 |
+| boxBordRadius        | Number | 10                                                 | 外框圆角               |
+| boxShadow            | String | 0 0 10rpx #bbbbbb                                  | 外框阴影               |
+| fontFamily           | String | 'Courier New', Courier, monospace                  | 字体                   |
+| stampTopPadding      | String | 0 0 30rpx                                          | 顶部邮票栏内边距       |
+| stampTopLeftPic      | String | https://s4.ax1x.com/2021/03/20/6hQpOf.png          | 顶部邮票栏左图         |
+| stampTopLeftPicSize  | Number | 50                                                 | 顶部邮票栏左图大小     |
+| stampPic             | String | https://s4.ax1x.com/2021/03/20/6h1kzn.png          | 顶部邮票栏邮票图片地址 |
+| stampPicWidthSize    | Number | 90                                                 | 顶部邮票栏邮票图片宽度 |
+| stampPicHeightSize   | Number | 120                                                | 顶部邮票栏邮票图片高度 |
+| contentFontColor     | String | \#4B4B4B                                           | 内容框字体颜色         |
+| contentFontSize      | Number | 26                                                 | 内容框字体大小         |
+| contentPadding       | String | 0 0 60rpx                                          | 内容框内边距           |
+| contentLineHeight    | Number | 1.6                                                | 内容框行高             |
+| contentLetterSpacing | Number | 1                                                  | 内容框字间距           |
+| infoNameFontSize     | Number | 30                                                 | 信息栏用户名字体大小   |
+| infoNamePadding      | String | 0 0 50rpx                                          | 信息框用户名内边距     |
+| infoNameFontColor    | String | #24314C                                            | 信息框用户名字体颜色   |
+| infoNameFontWeight   | String | bold                                               | 信息框用户名字体粗细   |
+| content              | String | 这是一个关于邮票的文本框，用户可以自定义邮票与内容 | 内容                   |
+| name                 | String | 幸运小木头                                         | 用户名                 |
+| date                 | String | 今天上午 11:32                                     | 时间                   |
+
+### 事件
+
+| 事件名          | 事件描述           | 组件返回页面数据 | 返回数据类型 | 返回数据说明                       |
+| --------------- | ------------------ | ---------------- | ------------ | ---------------------------------- |
+| bind:clickevent | 监听点击邮票框事件 | info             | Object       | 包含邮票用户名、日记内容、日记时间 |
+
+### 使用示例
+
+index.wxml 与 index.wxss
+
+```html
+<yeo-stamp-text></yeo-stamp-text>
+```
+
+```css
+page {
+  background: #f6f6f6;
 }
 ```
 

@@ -1,23 +1,11 @@
-// miniprogram/pages/yeo-horizon-slider/yeo-horizon-slider.js
+// miniprogram/pages/yeo-stamp-text/yeo-stamp-text.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    sliderArr: [
-      {picUrl: 'https://s3.ax1x.com/2021/03/09/63FNEn.jpg',title: '怦然心动',description: '月亮将会奔你而来'},
-      {picUrl: 'https://s3.ax1x.com/2021/03/09/63FUNq.jpg',title: '傲慢与偏见',description: '以灵魂唤醒灵魂'},
-      {picUrl: 'https://s1.ax1x.com/2020/08/02/aYQfFx.jpg',title: '老人与海',description: '老人与海的固执'},
-      {picUrl: 'https://s1.ax1x.com/2020/08/02/aYlncF.jpg',title: '复仇者联盟',description: '以父之名论英雄'},
-    ]
-  },
 
-
-  // 点击事件
-  clickObj(e) {
-    // 监听触发目标
-    console.log(e.detail.clickObj);
   },
 
   /**

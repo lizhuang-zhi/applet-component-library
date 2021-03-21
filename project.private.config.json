@@ -185,6 +185,11 @@
           "pathName": "pages/yeo-flow-waterfall-box/yeo-flow-waterfall-box",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "yeo-邮票文本框",
+          "pathName": "pages/yeo-stamp-text/yeo-stamp-text",
+          "scene": null
         }
       ]
     }
