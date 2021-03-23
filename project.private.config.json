@@ -189,6 +189,19 @@
         {
           "name": "yeo-邮票文本框",
           "pathName": "pages/yeo-stamp-text/yeo-stamp-text",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-日记内容",
+          "pathName": "pages/yeo-diary-content/yeo-diary-content",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-文本内容",
+          "pathName": "pages/yeo-text-content/yeo-text-content",
+          "query": "",
           "scene": null
         }
       ]

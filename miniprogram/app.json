@@ -29,7 +29,9 @@
     "pages/yeo-diary-box/yeo-diary-box",
     "pages/yeo-text-box/yeo-text-box",
     "pages/yeo-flow-waterfall-box/yeo-flow-waterfall-box",
-    "pages/yeo-stamp-text/yeo-stamp-text"
+    "pages/yeo-stamp-text/yeo-stamp-text",
+    "pages/yeo-diary-content/yeo-diary-content",
+    "pages/yeo-text-content/yeo-text-content"
   ],
   "tabBar": {
     "custom": true,
@@ -103,6 +105,8 @@
     "yeo-diary-box": "/Yeo/YeoDiaryBox/YeoDiaryBox",
     "yeo-text-box": "/Yeo/YeoTextBox/YeoTextBox",
     "yeo-flow-waterfall-box": "/Yeo/YeoFlowWaterfallBox/YeoFlowWaterfallBox",
-    "yeo-stamp-text": "/Yeo/YeoStampText/YeoStampText"
+    "yeo-stamp-text": "/Yeo/YeoStampText/YeoStampText",
+    "yeo-diary-content": "/Yeo/YeoDiaryContent/YeoDiaryContent",
+    "yeo-text-content": "/Yeo/YeoTextContent/YeoTextContent"
   }
 }

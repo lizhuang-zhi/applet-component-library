@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    tabArray: ['Yeo', '我的', '动态']
+    tabArray: ['Yeo', '我的', '动态'],
+    maxHeight: 500
   },
 
   // 初始化tab页面高度
@@ -45,7 +46,7 @@ Page({
    */
   onLoad: function (options) {
     // 初始化tab高度
-    this.TabInit();
+    // this.TabInit();
 
   },
 

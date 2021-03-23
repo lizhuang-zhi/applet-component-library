@@ -410,18 +410,20 @@ index.wxss
 
 ### 属性说明
 
-| 属性名                     | 类型         | 默认值                           | 说明                                 |
-| -------------------------- | :----------- | -------------------------------- | ------------------------------------ |
-| tabOutMargin               | String       | 40rpx 0 0 0                      | tab外框外边距                        |
-| tabContHeight              | Number       | 70                               | tab内容框高度                        |
-| tabContColor               | String       | \#F6F6F6                         | tab内容框背景颜色                    |
-| tabMargin                  | String       | 20rpx 10rpx 0                    | tab内容框外边距                      |
-| tabBordRadius              | Number       | 10                               | tab内容框圆角                        |
-| *以下为yeo-tab-change部分* | ------------ | -------------------------------- | ------------------------------------ |
-| tabArr                     | Array        | ["Yeo", "听听", "推荐"]          | TabChange数组                        |
-| tabChangeWidth             | String       | 100%                             | TabChange框宽度                      |
-| tabChangeJustiContent      | String       | space-around                     | TabChange布局方式                    |
-| currentTab                 | Number       | 0                                | 初始化显示tab页面的索引              |
+| 属性名                     | 类型         | 默认值                           | 说明                                                         |
+| -------------------------- | :----------- | -------------------------------- | ------------------------------------------------------------ |
+| tabOutMargin               | String       | 40rpx 0 0 0                      | tab外框外边距                                                |
+| tabContHeight              | Number       | 270                              | ttab内容高度                                                 |
+| tabContColor               | String       | \#F6F6F6                         | tab内容框背景颜色                                            |
+| tabMargin                  | String       | 20rpx 10rpx 0                    | tab内容框外边距                                              |
+| tabBordRadius              | Number       | 10                               | tab内容框圆角                                                |
+| tabIsScrollY               | Boolean      | false                            | tab内容是否可垂直滚动                                        |
+| tabScrollHeight            | Number       | 200                              | tab内容滚动的可视高度（当tab内容高度 > 此高度时，可看到滚动效果） |
+| *以下为yeo-tab-change部分* | ------------ | -------------------------------- | ------------------------------------                         |
+| tabArr                     | Array        | ["Yeo", "听听", "推荐"]          | TabChange数组                                                |
+| tabChangeWidth             | String       | 100%                             | TabChange框宽度                                              |
+| tabChangeJustiContent      | String       | space-around                     | TabChange布局方式                                            |
+| currentTab                 | Number       | 0                                | 初始化显示tab页面的索引                                      |
 
 ==其余没有写到的关于yeo-tab-change属性，都是可直接调用的同名属性！！==
 
@@ -1401,18 +1403,20 @@ index.wxml
 | content                     | String | 从昨天开始，我要好好学习，天天向上，嘻嘻，因为我是一个爱学习的Man | 内容               |
 | userName                    | String | 胡辣汤的朋友                                                 | 用户名             |
 | commentNum                  | Number | 265                                                          | 评论数量           |
-| bgColor                     | String | #f6f6f6                                                      | 背景色             |
-| padding                     | Number | 28                                                           | 内边距             |
 | boxBordRadius               | Number | 25                                                           | 外框圆角           |
 | contMarginBottom            | Number | 25                                                           | 内容底部外边距     |
 | contLetterSpacing           | Number | 2                                                            | 内容字间距         |
 | contFontSize                | Number | 28                                                           | 内容文字大小       |
 | contLineHeight              | Number | 1.55                                                         | 内容行高           |
+| contentPadding              | String | 28rpx 28rpx 13rpx                                            | 内容内边距         |
+| contentBgColor              | String | #F9F9F9                                                      | 内容背景色         |
 | botBarJustifyContent        | String | space-between                                                | 底部栏布局方式     |
 | botBarFontColor             | String | #767676                                                      | 底部栏字体颜色     |
 | botBarUserNameLetterSpacing | Number | 1                                                            | 底部栏用户名字间距 |
 | botBarUserNameFontSize      | Number | 26                                                           | 底部栏字体大小     |
 | picSize                     | Number | 20                                                           | 箭头图标大小       |
+| botBarPadding               | String | 13rpx 28rpx 28rpx                                            | 底部栏内边距       |
+| botBarBgColor               | String | #F3F6F6                                                      | 底部栏背景色       |
 
 ### 事件
 

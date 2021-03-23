@@ -6,6 +6,23 @@
     <view>{{tabArray[0]}}</view>
     <view>{{tabArray[0]}}</view>
     <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>{{tabArray[0]}}</view>
+    <view>-------------</view>
+    <view>{{tabArray[0]}}</view>
   </view>
   <view slot='{{tabArray[1]}}' class="tab-2">
     <view>{{tabArray[1]}}</view>
