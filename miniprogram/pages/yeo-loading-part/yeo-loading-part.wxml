@@ -1,0 +1,4 @@
+<yeo-loading-part pull="{{pull}}" push="{{push}}" bindrefresh="refresh" bindtoload="toload">
+  <view>下拉刷新试试</view>
+  <view>上拉加载更多</view>
+</yeo-loading-part>
