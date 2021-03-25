@@ -26,6 +26,16 @@ Component({
 		gifWidth: {
 			type: Number,
 			value: 140
+		},
+		// 组件距离顶部高度（绝对定位）
+		top: {
+			type: Number,
+			value: 0
+		},
+		// 上拉加载的外边距
+		pushLoadMargin: {
+			type: String,
+			value: '0 0 200rpx 0;'
 		}
 	},
 	pageLifetimes: {

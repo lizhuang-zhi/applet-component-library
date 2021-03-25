@@ -207,6 +207,12 @@
         {
           "name": "yeo-局部加载（顶部与底部）",
           "pathName": "pages/yeo-loading-part/yeo-loading-part",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-消息通知",
+          "pathName": "pages/yeo-message-notification/yeo-message-notification",
           "scene": null
         }
       ]

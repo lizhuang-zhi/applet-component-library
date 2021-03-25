@@ -1,0 +1,7 @@
+<view class="box">
+  <yeo-message-notification></yeo-message-notification>
+  <yeo-message-notification></yeo-message-notification>
+  <yeo-message-notification></yeo-message-notification>
+  <yeo-message-notification></yeo-message-notification>
+  <yeo-message-notification></yeo-message-notification>
+</view>
