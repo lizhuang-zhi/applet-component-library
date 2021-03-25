@@ -213,6 +213,12 @@
         {
           "name": "yeo-消息通知",
           "pathName": "pages/yeo-message-notification/yeo-message-notification",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-日记框（第二版本）",
+          "pathName": "pages/yeo-diary-box-v2/yeo-diary-box-v2",
           "scene": null
         }
       ]

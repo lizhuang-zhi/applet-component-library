@@ -1398,25 +1398,33 @@ index.wxml
 
 ### 属性说明
 
-| 属性名                      | 类型   | 默认值                                                       | 说明               |
-| --------------------------- | :----- | ------------------------------------------------------------ | ------------------ |
-| content                     | String | 从昨天开始，我要好好学习，天天向上，嘻嘻，因为我是一个爱学习的Man | 内容               |
-| userName                    | String | 胡辣汤的朋友                                                 | 用户名             |
-| commentNum                  | Number | 265                                                          | 评论数量           |
-| boxBordRadius               | Number | 25                                                           | 外框圆角           |
-| contMarginBottom            | Number | 25                                                           | 内容底部外边距     |
-| contLetterSpacing           | Number | 2                                                            | 内容字间距         |
-| contFontSize                | Number | 28                                                           | 内容文字大小       |
-| contLineHeight              | Number | 1.55                                                         | 内容行高           |
-| contentPadding              | String | 28rpx 28rpx 13rpx                                            | 内容内边距         |
-| contentBgColor              | String | #F9F9F9                                                      | 内容背景色         |
-| botBarJustifyContent        | String | space-between                                                | 底部栏布局方式     |
-| botBarFontColor             | String | #767676                                                      | 底部栏字体颜色     |
-| botBarUserNameLetterSpacing | Number | 1                                                            | 底部栏用户名字间距 |
-| botBarUserNameFontSize      | Number | 26                                                           | 底部栏字体大小     |
-| picSize                     | Number | 20                                                           | 箭头图标大小       |
-| botBarPadding               | String | 13rpx 28rpx 28rpx                                            | 底部栏内边距       |
-| botBarBgColor               | String | #F3F6F6                                                      | 底部栏背景色       |
+| 属性名                      | 类型    | 默认值                                                       | 说明               |
+| --------------------------- | :------ | ------------------------------------------------------------ | ------------------ |
+| content                     | String  | 从昨天开始，我要好好学习，天天向上，嘻嘻，因为我是一个爱学习的Man | 内容               |
+| userName                    | String  | 胡辣汤的朋友                                                 | 用户名             |
+| commentNum                  | Number  | 265                                                          | 评论数量           |
+| boxWidth                    | String  | 100%                                                         | 外框宽度           |
+| boxBordRadius               | Number  | 25                                                           | 外框圆角           |
+| boxShadow                   | String  | 0 0 20rpx #cccccc                                            | 外框阴影           |
+| contMarginBottom            | Number  | 25                                                           | 内容底部外边距     |
+| contLetterSpacing           | Number  | 2                                                            | 内容字间距         |
+| contFontSize                | Number  | 28                                                           | 内容文字大小       |
+| contLineHeight              | Number  | 1.55                                                         | 内容行高           |
+| contentPadding              | String  | 28rpx 28rpx 13rpx                                            | 内容内边距         |
+| contentBgColor              | String  | #F9F9F9                                                      | 内容背景色         |
+| isShowHeadPic               | Boolean | true                                                         | 是否显示用户头像   |
+| headPicUrl                  | String  | https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2596268243,3122318467&fm=26&gp=0.jpg | 用户头像url        |
+| botBarHeadPicWidth          | Number  | 40                                                           | 用户头像宽度       |
+| botBarHeadPicHeight         | Number  | 40                                                           | 用户头像高度       |
+| botBarHeadPicMargin         | String  | 0 10rpx 0 0                                                  | 用户头像外边距     |
+| botBarHeadPicBordRadius     | String  | 50%                                                          | 用户头像图片圆角   |
+| botBarJustifyContent        | String  | space-between                                                | 底部栏布局方式     |
+| botBarFontColor             | String  | #767676                                                      | 底部栏字体颜色     |
+| botBarUserNameLetterSpacing | Number  | 1                                                            | 底部栏用户名字间距 |
+| botBarUserNameFontSize      | Number  | 26                                                           | 底部栏字体大小     |
+| picSize                     | Number  | 20                                                           | 箭头图标大小       |
+| botBarPadding               | String  | 13rpx 28rpx 28rpx                                            | 底部栏内边距       |
+| botBarBgColor               | String  | #F3F6F6                                                      | 底部栏背景色       |
 
 ### 事件
 

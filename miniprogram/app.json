@@ -33,7 +33,8 @@
     "pages/yeo-diary-content/yeo-diary-content",
     "pages/yeo-text-content/yeo-text-content",
     "pages/yeo-loading-part/yeo-loading-part",
-    "pages/yeo-message-notification/yeo-message-notification"
+    "pages/yeo-message-notification/yeo-message-notification",
+    "pages/yeo-diary-box-v2/yeo-diary-box-v2"
   ],
   "tabBar": {
     "custom": true,
@@ -111,6 +112,7 @@
     "yeo-diary-content": "/Yeo/YeoDiaryContent/YeoDiaryContent",
     "yeo-text-content": "/Yeo/YeoTextContent/YeoTextContent",
     "yeo-loading-part": "/Yeo/YeoLoadingPart/YeoLoadingPart",
-    "yeo-message-notification": "/Yeo/YeoMessageNotification/YeoMessageNotification"
+    "yeo-message-notification": "/Yeo/YeoMessageNotification/YeoMessageNotification",
+    "yeo-diary-box-v2": "/Yeo/YeoDiaryBoxV2/YeoDiaryBoxV2"
   }
 }
