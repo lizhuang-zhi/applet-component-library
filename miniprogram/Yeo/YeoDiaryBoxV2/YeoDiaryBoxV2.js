@@ -15,17 +15,33 @@ Component({
       value: '3月21日'
     },
     // 天气图标
-    wheatherPicUrl: {
+    weatherPicUrl: {
       type: String,
       value: 'https://z3.ax1x.com/2021/03/25/6XlBQ0.png'
     },
     // 浏览量
     looksNum: {
       type: Number,
-      value: 3928
+      value: 9928
+    },
+    // 外框宽度
+    boxWidth: {
+      type: String,
+      value: '100%'
+    },
+    // 浏览量字体颜色
+    looksNumColor: {
+      type: String,
+      value: '#707070'
     }
 
 
+  },
+
+  lifetimes: {
+    attached() {
+
+    }
   },
 
   /**

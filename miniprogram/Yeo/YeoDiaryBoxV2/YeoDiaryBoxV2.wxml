@@ -1,12 +1,12 @@
 <view class="yeo-diary-box-v2"
-  style="background: #f3f3f3;border-radius: 20rpx;padding: 30rpx;box-shadow: 0 0 20rpx #dddddd;width: 100%;margin: 0 0 20rpx;">
+  style="background: #f3f3f3;border-radius: 20rpx;padding: 30rpx;box-shadow: 0 0 20rpx #dddddd;width: {{boxWidth}};margin: 0 0 20rpx;">
   <!-- 顶栏布局 -->
   <view class="top-part" style="margin: 0 0 20rpx;">
     <!-- 日期 -->
     <view class="date" style="font-size: 34rpx;letter-spacing: 1rpx;color: #293939;">{{date}}</view>
     <!-- 天气图片 -->
     <view cRlass="weather-pic">
-      <image src="{{wheatherPicUrl}}" style="width: 60rpx;height: 60rpx;"></image>
+      <image src="{{weatherPicUrl}}" style="width: 60rpx;height: 60rpx;"></image>
     </view>
   </view>
 
@@ -21,7 +21,7 @@
       <view class="bot-part-inner">
         <image src="https://z3.ax1x.com/2021/03/25/6XKHoj.png" style="width: 35rpx;height: 30rpx;margin: 0 8rpx 0 0;">
         </image>
-        <text style="font-size: 28rpx;color: #707070;">{{looksNum}}</text>
+        <text style="font-size: 28rpx;color: {{looksNumColor}};">{{looksNum > 9999 ? '1w+' : looksNum}}</text>
       </view>
 
     </view>

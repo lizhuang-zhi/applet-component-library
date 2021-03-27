@@ -733,6 +733,7 @@ Page({
 | inputLeftMargin  | Number | 16                                        | 输入框左外边距 |
 | inputRightMargin | Number | 30                                        | 输入框右外边距 |
 | inputType        | String | text                                      | 输入内容类型   |
+| initValue        | String | 我是起始内容                              | 输入的起始内容 |
 
 * inputType属性的适用值
 
@@ -1405,6 +1406,7 @@ index.wxml
 | commentNum                  | Number  | 265                                                          | 评论数量           |
 | boxWidth                    | String  | 100%                                                         | 外框宽度           |
 | boxBordRadius               | Number  | 25                                                           | 外框圆角           |
+| boxShadow                   | String  | 0 0 20rpx #cccccc                                            | 外框阴影           |
 | contMarginBottom            | Number  | 25                                                           | 内容底部外边距     |
 | contLetterSpacing           | Number  | 2                                                            | 内容字间距         |
 | contFontSize                | Number  | 28                                                           | 内容文字大小       |
@@ -1751,18 +1753,21 @@ index.wxml 与 index.js
 
 ### 属性说明
 
-| 属性名         | 类型   | 默认值                  | 说明                           |
-| -------------- | :----- | ----------------------- | ------------------------------ |
-| boxTopMargin   | Number | 50                      | 评论组件上外边距               |
-| boxSizeMargin  | Number | 40                      | 评论组件左右外边距             |
-| boxBotMargin   | Number | 40                      | 评论组件下外边距               |
-| commentTitle   | String | 最新评论                | 评论顶标题                     |
-| commentColor   | String | #188AFC                 | 评论顶标题颜色                 |
-| lineWidth      | String | 94rpx                   | 下划线长度（百分比or具体数值） |
-| lineColor      | String | \#5AC3D6                | 下划线颜色                     |
-| searBordRadius | Number | 20                      | 搜索框圆角                     |
-| placeholder    | String | 快来留下你精彩的评论... | 输入框占位文字                 |
-| **commentArr** | Array  | 数组数据（下面展示）    | 评论数组数据                   |
+| 属性名              | 类型   | 默认值                                                       | 说明                           |
+| ------------------- | :----- | ------------------------------------------------------------ | ------------------------------ |
+| boxTopMargin        | Number | 50                                                           | 评论组件上外边距               |
+| boxSizeMargin       | Number | 40                                                           | 评论组件左右外边距             |
+| boxBotMargin        | Number | 40                                                           | 评论组件下外边距               |
+| commentTitle        | String | 最新评论                                                     | 评论顶标题                     |
+| commentColor        | String | #188AFC                                                      | 评论顶标题颜色                 |
+| lineWidth           | String | 94rpx                                                        | 下划线长度（百分比or具体数值） |
+| lineColor           | String | \#5AC3D6                                                     | 下划线颜色                     |
+| searBordRadius      | Number | 20                                                           | 搜索框圆角                     |
+| placeholder         | String | 快来留下你精彩的评论...                                      | 输入框占位文字                 |
+| **commentArr**      | Array  | 数组数据（下面展示）                                         | 评论数组数据                   |
+| commentIntervalTime | Number | 5000                                                         | 限制用户评论间隔时长           |
+| initValue           | String | ''                                                           | 初始化输入内容                 |
+| commentObjectInfo   | Object | {userName: '荒野大道',headPendant: 0,userImg: 'https://s3.ax1x.com/2021/03/09/63FNEn.jpg'} | 评论对象                       |
 
 commentArr默认值：
 
