@@ -4,3 +4,4 @@
 
 
 <navigator url="/pages/yeo-card/yeo-card" open-type="reLaunch">跳转（组件毁灭，传出改变后的dataArr数据）</navigator>
+

@@ -300,24 +300,26 @@ index.wxml
 
 > 内部样式
 
-| 属性名                   | 类型   | 默认值   | 说明                                      |
-| ------------------------ | :----- | -------- | ----------------------------------------- |
-| starBoxWidth             | Number | 80       | 收藏框宽度                                |
-| starBoxHeight            | Number | 80       | 收藏框高度                                |
-| starBoxBordRadius        | Number | 35       | 收藏框圆角                                |
-| starBoxBgColor           | String | \#4C5F79 | 收藏框背景色                              |
-| starTopWithOutBox        | Number | -10      | 收藏框距离外部框顶距离                    |
-| starRightWithOutBox      | Number | 30       | 收藏框距离外部框右侧边缘距离              |
-| starPicSize              | String | 50%      | 收藏框内图标大小(屏幕占比or具体数值<rpx>) |
-| bottomInfoBotWithOutBox  | Number | 10       | 底部栏距离外部框底距离                    |
-| bottomInfoLeftWithOutBox | Number | 38       | 底部栏距离外部框左侧距离                  |
-| timeFontSize             | Number | 24       | 时间字体大小                              |
-| timeLetterSpacing        | Number | 1        | 时间字母间距                              |
-| timeColor                | String | \#A8A4AE | 时间颜色                                  |
-| timeFontWeight           | String | normal   | 时间字体粗度                              |
-| titleFontSize            | Number | 42       | 标题字体大小                              |
-| titleColor               | String | #F5F9FC  | 标题颜色                                  |
-| titleFontWeight          | String | bold     | 标题字体粗度                              |
+| 属性名                   | 类型    | 默认值   | 说明                                      |
+| ------------------------ | :------ | -------- | ----------------------------------------- |
+| starBoxWidth             | Number  | 80       | 收藏框宽度                                |
+| starBoxHeight            | Number  | 80       | 收藏框高度                                |
+| starBoxBordRadius        | Number  | 35       | 收藏框圆角                                |
+| starBoxBgColor           | String  | \#4C5F79 | 收藏框背景色                              |
+| starTopWithOutBox        | Number  | -10      | 收藏框距离外部框顶距离                    |
+| starRightWithOutBox      | Number  | 30       | 收藏框距离外部框右侧边缘距离              |
+| starPicSize              | String  | 50%      | 收藏框内图标大小(屏幕占比or具体数值<rpx>) |
+| bottomInfoBotWithOutBox  | Number  | 10       | 底部栏距离外部框底距离                    |
+| bottomInfoLeftWithOutBox | Number  | 38       | 底部栏距离外部框左侧距离                  |
+| timeFontSize             | Number  | 24       | 时间字体大小                              |
+| timeLetterSpacing        | Number  | 1        | 时间字母间距                              |
+| timeColor                | String  | \#A8A4AE | 时间颜色                                  |
+| timeFontWeight           | String  | normal   | 时间字体粗度                              |
+| titleFontSize            | Number  | 42       | 标题字体大小                              |
+| titleColor               | String  | #F5F9FC  | 标题颜色                                  |
+| titleFontWeight          | String  | bold     | 标题字体粗度                              |
+| titleFontNum             | Number  | 8        | 显示标题文字数量                          |
+| isShowStarPic            | Boolean | true     | 是否显示收藏图标                          |
 
 ### 事件
 

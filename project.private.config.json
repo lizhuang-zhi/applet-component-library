@@ -219,6 +219,19 @@
         {
           "name": "yeo-日记框（第二版本）",
           "pathName": "pages/yeo-diary-box-v2/yeo-diary-box-v2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-换行框架",
+          "pathName": "pages/yeo-frame/yeo-frame",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-标题（信件）",
+          "pathName": "pages/yeo-title/yeo-title",
+          "query": "",
           "scene": null
         }
       ]
