@@ -68,14 +68,16 @@ app.json
 
 * ==YeoCategory组件==
 
-| 属性名           | 类型   | 默认值                                    | 说明                   |
-| ---------------- | :----- | ----------------------------------------- | ---------------------- |
-| bgColor          | String | \#948CFF                                  | 背景颜色               |
-| picUrl           | String | https://s3.ax1x.com/2021/03/09/63FkcD.png | 图片地址               |
-| picSize          | Number | 46                                        | 图片大小               |
-| paddingLeftofPic | Number | 30                                        | 图片距离框体左侧内边距 |
-| boxRadius        | Number | 32                                        | 框体圆角               |
-| boxMarginBottom  | Number | 38                                        | 框体底部外边距         |
+| 属性名           | 类型    | 默认值                                    | 说明                   |
+| ---------------- | :------ | ----------------------------------------- | ---------------------- |
+| boxWidth         | String  | 250rpx                                    | 外框宽度               |
+| isShowPic        | Boolean | true                                      | 是否显示左侧配图       |
+| bgColor          | String  | \#948CFF                                  | 背景颜色               |
+| picUrl           | String  | https://s3.ax1x.com/2021/03/09/63FkcD.png | 图片地址               |
+| picSize          | Number  | 46                                        | 图片大小               |
+| paddingLeftofPic | Number  | 30                                        | 图片距离框体左侧内边距 |
+| boxRadius        | Number  | 32                                        | 框体圆角               |
+| boxMarginBottom  | Number  | 38                                        | 框体底部外边距         |
 
 ### 插槽
 

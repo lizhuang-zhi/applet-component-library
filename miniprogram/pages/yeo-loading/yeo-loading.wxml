@@ -2,7 +2,7 @@
 <yeo-loading isShowLoading='{{isShowLoading}}'></yeo-loading>
 
 <!-- 模拟数据请求 -->
-<view>我就是个摆设</view>
+<view bindtap="tapme">我就是个摆设</view>
 <view style="height: 500rpx;">
   <view wx:for="{{arr}}" wx:key='index'>
     <view>  
@@ -10,5 +10,5 @@
     </view>
   </view>
 </view>
-<view>我就是个摆设</view>
+<view style="height: 1000rpx;background: blue;">我就是个摆设</view>
 
