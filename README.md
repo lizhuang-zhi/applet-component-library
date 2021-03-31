@@ -68,14 +68,16 @@ app.json
 
 * ==YeoCategory组件==
 
-| 属性名           | 类型   | 默认值                                    | 说明                   |
-| ---------------- | :----- | ----------------------------------------- | ---------------------- |
-| bgColor          | String | \#948CFF                                  | 背景颜色               |
-| picUrl           | String | https://s3.ax1x.com/2021/03/09/63FkcD.png | 图片地址               |
-| picSize          | Number | 46                                        | 图片大小               |
-| paddingLeftofPic | Number | 30                                        | 图片距离框体左侧内边距 |
-| boxRadius        | Number | 32                                        | 框体圆角               |
-| boxMarginBottom  | Number | 38                                        | 框体底部外边距         |
+| 属性名           | 类型    | 默认值                                    | 说明                   |
+| ---------------- | :------ | ----------------------------------------- | ---------------------- |
+| boxWidth         | String  | 250rpx                                    | 外框宽度               |
+| isShowPic        | Boolean | true                                      | 是否显示左侧配图       |
+| bgColor          | String  | \#948CFF                                  | 背景颜色               |
+| picUrl           | String  | https://s3.ax1x.com/2021/03/09/63FkcD.png | 图片地址               |
+| picSize          | Number  | 46                                        | 图片大小               |
+| paddingLeftofPic | Number  | 30                                        | 图片距离框体左侧内边距 |
+| boxRadius        | Number  | 32                                        | 框体圆角               |
+| boxMarginBottom  | Number  | 38                                        | 框体底部外边距         |
 
 ### 插槽
 
@@ -300,24 +302,26 @@ index.wxml
 
 > 内部样式
 
-| 属性名                   | 类型   | 默认值   | 说明                                      |
-| ------------------------ | :----- | -------- | ----------------------------------------- |
-| starBoxWidth             | Number | 80       | 收藏框宽度                                |
-| starBoxHeight            | Number | 80       | 收藏框高度                                |
-| starBoxBordRadius        | Number | 35       | 收藏框圆角                                |
-| starBoxBgColor           | String | \#4C5F79 | 收藏框背景色                              |
-| starTopWithOutBox        | Number | -10      | 收藏框距离外部框顶距离                    |
-| starRightWithOutBox      | Number | 30       | 收藏框距离外部框右侧边缘距离              |
-| starPicSize              | String | 50%      | 收藏框内图标大小(屏幕占比or具体数值<rpx>) |
-| bottomInfoBotWithOutBox  | Number | 10       | 底部栏距离外部框底距离                    |
-| bottomInfoLeftWithOutBox | Number | 38       | 底部栏距离外部框左侧距离                  |
-| timeFontSize             | Number | 24       | 时间字体大小                              |
-| timeLetterSpacing        | Number | 1        | 时间字母间距                              |
-| timeColor                | String | \#A8A4AE | 时间颜色                                  |
-| timeFontWeight           | String | normal   | 时间字体粗度                              |
-| titleFontSize            | Number | 42       | 标题字体大小                              |
-| titleColor               | String | #F5F9FC  | 标题颜色                                  |
-| titleFontWeight          | String | bold     | 标题字体粗度                              |
+| 属性名                   | 类型    | 默认值   | 说明                                      |
+| ------------------------ | :------ | -------- | ----------------------------------------- |
+| starBoxWidth             | Number  | 80       | 收藏框宽度                                |
+| starBoxHeight            | Number  | 80       | 收藏框高度                                |
+| starBoxBordRadius        | Number  | 35       | 收藏框圆角                                |
+| starBoxBgColor           | String  | \#4C5F79 | 收藏框背景色                              |
+| starTopWithOutBox        | Number  | -10      | 收藏框距离外部框顶距离                    |
+| starRightWithOutBox      | Number  | 30       | 收藏框距离外部框右侧边缘距离              |
+| starPicSize              | String  | 50%      | 收藏框内图标大小(屏幕占比or具体数值<rpx>) |
+| bottomInfoBotWithOutBox  | Number  | 10       | 底部栏距离外部框底距离                    |
+| bottomInfoLeftWithOutBox | Number  | 38       | 底部栏距离外部框左侧距离                  |
+| timeFontSize             | Number  | 24       | 时间字体大小                              |
+| timeLetterSpacing        | Number  | 1        | 时间字母间距                              |
+| timeColor                | String  | \#A8A4AE | 时间颜色                                  |
+| timeFontWeight           | String  | normal   | 时间字体粗度                              |
+| titleFontSize            | Number  | 42       | 标题字体大小                              |
+| titleColor               | String  | #F5F9FC  | 标题颜色                                  |
+| titleFontWeight          | String  | bold     | 标题字体粗度                              |
+| titleFontNum             | Number  | 8        | 显示标题文字数量                          |
+| isShowStarPic            | Boolean | true     | 是否显示收藏图标                          |
 
 ### 事件
 
@@ -1517,6 +1521,7 @@ index.wxml 与 index.wxss
 | 属性名               | 类型   | 默认值                                             | 说明                   |
 | -------------------- | :----- | -------------------------------------------------- | ---------------------- |
 | boxWidth             | Number | 300                                                | 外框宽度               |
+| boxHeight            | Number | 410                                                | 外框高度               |
 | boxPadding           | String | #ffffff                                            | 内边距                 |
 | boxBordRadius        | Number | 10                                                 | 外框圆角               |
 | boxShadow            | String | 0 0 10rpx #bbbbbb                                  | 外框阴影               |
@@ -1527,6 +1532,7 @@ index.wxml 与 index.wxss
 | stampPic             | String | https://s4.ax1x.com/2021/03/20/6h1kzn.png          | 顶部邮票栏邮票图片地址 |
 | stampPicWidthSize    | Number | 90                                                 | 顶部邮票栏邮票图片宽度 |
 | stampPicHeightSize   | Number | 120                                                | 顶部邮票栏邮票图片高度 |
+| contentHeight        | Number | 120                                                | 内容高度               |
 | contentFontColor     | String | \#4B4B4B                                           | 内容框字体颜色         |
 | contentFontSize      | Number | 26                                                 | 内容框字体大小         |
 | contentPadding       | String | 0 0 60rpx                                          | 内容框内边距           |

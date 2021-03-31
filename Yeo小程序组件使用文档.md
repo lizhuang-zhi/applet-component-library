@@ -1521,6 +1521,7 @@ index.wxml 与 index.wxss
 | 属性名               | 类型   | 默认值                                             | 说明                   |
 | -------------------- | :----- | -------------------------------------------------- | ---------------------- |
 | boxWidth             | Number | 300                                                | 外框宽度               |
+| boxHeight            | Number | 410                                                | 外框高度               |
 | boxPadding           | String | #ffffff                                            | 内边距                 |
 | boxBordRadius        | Number | 10                                                 | 外框圆角               |
 | boxShadow            | String | 0 0 10rpx #bbbbbb                                  | 外框阴影               |
@@ -1531,6 +1532,7 @@ index.wxml 与 index.wxss
 | stampPic             | String | https://s4.ax1x.com/2021/03/20/6h1kzn.png          | 顶部邮票栏邮票图片地址 |
 | stampPicWidthSize    | Number | 90                                                 | 顶部邮票栏邮票图片宽度 |
 | stampPicHeightSize   | Number | 120                                                | 顶部邮票栏邮票图片高度 |
+| contentHeight        | Number | 120                                                | 内容高度               |
 | contentFontColor     | String | \#4B4B4B                                           | 内容框字体颜色         |
 | contentFontSize      | Number | 26                                                 | 内容框字体大小         |
 | contentPadding       | String | 0 0 60rpx                                          | 内容框内边距           |
