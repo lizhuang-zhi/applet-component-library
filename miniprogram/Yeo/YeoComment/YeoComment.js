@@ -73,8 +73,6 @@ Component({
    */
   methods: {
 
-
-    // },
     // 回车发送评论事件
     sendMessage(e) {
       // 评论内容
@@ -92,23 +90,6 @@ Component({
       this.triggerEvent('sendmessageevent',{});
     },
 
-
-    /* 点击用户头像事件 */
-    // clickUserImg(e) {
-    //   // 用户信息
-    //   let userInfo = e.detail.obj;
-    //   this.triggerEvent('userimgevent', {
-    //     userInfo
-    //   });
-    // },
-    /* 点击用户评论内容事件 */
-    // clickContent(e) {
-    //   // 用户评论信息
-    //   let commentInfo = e.detail.obj;
-    //   this.triggerEvent('commentevent', {
-    //     commentInfo
-    //   });
-    // }
   }
 })
 
