@@ -1759,54 +1759,18 @@ index.wxml 与 index.js
 
 ### 属性说明
 
-| 属性名              | 类型   | 默认值                                                       | 说明                           |
-| ------------------- | :----- | ------------------------------------------------------------ | ------------------------------ |
-| boxTopMargin        | Number | 50                                                           | 评论组件上外边距               |
-| boxSizeMargin       | Number | 40                                                           | 评论组件左右外边距             |
-| boxBotMargin        | Number | 40                                                           | 评论组件下外边距               |
-| commentTitle        | String | 最新评论                                                     | 评论顶标题                     |
-| commentColor        | String | #188AFC                                                      | 评论顶标题颜色                 |
-| lineWidth           | String | 94rpx                                                        | 下划线长度（百分比or具体数值） |
-| lineColor           | String | \#5AC3D6                                                     | 下划线颜色                     |
-| searBordRadius      | Number | 20                                                           | 搜索框圆角                     |
-| placeholder         | String | 快来留下你精彩的评论...                                      | 输入框占位文字                 |
-| **commentArr**      | Array  | 数组数据（下面展示）                                         | 评论数组数据                   |
-| commentIntervalTime | Number | 5000                                                         | 限制用户评论间隔时长           |
-| initValue           | String | ''                                                           | 初始化输入内容                 |
-| commentObjectInfo   | Object | {userName: '荒野大道',headPendant: 0,userImg: 'https://s3.ax1x.com/2021/03/09/63FNEn.jpg'} | 评论对象                       |
-
-commentArr默认值：
-
-YeoComment.js
-
-```js
-    /* 评论数组数据 */
-    commentArr: {
-      type: Array,
-      value: [{
-          userImg: 'https://s3.ax1x.com/2021/03/09/63FF1O.jpg',
-          headPendant: 7,
-          userName: '人是非',
-          content: '我说的话叫评论，我做的事叫论评，你看我评论还是论评都是非常的坦荡',
-          time: '2021-2-21'
-        },
-        {
-          userImg: 'https://s3.ax1x.com/2021/03/09/63FUNq.jpg',
-          headPendant: 3,
-          userName: '陌生的兄弟',
-          content: '楼上说的对',
-          time: '2021-02-22'
-        },
-        {
-          userImg: 'https://s3.ax1x.com/2021/03/09/63FNEn.jpg',
-          headPendant: 5,
-          userName: '可爱的猫',
-          content: '楼上说的有道理',
-          time: '2021-1-05'
-        },
-      ]
-    }
-```
+| 属性名         | 类型   | 默认值                  | 说明                           |
+| -------------- | :----- | ----------------------- | ------------------------------ |
+| boxTopMargin   | Number | 50                      | 评论组件上外边距               |
+| boxSizeMargin  | Number | 40                      | 评论组件左右外边距             |
+| boxBotMargin   | Number | 40                      | 评论组件下外边距               |
+| commentTitle   | String | 最新评论                | 评论顶标题                     |
+| commentColor   | String | #188AFC                 | 评论顶标题颜色                 |
+| lineWidth      | String | 94rpx                   | 下划线长度（百分比or具体数值） |
+| lineColor      | String | \#5AC3D6                | 下划线颜色                     |
+| searBordRadius | Number | 20                      | 搜索框圆角                     |
+| placeholder    | String | 快来留下你精彩的评论... | 输入框占位文字                 |
+| initValue      | String | ''                      | 初始化输入内容                 |
 
 ### 事件
 

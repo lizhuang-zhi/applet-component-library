@@ -1,1 +1,5 @@
-<yeo-comment></yeo-comment>
+<yeo-comment bind:sendenterevent='enterEvent' bind:inputevent='inputEvent' bind:sendmessageevent='sendmessageEvent' initValue='{{initValue}}'>
+  <yeo-message-card wx:for="{{commentArr}}" time='{{item.time}}' headPendant='{{item.headPendant}}'
+    userName='{{item.userName}}' userImg='{{item.userImg}}' content="{{item.content}}" bind:userimgclick='clickUserImg'
+    bind:contentclick='clickContent' wx:key='index'></yeo-message-card>
+</yeo-comment>
