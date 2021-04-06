@@ -18,6 +18,16 @@ Component({
     frameHeight: {
       type: String,
       value: '100%'
+    },
+    // 框架内边距
+    framePadding: {
+      type: String,
+      value: '10rpx'
+    },
+    // 框架外边距
+    frameMargin: {
+      type: String,
+      value: '0rpx'
     } 
     
   },

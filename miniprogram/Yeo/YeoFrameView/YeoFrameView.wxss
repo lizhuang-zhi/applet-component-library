@@ -1,6 +1,5 @@
 .yeo-frame-view .frame-view {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
 }
 
