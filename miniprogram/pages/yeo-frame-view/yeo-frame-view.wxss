@@ -1,1 +1,4 @@
-/* miniprogram/pages/yeo-frame-view/yeo-frame-view.wxss */
+.box {
+  width: 300rpx;
+  height: 400rpx;
+}

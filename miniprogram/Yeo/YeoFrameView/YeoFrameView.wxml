@@ -1,0 +1,5 @@
+<view class="yeo-frame-view" style="width: {{frameWidth}};height: {{frameHeight}};">
+  <view class="frame-view {{direction == 'row' ? 'yeo-row' : 'yeo-col'}}">
+    <slot></slot>
+  </view>
+</view>

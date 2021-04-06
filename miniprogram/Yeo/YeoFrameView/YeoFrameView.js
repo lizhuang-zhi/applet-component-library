@@ -4,7 +4,22 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    // 方向
+    direction: {
+      type: String,
+      value: 'col'
+    },
+    // 框架宽度
+    frameWidth: {
+      type: String,
+      value: '100%'
+    },
+    // 框架高度
+    frameHeight: {
+      type: String,
+      value: '100%'
+    } 
+    
   },
 
   /**
