@@ -233,6 +233,11 @@
           "pathName": "pages/yeo-title/yeo-title",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "统一框架设计",
+          "pathName": "pages/yeo-frame-view/yeo-frame-view",
+          "scene": null
         }
       ]
     }

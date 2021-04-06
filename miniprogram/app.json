@@ -36,7 +36,8 @@
     "pages/yeo-message-notification/yeo-message-notification",
     "pages/yeo-diary-box-v2/yeo-diary-box-v2",
     "pages/yeo-frame/yeo-frame",
-    "pages/yeo-title/yeo-title"
+    "pages/yeo-title/yeo-title",
+    "pages/yeo-frame-view/yeo-frame-view"
   ],
   "tabBar": {
     "custom": true,
@@ -117,6 +118,7 @@
     "yeo-message-notification": "/Yeo/YeoMessageNotification/YeoMessageNotification",
     "yeo-diary-box-v2": "/Yeo/YeoDiaryBoxV2/YeoDiaryBoxV2",
     "yeo-frame": "/Yeo/YeoFrame/YeoFrame",
-    "yeo-title": "/Yeo/YeoTitle/YeoTitle"
+    "yeo-title": "/Yeo/YeoTitle/YeoTitle",
+    "yeo-frame-view": "/Yeo/YeoFrameView/YeoFrameView"
   }
 }
