@@ -1,22 +1,20 @@
-<view class="box">
-  <yeo-frame-view direction='row'>
-    <view>
-      <yeo-frame-view direction='col' frameHeight='100rpx'>
-        <view>4.2</view>
-        <view>多云</view>
-      </yeo-frame-view>
-    </view>
-    <view>2我手机事2是东欧山东是都放到覅巍峨的开发的刀锋上的覅史蒂夫十大覅的说法哦啊的首覅十大发送到发</view>
-    <view style="text-align:right;">333</view>
-  </yeo-frame-view>
-</view>
+<yeo-frame-view direction='row' frameWidth='300rpx' frameHeight='300rpx'>
+  <view>
+    <yeo-frame-view direction='col' frameHeight='100rpx' frameBoxSizing='border-box'>
+      <view>4.2</view>
+      <view>多云</view>
+    </yeo-frame-view>
+  </view>
+  <view>史蒂夫十大覅的说法哦啊的首覅十大发送到发</view>
+  <view style="text-align:right;">333</view>
+</yeo-frame-view>
 
 ------------- ---------- ---------------------------
 
-<yeo-frame-view direction='row' frameWidth='500rpx'>
+<yeo-frame-view direction='row' frameWidth='500rpx' frameHeight='200rpx' >
   <view>2我手机事2是东欧山锋上的覅史蒂夫十大覅的说法哦啊的首覅十大发送到发</view>
   <view>
-    <yeo-frame-view direction='col'>
+    <yeo-frame-view direction='col' frameWidth='100%' frameHeight='50rpx'  framePadding='0rpx'>
       <view>夕阳西下</view>
       <view>8273评论></view>
     </yeo-frame-view>
@@ -25,20 +23,26 @@
 
 ------------- ---------- ---------------------------
 
-
-<yeo-frame-view direction='col'>
-  <view>我是一张图</view>
-  <view>
-    <yeo-frame-view direction='row'>
-      <view>
-        <yeo-frame-view direction='col'>
-          <view>我的成就</view>
-          <view>星期三</view>
-        </yeo-frame-view>
-      </view>
-      <view>我是一个非常有意思的描述，请你认</view>
-    </yeo-frame-view>
-  </view>
-</yeo-frame-view>
-
+<view class="box" style="margin:0 20rpx;">
+  <yeo-frame-view direction='col' frameWidth='100%' frameHeight='120rpx' frameAlignItems='center'>
+    <view>
+      <image src="../../images/index.png" style="width: 50rpx;height: 50rpx;"></image>
+    </view>
+    
+    <view>
+      <yeo-frame-view direction='row' frameWidth='600rpx' frameAlignItems='stretch'
+      frameHeight='100rpx'>
+        <view>
+          <yeo-frame-view direction='col' frameBgColor='orange'>
+            <view>我的成就</view>
+            <view>星期三</view>
+          </yeo-frame-view>
+        </view>
+        <view>我是一个非常有意思的描述，请你认</view>
+      </yeo-frame-view>
+    </view>
+    
+  </yeo-frame-view>
+</view>
+  
 ------------- ---------- ---------------------------

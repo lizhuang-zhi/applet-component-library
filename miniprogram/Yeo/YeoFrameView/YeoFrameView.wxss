@@ -1,4 +1,4 @@
-.yeo-frame-view .frame-view {
+.yeo-frame-view {
   display: flex;
   justify-content: space-between;
 }
