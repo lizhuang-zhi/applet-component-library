@@ -1,11 +1,11 @@
-<scroll-view class="yeo-horizon-slider" scroll-x>
+<scroll-view class="yeo-horizon-slider" scroll-x style="margin: {{boxMargin}};">
 
   <view class="singleBox" wx:for="{{sliderArr}}" wx:key='index'
   bindtap="clickObject" data-item="{{item}}" data-index="{{index}}">
 
     <!-- 图片 -->
     <view class="pic">
-      <image src="{{item.picUrl}}"></image>
+      <image src="{{item.picUrl}}" style="border: {{item.picBorder}};"></image>
     </view>
 
     <!-- 文字内容 -->

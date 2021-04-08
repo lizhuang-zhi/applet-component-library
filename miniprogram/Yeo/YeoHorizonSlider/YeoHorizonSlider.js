@@ -13,6 +13,11 @@ Component({
     isShowContent: {
       type: Boolean,
       value: true
+    },
+    // 外框外边距
+    boxMargin: {
+      type: String,
+      value: '0 0 0 34rpx'
     }
   },
 
