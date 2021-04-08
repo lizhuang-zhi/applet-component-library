@@ -965,11 +965,30 @@ index.js
    */
   data: {
     // 传入数组数据
-    sliderArr: [
-      {picUrl: '../imgs/YHS-1.jpg',title: '怦然心动',description: '月亮将会奔你而来'},
-      {picUrl: '../imgs/YHS-2.jpg',title: '傲慢与偏见',description: '以灵魂唤醒灵魂'},
-      {picUrl: '../imgs/YHS-3.jfif',title: '老人与海',description: '老人与海的固执'},
-      {picUrl: '../imgs/YHS-4.jpg',title: '复仇者联盟',description: '以父之名论英雄'},
+    sliderArr: [{
+        picUrl: 'https://s3.ax1x.com/2021/03/09/63FNEn.jpg',
+        title: '怦然心动',
+        description: '月亮将会奔你而来',
+        picBorder: ''
+      },
+      {
+        picUrl: 'https://s3.ax1x.com/2021/03/09/63FUNq.jpg',
+        title: '傲慢与偏见',
+        description: '以灵魂唤醒灵魂',
+        picBorder: ''
+      },
+      {
+        picUrl: 'https://s1.ax1x.com/2020/08/02/aYQfFx.jpg',
+        title: '老人与海',
+        description: '老人与海的固执',
+        picBorder: ''
+      },
+      {
+        picUrl: 'https://s1.ax1x.com/2020/08/02/aYlncF.jpg',
+        title: '复仇者联盟',
+        description: '以父之名论英雄',
+        picBorder: ''
+      },
     ]
   },
 
