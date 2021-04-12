@@ -1345,12 +1345,15 @@ index.wxml
 
 ```html
 <yeo-flow-waterfall-box>
-  <yeo-text-box content='我是一个人在游走的时候'></yeo-text-box>
-  <yeo-text-box></yeo-text-box>
-  <yeo-text-box content='面对人生，我们有许多的选择，请加油！'></yeo-text-box>
-  <yeo-text-box content='时间在走着，但是我想要停下'></yeo-text-box>
-  <yeo-text-box></yeo-text-box>
+  <!-- 奇数 -->
+  <yeo-text-box wx:for="{{dataArr}}" wx:key='index' wx:if="{{index % 2 == 0}}" content='{{item.content}}'></yeo-text-box>
+
+  <!-- 偶数 -->
+  <yeo-text-box wx:for="{{dataArr}}" wx:key='index' wx:if="{{index % 2 != 0}}" content='{{item.content}}'></yeo-text-box>
 </yeo-flow-waterfall-box>
+
+<!-- 添加数据 -->
+<button bindtap="add">添加</button>
 ```
 
 index.wxss
@@ -1360,6 +1363,65 @@ yeo-text-box {
   display: inline-block;
   margin-bottom: 20rpx;
 }
+```
+
+index.js
+
+```js
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    dataArr: [{
+        content: '我是一个人在游走的时候我送山大佛都发生的的撒佛1'
+      },
+      {
+        content: '我是一个人在游走的时候我送山大佛都发生的的撒佛2'
+      },
+      {
+        content: '我是一个人在游走的时候我送山大佛都发生的的撒佛3'
+      },
+      {
+        content: '我是一个人在游走的时候我送山大佛都发生的的撒佛4'
+      },
+      {
+        content: '我是一个人在游走的时候我送山大佛都发生的的撒佛5'
+      },
+      {
+        content: '我是一个人在游走的时候我送山大佛都发生的的撒佛6'
+      },
+    ]
+  },
+
+  // 添加数据
+  add() {
+    let dataArr = this.data.dataArr;
+    let newArr = [{
+        content: '我是新数据，看好了1'
+      },
+      {
+        content: '我是新数据，看好了2'
+      },
+      {
+        content: '我是新数据，看好了3'
+      },
+      {
+        content: '我是新数据，看好了4'
+      },
+      {
+        content: '我是新数据，看好了5'
+      },
+      {
+        content: '我是新数据，看好了6'
+      },
+    ];
+    this.setData({
+      dataArr: dataArr.concat(newArr)
+    })
+  },
+})
 ```
 
 ## yeo-flow-waterfall（瀑布流布局）
