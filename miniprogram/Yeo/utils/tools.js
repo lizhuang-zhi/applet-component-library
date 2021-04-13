@@ -63,7 +63,7 @@ let tools = {
     // 当前时间（格式化）
     let dateNowAll = this.changeTimeFormat(dataNowTime);
     // 发布时间
-    let timeDate = tools.changeTimeFormat(this.data.time);
+    let timeDate = tools.changeTimeFormat(time);
     // 发布时间戳
     let commentDate = new Date(timeDate).getTime();
     // 历经时长
