@@ -36,6 +36,11 @@ Component({
 		pushLoadMargin: {
 			type: String,
 			value: '0 0 200rpx 0;'
+		},
+		// 是否显示上拉加载更多
+		isShowBottom: {
+			type: Boolean,
+			value: true
 		}
 	},
 	pageLifetimes: {

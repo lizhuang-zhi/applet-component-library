@@ -12,11 +12,12 @@
 		<slot></slot>
 
 
-		<view class="pull-refresh" style="margin: {{pushLoadMargin}};">
+		<view wx:if="{{isShowBottom}}" class="pull-refresh" style="margin: {{pushLoadMargin}};">
 			<image class="icon-refresh z-index-1" wx:if="{{push.isLoading}}" src="{{push.loading}}" style="width: {{gifWidth + 'rpx'}};"/>
 
 			<!-- 加载文字 -->
 			<view class="fs24 f-color-666 z-index-1">{{push.pullText}}</view>
 		</view>
+
 	</scroll-view>
 </view>
