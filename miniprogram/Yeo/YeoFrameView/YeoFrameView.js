@@ -58,13 +58,13 @@ Component({
         初始化行列背景色（易于区分）
       */
       // 获取行列信息
-      let RowOrCol = this.properties.direction;
-      if(RowOrCol == 'row') {
-        this.setData({
-          frameBgColor: 'red'
-        })
-        console.log('变红是因为组件的attend()生命周期中执行了操作 ==> 开发时注释掉这块就可以');
-      }
+      // let RowOrCol = this.properties.direction;
+      // if(RowOrCol == 'row') {
+      //   this.setData({
+      //     frameBgColor: 'red'
+      //   })
+      //   console.log('变红是因为组件的attend()生命周期中执行了操作');
+      // }
 
     }
   },
