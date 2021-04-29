@@ -237,6 +237,13 @@
         {
           "name": "统一框架设计",
           "pathName": "pages/yeo-frame-view/yeo-frame-view",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "yeo-下拉刷新",
+          "pathName": "pages/yeo-pull-refresh/yeo-pull-refresh",
+          "query": "",
           "scene": null
         }
       ]
