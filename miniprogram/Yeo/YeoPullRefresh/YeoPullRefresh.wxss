@@ -2,7 +2,7 @@
   position: absolute;
   top: 80rpx;
   left: 50%;
-  margin-left: -50rpx;
+  margin-left: -63rpx;
   opacity: 0;
 }
 .yeo-start-loading {

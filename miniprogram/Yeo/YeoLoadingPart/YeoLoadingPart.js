@@ -112,7 +112,7 @@ Component({
 			if (Math.abs(Y) > Math.abs(X) && Y > 0) {
 				console.log("top 2 bottom");
 				// 下拉刷新
-				this.pullRefresh();
+				this.pullRefresh()
 			} else if (Math.abs(Y) > Math.abs(X) && Y < 0) {
 				console.log("bottom 2 top");
 				// 上拉加载更多
