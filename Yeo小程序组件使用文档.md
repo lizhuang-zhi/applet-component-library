@@ -583,24 +583,30 @@ index.wxss
 
 ### 属性说明
 
-| 属性名            | 类型   | 默认值                                                       | 说明                                                         |
-| ----------------- | :----- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| cardBotMargin     | Number | 30                                                           | 底部外边距                                                   |
-| userImg           | String | https://s3.ax1x.com/2021/03/09/63FUNq.jpg                    | 用户头像                                                     |
-| headPendant       | Number | 1                                                            | 头像挂件：从1-7级，级数越高，挂件越靓；小于1，默认不佩戴挂件；大于7，默认第7级 |
-| userName          | String | 仙秩                                                         | 用户名                                                       |
-| userNameColor     | String | #555555                                                      | 用户名颜色                                                   |
-| userNameSize      | Number | 28                                                           | 用户名字体大小                                               |
-| time              | String | 2020-02-20                                                   | 时间                                                         |
-| timeColor         | String | #555555                                                      | 时间颜色                                                     |
-| timeSize          | Number | 22                                                           | 时间字体大小                                                 |
-| content           | String | 我说的话叫评论，我做的事叫论评，你看我评论还是论评都是非常的坦荡 | 评论内容                                                     |
-| contentColor      | String | \#222222                                                     | 评论内容颜色                                                 |
-| contentSize       | Number | 30                                                           | 评论内容字体大小                                             |
-| contentLetSpacing | Number | 2                                                            | 评论内容字间距                                               |
-| lineColor         | String | \#bbbbbb                                                     | 下划线颜色                                                   |
-| contentPaddingBot | Number | 45                                                           | 下划线与内容距离                                             |
-| ==model==         | String | white                                                        | 设置模式（dark暗黑模式与white白天模式）：设置模式的同时也设置了模式内的值，此时我们对于开发者设置的部分予以保留<暗黑模式最适背景色：#272727；白天模式最适背景色：#EBEBEB> |
+| 属性名               | 类型    | 默认值                                                       | 说明                                                         |
+| -------------------- | :------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| cardBotMargin        | Number  | 30                                                           | 底部外边距                                                   |
+| userImg              | String  | https://s3.ax1x.com/2021/03/09/63FUNq.jpg                    | 用户头像                                                     |
+| headPendant          | Number  | 1                                                            | 头像挂件：从1-7级，级数越高，挂件越靓；小于1，默认不佩戴挂件；大于7，默认第7级 |
+| userName             | String  | 仙秩                                                         | 用户名                                                       |
+| userNameColor        | String  | #555555                                                      | 用户名颜色                                                   |
+| userNameSize         | Number  | 28                                                           | 用户名字体大小                                               |
+| time                 | String  | 2020-02-20                                                   | 时间                                                         |
+| timeColor            | String  | #555555                                                      | 时间颜色                                                     |
+| timeSize             | Number  | 22                                                           | 时间字体大小                                                 |
+| content              | String  | 我说的话叫评论，我做的事叫论评，你看我评论还是论评都是非常的坦荡 | 评论内容                                                     |
+| contentColor         | String  | \#222222                                                     | 评论内容颜色                                                 |
+| contentSize          | Number  | 30                                                           | 评论内容字体大小                                             |
+| contentLetSpacing    | Number  | 2                                                            | 评论内容字间距                                               |
+| lineColor            | String  | \#bbbbbb                                                     | 下划线颜色                                                   |
+| contentPaddingBot    | Number  | 45                                                           | 下划线与内容距离                                             |
+| ==model==            | String  | white                                                        | 设置模式（dark暗黑模式与white白天模式）：设置模式的同时也设置了模式内的值，此时我们对于开发者设置的部分予以保留<暗黑模式最适背景色：#272727；白天模式最适背景色：#EBEBEB> |
+| isShowStatus         | Boolean | true                                                         | 是否显示文字审核                                             |
+| statusWords          | String  | 待审核                                                       | 审核文字状态                                                 |
+| statusWordsTextAlign | String  | left                                                         | 审核文字位置                                                 |
+| statusWordsColor     | String  | #188AFC                                                      | 审核文字颜色                                                 |
+| statusWordsFontSize  | Number  | 25                                                           | 审核文字大小                                                 |
+| statusWordsMarginTop | Number  | 20                                                           | 审核文字距离上外边距                                         |
 
 ### 事件
 
