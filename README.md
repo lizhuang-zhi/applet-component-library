@@ -1608,8 +1608,10 @@ index.wxml 与 index.wxss
 
 | 属性名               | 类型   | 默认值                                             | 说明                   |
 | -------------------- | :----- | -------------------------------------------------- | ---------------------- |
+| boxSizing            | String | content-box                                        | 外框boxSizing          |
 | boxWidth             | Number | 300                                                | 外框宽度               |
 | boxHeight            | Number | 410                                                | 外框高度               |
+| boxMargin            | String | 0                                                  | 外边距                 |
 | boxPadding           | String | #ffffff                                            | 内边距                 |
 | boxBordRadius        | Number | 10                                                 | 外框圆角               |
 | boxShadow            | String | 0 0 10rpx #bbbbbb                                  | 外框阴影               |
