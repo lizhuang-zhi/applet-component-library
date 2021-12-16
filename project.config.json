@@ -1,215 +1,215 @@
 {
-  "miniprogramRoot": "miniprogram/",
-  "cloudfunctionRoot": "cloudfunctions/",
-  "setting": {
-    "urlCheck": true,
-    "es6": true,
-    "enhance": true,
-    "postcss": true,
-    "preloadBackgroundData": false,
-    "minified": true,
-    "newFeature": true,
-    "coverView": true,
-    "nodeModules": false,
-    "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
-    "uglifyFileName": false,
-    "checkInvalidKey": true,
-    "checkSiteMap": true,
-    "uploadWithSourceMap": true,
-    "compileHotReLoad": false,
-    "useMultiFrameRuntime": true,
-    "useApiHook": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
+    "miniprogramRoot": "miniprogram/",
+    "cloudfunctionRoot": "cloudfunctions/",
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "enhance": true,
+        "postcss": true,
+        "preloadBackgroundData": false,
+        "minified": true,
+        "newFeature": true,
+        "coverView": true,
+        "nodeModules": false,
+        "autoAudits": false,
+        "showShadowRootInWxmlPanel": true,
+        "scopeDataCheck": false,
+        "uglifyFileName": false,
+        "checkInvalidKey": true,
+        "checkSiteMap": true,
+        "uploadWithSourceMap": true,
+        "compileHotReLoad": false,
+        "lazyloadPlaceholderEnable": false,
+        "useMultiFrameRuntime": true,
+        "useApiHook": true,
+        "useApiHostProcess": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        },
+        "enableEngineNative": false,
+        "useIsolateContext": true,
+        "userConfirmedBundleSwitch": false,
+        "packNpmManually": false,
+        "packNpmRelationList": [],
+        "minifyWXSS": true,
+        "showES6CompileOption": false
     },
-    "enableEngineNative": false,
-    "useIsolateContext": true,
-    "useCompilerModule": true,
-    "userConfirmedUseCompilerModuleSwitch": false,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true,
-    "bundle": false,
-    "useApiHostProcess": false
-  },
-  "appid": "wx45847f8c326518ee",
-  "projectname": "%E5%90%84%E7%B1%BB%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91",
-  "libVersion": "2.15.0",
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
-  "compileType": "miniprogram",
-  "condition": {
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "name": "yeo-右下角圆圈组件",
-          "pathName": "pages/yeo-circle/yeo-circle",
-          "query": "",
-          "scene": null
+    "appid": "wx45847f8c326518ee",
+    "projectname": "YeoUI",
+    "libVersion": "2.21.1",
+    "simulatorType": "wechat",
+    "simulatorPluginLibVersion": {},
+    "compileType": "miniprogram",
+    "condition": {
+        "plugin": {
+            "list": []
         },
-        {
-          "name": "yeo-艺术字体",
-          "pathName": "pages/yeo-overlapFon/yeo-overlapFon",
-          "query": "",
-          "scene": null
+        "game": {
+            "list": []
         },
-        {
-          "name": "yeo-摇摆的吊灯",
-          "pathName": "pages/yeo-hangswing/yeo-hangswing",
-          "query": "",
-          "scene": null
+        "gamePlugin": {
+            "list": []
         },
-        {
-          "name": "yeo-动态功能栏",
-          "pathName": "pages/yeo-dyfunbar/yeo-dyfunbar",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-介绍卡片",
-          "pathName": "pages/yeo-card/yeo-card",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-简单卡片",
-          "pathName": "pages/yeo-simple-card/yeo-simple-card",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-底部栏",
-          "pathName": "pages/yeo-tab-bar/yeo-tab-bar",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-标签框",
-          "pathName": "pages/yeo-label-box/yeo-label-box",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-动态伸缩模块",
-          "pathName": "pages/yeo-stretch/yeo-stretch",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-横向滑动栏",
-          "pathName": "pages/yeo-horizon-slider/yeo-horizon-slider",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-分类模块",
-          "pathName": "pages/yeo-category/yeo-category",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-第二版本横拉栏",
-          "pathName": "pages/yeo-horizon-slider-v2/yeo-horizon-slider-v2",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-工具栏",
-          "pathName": "pages/yeo-tools-bar/yeo-tools-bar",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-下方弹出框",
-          "pathName": "pages/yeo-below-pop/yeo-below-pop",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-动画搜索",
-          "pathName": "pages/yeo-anima-search/yeo-anima-search",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-加载动画",
-          "pathName": "pages/yeo-loading/yeo-loading",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-旋转的美食",
-          "pathName": "pages/yeo-rotate/yeo-rotate",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-图标",
-          "pathName": "pages/yeo-icon/yeo-icon",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-搜索栏",
-          "pathName": "pages/yeo-search/yeo-search",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-滤镜卡片",
-          "pathName": "pages/yeo-blur-card/yeo-blur-card",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-评论组件",
-          "pathName": "pages/yeo-comment/yeo-comment",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-留言卡片",
-          "pathName": "pages/yeo-message-card/yeo-message-card",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-轮播图",
-          "pathName": "pages/index/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-tab切换栏",
-          "pathName": "pages/yeo-tab-change/yeo-tab-change",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-标签栏",
-          "pathName": "pages/yeo-label-bar/yeo-label-bar",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "yeo-流式布局",
-          "pathName": "pages/yeo-flow-waterfall/yeo-flow-waterfall",
-          "scene": null
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "yeo-右下角圆圈组件",
+                    "pathName": "pages/yeo-circle/yeo-circle",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-艺术字体",
+                    "pathName": "pages/yeo-overlapFon/yeo-overlapFon",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-摇摆的吊灯",
+                    "pathName": "pages/yeo-hangswing/yeo-hangswing",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-动态功能栏",
+                    "pathName": "pages/yeo-dyfunbar/yeo-dyfunbar",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-介绍卡片",
+                    "pathName": "pages/yeo-card/yeo-card",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-简单卡片",
+                    "pathName": "pages/yeo-simple-card/yeo-simple-card",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-底部栏",
+                    "pathName": "pages/yeo-tab-bar/yeo-tab-bar",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-标签框",
+                    "pathName": "pages/yeo-label-box/yeo-label-box",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-动态伸缩模块",
+                    "pathName": "pages/yeo-stretch/yeo-stretch",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-横向滑动栏",
+                    "pathName": "pages/yeo-horizon-slider/yeo-horizon-slider",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-分类模块",
+                    "pathName": "pages/yeo-category/yeo-category",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-第二版本横拉栏",
+                    "pathName": "pages/yeo-horizon-slider-v2/yeo-horizon-slider-v2",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-工具栏",
+                    "pathName": "pages/yeo-tools-bar/yeo-tools-bar",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-下方弹出框",
+                    "pathName": "pages/yeo-below-pop/yeo-below-pop",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-动画搜索",
+                    "pathName": "pages/yeo-anima-search/yeo-anima-search",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-加载动画",
+                    "pathName": "pages/yeo-loading/yeo-loading",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-旋转的美食",
+                    "pathName": "pages/yeo-rotate/yeo-rotate",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-图标",
+                    "pathName": "pages/yeo-icon/yeo-icon",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-搜索栏",
+                    "pathName": "pages/yeo-search/yeo-search",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-滤镜卡片",
+                    "pathName": "pages/yeo-blur-card/yeo-blur-card",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-评论组件",
+                    "pathName": "pages/yeo-comment/yeo-comment",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-留言卡片",
+                    "pathName": "pages/yeo-message-card/yeo-message-card",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-轮播图",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-tab切换栏",
+                    "pathName": "pages/yeo-tab-change/yeo-tab-change",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-标签栏",
+                    "pathName": "pages/yeo-label-bar/yeo-label-bar",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "yeo-流式布局",
+                    "pathName": "pages/yeo-flow-waterfall/yeo-flow-waterfall",
+                    "scene": null
+                }
+            ]
         }
-      ]
     }
-  }
 }

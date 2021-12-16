@@ -1,0 +1,15 @@
+{
+  "name": "yeo-ui",
+  "version": "1.0.0",
+  "description": "## Yeo小程序组件库",
+  "main": "/miniprogram/app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:leo_sys/applet-component-library.git"
+  },
+  "author": "mrkleo",
+  "license": "ISC"
+}
