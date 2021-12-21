@@ -1,15 +1,22 @@
 # Yeo小程序组件使用文档
 
 ## Yeo组件使用步骤
-
+> 方式一：
 1. 导入Yeo文件夹（将文件放置同page同层级）
 2. 在app.json中导入组件路径
 
-app.json
+> 方式二：
+使用npm导入
+```bash
+npm install yeo-ui
+```
+
+配置 app.json 文件
 
 ```json
   "usingComponents": {
     "yeo-search": "/Yeo/YeoSearch/YeoSearch",
+    "yeo-below-pop": "/Yeo/YeoBelowPop/YeoBelowPop",
     "yeo-anima-search": "/Yeo/YeoAnimaSearch/YeoAnimaSearch",
     "yeo-rotate": "/Yeo/YeoRotate/YeoRotate",
     "yeo-art-font": "/Yeo/YeoArtFont/YeoArtFont",
@@ -27,18 +34,28 @@ app.json
     "yeo-label-box": "/Yeo/YeoLabelBox/YeoLabelBox",
     "yeo-stretch": "/Yeo/YeoStretch/YeoStretch",
     "yeo-tools-bar": "/Yeo/YeoToolsBar/YeoToolsBar",
+    "yeo-circle-corner": "/Yeo/YeoCircleCorner/YeoCircleCorner",
     "yeo-blur-card": "/Yeo/YeoBlurCard/YeoBlurCard",
     "yeo-comment": "/Yeo/YeoComment/YeoComment",
     "yeo-message-card": "/Yeo/YeoMessageCard/YeoMessageCard",
     "yeo-loading": "/Yeo/YeoLoading/YeoLoading",
     "yeo-swiper": "/Yeo/YeoSwiper/YeoSwiper",
-    "yeo-label-bar": "/Yeo/YeoLabelBar/YeoLabelBar",
     "yeo-tab-change": "/Yeo/YeoTabChange/YeoTabChange",
+    "yeo-label-bar": "/Yeo/YeoLabelBar/YeoLabelBar",
     "yeo-flow-waterfall": "/Yeo/YeoFlowWaterfall/YeoFlowWaterfall",
     "yeo-diary-box": "/Yeo/YeoDiaryBox/YeoDiaryBox",
     "yeo-text-box": "/Yeo/YeoTextBox/YeoTextBox",
     "yeo-flow-waterfall-box": "/Yeo/YeoFlowWaterfallBox/YeoFlowWaterfallBox",
-    "yeo-stamp-text": "/Yeo/YeoStampText/YeoStampText"
+    "yeo-stamp-text": "/Yeo/YeoStampText/YeoStampText",
+    "yeo-diary-content": "/Yeo/YeoDiaryContent/YeoDiaryContent",
+    "yeo-text-content": "/Yeo/YeoTextContent/YeoTextContent",
+    "yeo-loading-part": "/Yeo/YeoLoadingPart/YeoLoadingPart",
+    "yeo-message-notification": "/Yeo/YeoMessageNotification/YeoMessageNotification",
+    "yeo-diary-box-v2": "/Yeo/YeoDiaryBoxV2/YeoDiaryBoxV2",
+    "yeo-frame": "/Yeo/YeoFrame/YeoFrame",
+    "yeo-title": "/Yeo/YeoTitle/YeoTitle",
+    "yeo-frame-view": "/Yeo/YeoFrameView/YeoFrameView",
+    "yeo-pull-refresh": "/Yeo/YeoPullRefresh/YeoPullRefresh"
   }
 ```
 

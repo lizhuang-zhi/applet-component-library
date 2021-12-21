@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     
-  }
+  },
+  "navigationBarTitleText": "yeo-stretch示例"
 }

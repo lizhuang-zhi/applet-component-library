@@ -9,9 +9,23 @@ Page({
     pageValue: ''
   },
 
-
   // 改变数据搜索内容
+  /* 
+    - url 中需要配置自己服务器的地址
+    - searArr 此变量对应一个数组，示例：(其中对象的属性名字被强制定义为 tit 和 desc )
+      [
+        {
+          tit: 'java核心技术',
+          desc: 'java畅销书籍，java圣经书籍'
+        },
+        {
+          tit: 'HTTP权威指南',
+          desc: '带你深入了解以HTTP为主的协议'
+        }
+      ]
+  */
   changeSearCont(e) {
+    // 输入搜索值，才进行搜索
     if (e.detail.searCont) {
       // 获取实时搜索内容
       let searCon = e.detail.searCont;
@@ -37,12 +51,13 @@ Page({
         fail: res => {
           wx.showToast({
             icon: 'none',
-            title: '网络错误，请稍后再试',
+            title: '网络错误，请稍后再试！请按照注释修改参数',
+            duration: 3000
           })
         }
       })
-    } else {
-      console.log('暂无搜索值');
+    } else {  // 这里的else可以去掉
+      console.log('这里的else可以去掉！暂无搜索值，所以不请求服务器进行搜索。');
     }
 
   },

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     
-  }
+  },
+  "navigationBarTitleText": "yeo-horizon-slider示例"
 }

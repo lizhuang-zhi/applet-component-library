@@ -1,11 +1,15 @@
-<!-- 标签框组件 -->
-<yeo-label-box titleWords='Java工程师面试考点' bind:clickevent='clickEvent'>
-  <view slot='content'>· Java学成什么样子可以找到工作?</view>
-  <view slot='content'>· Java学成什么样子可以找到工作?不要去抱怨这些没有的启迪大水发？</view>
-</yeo-label-box>
+<view class="example">
 
-<!-- 标签框组件 -->
-<yeo-label-box looks='100000' bind:clickevent='clickEvent'>
-  <view slot='content'>从而使表格偶数行和奇数行颜色不一样。这样的兼容性很好。但是最近在做手机网站的时候，由于手机网站对浏览器兼容
-  </view>
-</yeo-label-box>
+  <!-- 标签框组件 -->
+  <yeo-label-box titleWords='Java工程师面试考点' bind:clickevent='clickEvent'>
+    <view slot='content'>· Java学成什么样子可以找到工作?</view>
+    <view slot='content'>· Java学成什么样子可以找到工作?不要去抱怨这些没有的启迪大水发？</view>
+  </yeo-label-box>
+  
+  <!-- 标签框组件 -->
+  <yeo-label-box looks='100000' bind:clickevent='clickEvent'>
+    <view slot='content'>从而使表格偶数行和奇数行颜色不一样。这样的兼容性很好。但是最近在做手机网站的时候，由于手机网站对浏览器兼容
+    </view>
+  </yeo-label-box>
+
+</view>

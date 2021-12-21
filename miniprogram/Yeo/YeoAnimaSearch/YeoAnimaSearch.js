@@ -1,5 +1,8 @@
 // Yeo/YeoAnimaSearch/YeoAnimaSearch.js
 let anima = require('../utils/tools');
+// 函数防抖
+let timer = null;
+
 Component({
   /**
    * 组件的属性列表
@@ -61,7 +64,6 @@ Component({
       value: '#FFFFFF'
     }
     
-    
   },
 
   /**
@@ -79,7 +81,16 @@ Component({
   // 数据监听器
   observers: {
     'bindvalue': function() {
-      this.EmitSearCont();
+      /* 
+        利用函数防抖，减少触发发送事件的次数
+      */
+      if(timer) {
+        clearTimeout(timer);
+      }
+      timer = setTimeout(() => {
+        // 父传子（发送事件）
+        this.EmitSearCont();
+      }, 800)
     }
   },
 
@@ -131,7 +142,7 @@ Component({
       
       hidden_input.width(0).height(0).opacity(0).left(20).step();
       hidden_cancel.opacity(0).left(30).step();
-      cancel.width(60).height(60).step();
+      cancel.width(55).height(55).step();
       hidden_sear_con.opacity(0).step({
         delay: 50,
         timingFunction: 'ease',

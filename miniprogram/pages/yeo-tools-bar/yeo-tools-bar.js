@@ -11,10 +11,17 @@ Page({
   // 监听上图标事件
   upEvent(e) {
     console.log(e);
+    console.log('我是上边的图标，你别点我！！');
   },
   // 右边图标事件
-  rightEvent() {
+  rightEvent(e) {
+    console.log(e);
     console.log('我是右边的图标，你别点我！！');
+  },
+  // 右上图标事件
+  upRightEvent(e) {
+    console.log(e);
+    console.log('我是右上边的图标，你别点我！！');
   },
   
 
