@@ -52,7 +52,6 @@ npm install yeo-ui
     "yeo-loading-part": "/Yeo/YeoLoadingPart/YeoLoadingPart",
     "yeo-message-notification": "/Yeo/YeoMessageNotification/YeoMessageNotification",
     "yeo-diary-box-v2": "/Yeo/YeoDiaryBoxV2/YeoDiaryBoxV2",
-    "yeo-frame": "/Yeo/YeoFrame/YeoFrame",
     "yeo-title": "/Yeo/YeoTitle/YeoTitle",
     "yeo-frame-view": "/Yeo/YeoFrameView/YeoFrameView",
     "yeo-pull-refresh": "/Yeo/YeoPullRefresh/YeoPullRefresh"

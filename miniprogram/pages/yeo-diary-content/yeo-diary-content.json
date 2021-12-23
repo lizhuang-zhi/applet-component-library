@@ -1,4 +1,5 @@
 {
   "usingComponents": {},
-  "navigationBarBackgroundColor": "#E9EBEB"
+  "navigationBarBackgroundColor": "#E9EBEB",
+  "navigationBarTitleText": "yeo-diary-content示例"
 }

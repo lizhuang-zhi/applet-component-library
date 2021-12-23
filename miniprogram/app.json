@@ -35,7 +35,6 @@
     "pages/yeo-loading-part/yeo-loading-part",
     "pages/yeo-message-notification/yeo-message-notification",
     "pages/yeo-diary-box-v2/yeo-diary-box-v2",
-    "pages/yeo-frame/yeo-frame",
     "pages/yeo-title/yeo-title",
     "pages/yeo-frame-view/yeo-frame-view",
     "pages/yeo-pull-refresh/yeo-pull-refresh"
@@ -118,7 +117,6 @@
     "yeo-loading-part": "/Yeo/YeoLoadingPart/YeoLoadingPart",
     "yeo-message-notification": "/Yeo/YeoMessageNotification/YeoMessageNotification",
     "yeo-diary-box-v2": "/Yeo/YeoDiaryBoxV2/YeoDiaryBoxV2",
-    "yeo-frame": "/Yeo/YeoFrame/YeoFrame",
     "yeo-title": "/Yeo/YeoTitle/YeoTitle",
     "yeo-frame-view": "/Yeo/YeoFrameView/YeoFrameView",
     "yeo-pull-refresh": "/Yeo/YeoPullRefresh/YeoPullRefresh"

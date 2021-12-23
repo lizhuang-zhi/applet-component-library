@@ -1,3 +1,5 @@
 .box {
-  margin: 60rpx auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

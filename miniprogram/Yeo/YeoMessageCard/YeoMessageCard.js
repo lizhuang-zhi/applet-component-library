@@ -204,7 +204,16 @@ Component({
           lineColor: white_lineColor
         })
       }
-
+      /* 
+        检查用户传入的time参数是否包含'-'
+      */
+      let showTime = this.data.time;
+      let isInclude = showTime.includes('-');
+      if(!isInclude) {
+        this.setData({
+          time: tools.changeTimeFormat(showTime)
+        })
+      }
 
     }
   },

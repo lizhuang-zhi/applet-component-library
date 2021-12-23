@@ -94,7 +94,8 @@ Page({
         userName: objInfo.userName,
         headPendant: objInfo.headPendant,
         userImg: objInfo.userImg,
-        content
+        content,
+        time: nowTime.toDateString()
       };
       this.data.commentArr.push(newCont);
       this.setData({
